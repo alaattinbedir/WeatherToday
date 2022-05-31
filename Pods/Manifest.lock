@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Nimble (9.2.1)
+  - ObjectMapper (4.2.0)
+  - Quick (4.0.0)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - Nimble
+  - ObjectMapper
+  - Quick
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Nimble
+    - ObjectMapper
+    - Quick
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: cc75c93c400b315ad53c8925b056f280dd839325
+
+COCOAPODS: 1.11.2

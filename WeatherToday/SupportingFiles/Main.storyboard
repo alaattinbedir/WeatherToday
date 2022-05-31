@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WeatherVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherVC" customModule="WeatherToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="After Noon" translatesAutoresizingMaskIntoConstraints="NO" id="mY5-c0-VVf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lWQ-Mo-fDM">
+                                <rect key="frame" x="0.0" y="64" width="414" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcB-AB-Vkl">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="bMa-ea-pe5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbR-5m-mT0">
+                                        <rect key="frame" x="0.0" y="43" width="414" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="N1L-5p-Mag"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="S0c-nx-afy">
+                                <rect key="frame" x="157" y="141" width="100" height="207"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partlysunny" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-YR-ht5">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="X7d-Fs-UpE"/>
+                                            <constraint firstAttribute="width" constant="100" id="bFH-Xt-CWb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW5-g3-DPI">
+                                        <rect key="frame" x="11.5" y="104" width="77.5" height="75.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="65"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-YZ-Gib">
+                                        <rect key="frame" x="27.5" y="183.5" width="45.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QUj-7i-Hxn">
+                                <rect key="frame" x="0.0" y="368" width="414" height="108"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="NVa-v2-hFo"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ncg-vo-bQM">
+                                    <size key="itemSize" width="63" height="87"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="UJQ-ix-Am6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2aU-Le-PEH"/>
+                                </connections>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fMA-iT-tkD">
+                                <rect key="frame" x="0.0" y="476" width="414" height="386"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="NNU-Cy-sPV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RcQ-yX-XII"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lWQ-Mo-fDM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4L0-Zc-v1N"/>
+                            <constraint firstItem="fMA-iT-tkD" firstAttribute="top" secondItem="QUj-7i-Hxn" secondAttribute="bottom" id="8dT-ro-q71"/>
+                            <constraint firstItem="QUj-7i-Hxn" firstAttribute="top" secondItem="S0c-nx-afy" secondAttribute="bottom" constant="20" id="HLc-4H-Tcn"/>
+                            <constraint firstItem="QUj-7i-Hxn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N7O-FZ-eaW"/>
+                            <constraint firstItem="fMA-iT-tkD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RGW-Qh-kaR"/>
+                            <constraint firstItem="fMA-iT-tkD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TnA-sn-sfa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lWQ-Mo-fDM" secondAttribute="trailing" id="U7m-eN-8wT"/>
+                            <constraint firstItem="mY5-c0-VVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Urb-G7-RQO"/>
+                            <constraint firstItem="fMA-iT-tkD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XS0-Kx-0Bq"/>
+                            <constraint firstItem="mY5-c0-VVf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e0h-cg-Lxp"/>
+                            <constraint firstItem="S0c-nx-afy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m6s-YJ-nnD"/>
+                            <constraint firstItem="lWQ-Mo-fDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sN9-na-Bjv"/>
+                            <constraint firstItem="QUj-7i-Hxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tIR-Gt-BBM"/>
+                            <constraint firstItem="mY5-c0-VVf" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="udp-l3-FyV"/>
+                            <constraint firstItem="mY5-c0-VVf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w3H-N0-leY"/>
+                            <constraint firstItem="S0c-nx-afy" firstAttribute="top" secondItem="lWQ-Mo-fDM" secondAttribute="bottom" constant="6" id="xeq-R2-hM7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="mY5-c0-VVf" id="uzC-Vz-OhX"/>
+                        <outlet property="cityNameLabel" destination="VcB-AB-Vkl" id="SjU-zN-7fM"/>
+                        <outlet property="collectionView" destination="QUj-7i-Hxn" id="bwd-ke-wgq"/>
+                        <outlet property="currentCityTempLabel" destination="aW5-g3-DPI" id="rx5-kP-dOE"/>
+                        <outlet property="currentDateLabel" destination="JMo-YZ-Gib" id="M78-Yc-N44"/>
+                        <outlet property="tableView" destination="fMA-iT-tkD" id="xaP-YM-gS2"/>
+                        <outlet property="weatherImageView" destination="lpT-YR-ht5" id="GtV-7O-4DK"/>
+                        <outlet property="weatherTypeLabel" destination="WbR-5m-mT0" id="XEz-Qu-WsI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="-11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="After Noon" width="375" height="667"/>
+        <image name="partlysunny" width="186" height="141"/>
+    </resources>
+</document>
