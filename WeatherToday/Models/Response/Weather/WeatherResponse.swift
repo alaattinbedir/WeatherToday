@@ -14,7 +14,7 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 import Foundation
 import ObjectMapper
 
-struct Weather : Mappable {
+class WeatherResponse : Mappable {
 	var latitude : Double?
 	var longitude : Double?
 	var timezone : String?
@@ -23,12 +23,15 @@ struct Weather : Mappable {
 	var daily : Daily?
 	var offset : Int?
 
-	init?(map: Map) {
+    init() {
+        // Intentionally unimplemented
+    }
 
-	}
+    required init?(map _: Map) {
+        // Intentionally unimplemented
+    }
 
-	mutating func mapping(map: Map) {
-
+	func mapping(map: Map) {
 		latitude <- map["latitude"]
 		longitude <- map["longitude"]
 		timezone <- map["timezone"]
