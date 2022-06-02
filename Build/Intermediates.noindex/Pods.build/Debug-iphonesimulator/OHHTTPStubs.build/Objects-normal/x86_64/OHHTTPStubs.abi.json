@@ -1,0 +1,1492 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Function",
+      "name": "fixture",
+      "printedName": "fixture(filePath:status:headers:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "HTTPStubsResponse",
+          "printedName": "OHHTTPStubs.HTTPStubsResponse",
+          "usr": "c:objc(cs)HTTPStubsResponse"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Int32",
+          "printedName": "Swift.Int32",
+          "hasDefaultArg": true,
+          "usr": "s:s5Int32V"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "[Swift.AnyHashable : Any]?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Dictionary",
+              "printedName": "[Swift.AnyHashable : Any]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AnyHashable",
+                  "printedName": "Swift.AnyHashable",
+                  "usr": "s:s11AnyHashableV"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ProtocolComposition",
+                  "printedName": "Any"
+                }
+              ],
+              "usr": "s:SD"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs7fixture8filePath6status7headersSo17HTTPStubsResponseCSS_s5Int32VSDys11AnyHashableVypGSgtF",
+      "mangledName": "$s11OHHTTPStubs7fixture8filePath6status7headersSo17HTTPStubsResponseCSS_s5Int32VSDys11AnyHashableVypGSgtF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "stub",
+      "printedName": "stub(condition:response:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "HTTPStubsDescriptor",
+          "printedName": "OHHTTPStubs.HTTPStubsDescriptor",
+          "usr": "c:objc(pl)HTTPStubsDescriptor"
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> OHHTTPStubs.HTTPStubsResponse",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "HTTPStubsResponse",
+              "printedName": "OHHTTPStubs.HTTPStubsResponse",
+              "usr": "c:objc(cs)HTTPStubsResponse"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs4stub9condition8responseSo19HTTPStubsDescriptor_pSb10Foundation10URLRequestVc_So0E8ResponseCAHctF",
+      "mangledName": "$s11OHHTTPStubs4stub9condition8responseSo19HTTPStubsDescriptor_pSb10Foundation10URLRequestVc_So0E8ResponseCAHctF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "DiscardableResult"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isMethodGET",
+      "printedName": "isMethodGET()",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11isMethodGETSb10Foundation10URLRequestVcyF",
+      "mangledName": "$s11OHHTTPStubs11isMethodGETSb10Foundation10URLRequestVcyF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isMethodPOST",
+      "printedName": "isMethodPOST()",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs12isMethodPOSTSb10Foundation10URLRequestVcyF",
+      "mangledName": "$s11OHHTTPStubs12isMethodPOSTSb10Foundation10URLRequestVcyF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isMethodPUT",
+      "printedName": "isMethodPUT()",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11isMethodPUTSb10Foundation10URLRequestVcyF",
+      "mangledName": "$s11OHHTTPStubs11isMethodPUTSb10Foundation10URLRequestVcyF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isMethodPATCH",
+      "printedName": "isMethodPATCH()",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs13isMethodPATCHSb10Foundation10URLRequestVcyF",
+      "mangledName": "$s11OHHTTPStubs13isMethodPATCHSb10Foundation10URLRequestVcyF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isMethodDELETE",
+      "printedName": "isMethodDELETE()",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs14isMethodDELETESb10Foundation10URLRequestVcyF",
+      "mangledName": "$s11OHHTTPStubs14isMethodDELETESb10Foundation10URLRequestVcyF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isMethodHEAD",
+      "printedName": "isMethodHEAD()",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs12isMethodHEADSb10Foundation10URLRequestVcyF",
+      "mangledName": "$s11OHHTTPStubs12isMethodHEADSb10Foundation10URLRequestVcyF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isAbsoluteURLString",
+      "printedName": "isAbsoluteURLString(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs19isAbsoluteURLStringySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs19isAbsoluteURLStringySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isScheme",
+      "printedName": "isScheme(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs8isSchemeySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs8isSchemeySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isHost",
+      "printedName": "isHost(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs6isHostySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs6isHostySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isPath",
+      "printedName": "isPath(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs6isPathySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs6isPathySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "pathStartsWith",
+      "printedName": "pathStartsWith(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs14pathStartsWithySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs14pathStartsWithySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "pathEndsWith",
+      "printedName": "pathEndsWith(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs12pathEndsWithySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs12pathEndsWithySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "pathMatches",
+      "printedName": "pathMatches(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "NSRegularExpression",
+          "printedName": "Foundation.NSRegularExpression",
+          "usr": "c:objc(cs)NSRegularExpression"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11pathMatchesySb10Foundation10URLRequestVcSo19NSRegularExpressionCF",
+      "mangledName": "$s11OHHTTPStubs11pathMatchesySb10Foundation10URLRequestVcSo19NSRegularExpressionCF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "pathMatches",
+      "printedName": "pathMatches(_:options:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Options",
+          "printedName": "Foundation.NSRegularExpression.Options",
+          "hasDefaultArg": true,
+          "usr": "c:@E@NSRegularExpressionOptions"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11pathMatches_7optionsSb10Foundation10URLRequestVcSS_So26NSRegularExpressionOptionsVtF",
+      "mangledName": "$s11OHHTTPStubs11pathMatches_7optionsSb10Foundation10URLRequestVcSS_So26NSRegularExpressionOptionsVtF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "isExtension",
+      "printedName": "isExtension(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11isExtensionySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs11isExtensionySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "containsQueryParams",
+      "printedName": "containsQueryParams(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Dictionary",
+          "printedName": "[Swift.String : Swift.String?]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "usr": "s:SD"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs19containsQueryParamsySb10Foundation10URLRequestVcSDyS2SSgGF",
+      "mangledName": "$s11OHHTTPStubs19containsQueryParamsySb10Foundation10URLRequestVcSDyS2SSgGF",
+      "moduleName": "OHHTTPStubs",
+      "intro_Macosx": "10.10",
+      "intro_iOS": "8.0",
+      "declAttributes": [
+        "AccessControl",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "hasHeaderNamed",
+      "printedName": "hasHeaderNamed(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs14hasHeaderNamedySb10Foundation10URLRequestVcSSF",
+      "mangledName": "$s11OHHTTPStubs14hasHeaderNamedySb10Foundation10URLRequestVcSSF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "hasHeaderNamed",
+      "printedName": "hasHeaderNamed(_:value:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs14hasHeaderNamed_5valueSb10Foundation10URLRequestVcSS_SStF",
+      "mangledName": "$s11OHHTTPStubs14hasHeaderNamed_5valueSb10Foundation10URLRequestVcSS_SStF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "hasBody",
+      "printedName": "hasBody(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Data",
+          "printedName": "Foundation.Data",
+          "usr": "s:10Foundation4DataV"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs7hasBodyySb10Foundation10URLRequestVcAC4DataVF",
+      "mangledName": "$s11OHHTTPStubs7hasBodyySb10Foundation10URLRequestVcAC4DataVF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "hasJsonBody",
+      "printedName": "hasJsonBody(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Dictionary",
+          "printedName": "[Swift.AnyHashable : Any]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AnyHashable",
+              "printedName": "Swift.AnyHashable",
+              "usr": "s:s11AnyHashableV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "ProtocolComposition",
+              "printedName": "Any"
+            }
+          ],
+          "usr": "s:SD"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11hasJsonBodyySb10Foundation10URLRequestVcSDys11AnyHashableVypGF",
+      "mangledName": "$s11OHHTTPStubs11hasJsonBodyySb10Foundation10URLRequestVcSDys11AnyHashableVypGF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "hasFormBody",
+      "printedName": "hasFormBody(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Dictionary",
+          "printedName": "[Swift.String : Swift.String?]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "usr": "s:SD"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11hasFormBodyySb10Foundation10URLRequestVcSDyS2SSgGF",
+      "mangledName": "$s11OHHTTPStubs11hasFormBodyySb10Foundation10URLRequestVcSDyS2SSgGF",
+      "moduleName": "OHHTTPStubs",
+      "intro_Macosx": "10.10",
+      "intro_iOS": "8.0",
+      "declAttributes": [
+        "AccessControl",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "hasFormBody",
+      "printedName": "hasFormBody(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[Foundation.URLQueryItem]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "URLQueryItem",
+              "printedName": "Foundation.URLQueryItem",
+              "usr": "s:10Foundation12URLQueryItemV"
+            }
+          ],
+          "usr": "s:Sa"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11hasFormBodyySb10Foundation10URLRequestVcSayAC12URLQueryItemVGF",
+      "mangledName": "$s11OHHTTPStubs11hasFormBodyySb10Foundation10URLRequestVcSayAC12URLQueryItemVGF",
+      "moduleName": "OHHTTPStubs",
+      "intro_Macosx": "10.10",
+      "intro_iOS": "8.0",
+      "declAttributes": [
+        "AccessControl",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "hasFormBody",
+      "printedName": "hasFormBody(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[Foundation.URLQueryItem]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "URLQueryItem",
+              "printedName": "Foundation.URLQueryItem",
+              "usr": "s:10Foundation12URLQueryItemV"
+            }
+          ],
+          "usr": "s:Sa"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs11hasFormBodyySb10Foundation10URLRequestVcAC12URLQueryItemVd_tF",
+      "mangledName": "$s11OHHTTPStubs11hasFormBodyySb10Foundation10URLRequestVcAC12URLQueryItemVd_tF",
+      "moduleName": "OHHTTPStubs",
+      "intro_Macosx": "10.10",
+      "intro_iOS": "8.0",
+      "declAttributes": [
+        "AccessControl",
+        "Available",
+        "Available",
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "||",
+      "printedName": "||(_:_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs2oooiySb10Foundation10URLRequestVcSbAEc_SbAEctF",
+      "mangledName": "$s11OHHTTPStubs2oooiySb10Foundation10URLRequestVcSbAEc_SbAEctF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "&&",
+      "printedName": "&&(_:_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs2aaoiySb10Foundation10URLRequestVcSbAEc_SbAEctF",
+      "mangledName": "$s11OHHTTPStubs2aaoiySb10Foundation10URLRequestVcSbAEc_SbAEctF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "!",
+      "printedName": "!(_:)",
+      "children": [
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URLRequest",
+              "printedName": "Foundation.URLRequest",
+              "usr": "s:10Foundation10URLRequestV"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:11OHHTTPStubs1nopySb10Foundation10URLRequestVcSbAEcF",
+      "mangledName": "$s11OHHTTPStubs1nopySb10Foundation10URLRequestVcSbAEcF",
+      "moduleName": "OHHTTPStubs",
+      "declAttributes": [
+        "Prefix",
+        "AccessControl"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "URLRequest",
+      "printedName": "URLRequest",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "ohhttpStubs_httpBody",
+          "printedName": "ohhttpStubs_httpBody",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Data?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:10Foundation10URLRequestV11OHHTTPStubsE20ohhttpStubs_httpBodyAA4DataVSgvp",
+          "mangledName": "$s10Foundation10URLRequestV11OHHTTPStubsE20ohhttpStubs_httpBodyAA4DataVSgvp",
+          "moduleName": "OHHTTPStubs",
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Foundation.Data?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Data",
+                      "printedName": "Foundation.Data",
+                      "usr": "s:10Foundation4DataV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10Foundation10URLRequestV11OHHTTPStubsE20ohhttpStubs_httpBodyAA4DataVSgvg",
+              "mangledName": "$s10Foundation10URLRequestV11OHHTTPStubsE20ohhttpStubs_httpBodyAA4DataVSgvg",
+              "moduleName": "OHHTTPStubs",
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:10Foundation10URLRequestV",
+      "mangledName": "$s10Foundation10URLRequestV",
+      "moduleName": "Foundation",
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "ReferenceConvertible",
+          "printedName": "ReferenceConvertible",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "ReferenceType",
+              "printedName": "ReferenceType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSURLRequest",
+                  "printedName": "Foundation.NSURLRequest",
+                  "usr": "c:objc(cs)NSURLRequest"
+                }
+              ]
+            }
+          ],
+          "usr": "s:10Foundation20ReferenceConvertibleP",
+          "mangledName": "$s10Foundation20ReferenceConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomReflectable",
+          "printedName": "CustomReflectable",
+          "usr": "s:s17CustomReflectableP",
+          "mangledName": "$ss17CustomReflectableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_ObjectiveCBridgeable",
+          "printedName": "_ObjectiveCBridgeable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "_ObjectiveCType",
+              "printedName": "_ObjectiveCType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSURLRequest",
+                  "printedName": "Foundation.NSURLRequest",
+                  "usr": "c:objc(cs)NSURLRequest"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s21_ObjectiveCBridgeableP",
+          "mangledName": "$ss21_ObjectiveCBridgeableP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

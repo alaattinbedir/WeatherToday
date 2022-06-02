@@ -12,7 +12,10 @@ import ObjectMapper
 
 class WeatherApi {
     // Get weather data from service
-    static func fetchWeather(latitude:(Double), longitude:(Double), success:@escaping (Weather) -> Void, failure:@escaping (MyError) -> Void) {
+    func fetchWeather(latitude:(Double),
+                      longitude:(Double),
+                      success:@escaping (WeatherResponse) -> Void,
+                      failure:@escaping (MyError) -> Void) {
         
         // Set up current coordinate url
         let urlCoordinate = "\(latitude),\(longitude)"
@@ -22,7 +25,7 @@ class WeatherApi {
             let weather = responseJSON.object
             
             // Map json to Weather object
-            guard let weatherObject:Weather = Mapper<Weather>().map(JSONObject: weather) else {
+            guard let weatherObject:WeatherResponse = Mapper<WeatherResponse>().map(JSONObject: weather) else {
                 let myError = MyError(errorCode: "MAPPING_RESPONSE_ERROR", errorMessage: NSLocalizedString("Error mapping response", comment: "comment"))
                 failure(myError)
                 return

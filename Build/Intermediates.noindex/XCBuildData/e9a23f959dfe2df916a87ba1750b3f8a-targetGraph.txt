@@ -1,0 +1,56 @@
+Target dependency graph (15 targets)
+Alamofire in Pods, no dependencies
+OHHTTPStubs in Pods, no dependencies
+ObjectMapper in Pods, no dependencies
+RxSwift in Pods, no dependencies
+RxRelay in Pods, depends on:
+RxSwift in Pods (explicit)
+RxCocoa in Pods, depends on:
+RxRelay in Pods (explicit)
+RxSwift in Pods (explicit)
+SwiftyJSON in Pods, no dependencies
+Pods-WeatherToday in Pods, depends on:
+Alamofire in Pods (explicit)
+OHHTTPStubs in Pods (explicit)
+ObjectMapper in Pods (explicit)
+RxCocoa in Pods (explicit)
+RxRelay in Pods (explicit)
+RxSwift in Pods (explicit)
+SwiftyJSON in Pods (explicit)
+WeatherToday in WeatherToday, depends on:
+Pods-WeatherToday in Pods (implicit dependency via file 'Pods_WeatherToday.framework' in build phase 'Link Binary')
+Alamofire in Pods (implicit dependency via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS')
+OHHTTPStubs in Pods (implicit dependency via options '-framework OHHTTPStubs' in build setting 'OTHER_LDFLAGS')
+ObjectMapper in Pods (implicit dependency via options '-framework ObjectMapper' in build setting 'OTHER_LDFLAGS')
+RxCocoa in Pods (implicit dependency via options '-framework RxCocoa' in build setting 'OTHER_LDFLAGS')
+RxRelay in Pods (implicit dependency via options '-framework RxRelay' in build setting 'OTHER_LDFLAGS')
+RxSwift in Pods (implicit dependency via options '-framework RxSwift' in build setting 'OTHER_LDFLAGS')
+SwiftyJSON in Pods (implicit dependency via options '-framework SwiftyJSON' in build setting 'OTHER_LDFLAGS')
+Nimble in Pods, no dependencies
+Quick in Pods, no dependencies
+Pods-WeatherTodayTests in Pods, depends on:
+Alamofire in Pods (explicit)
+Nimble in Pods (explicit)
+OHHTTPStubs in Pods (explicit)
+ObjectMapper in Pods (explicit)
+Quick in Pods (explicit)
+RxCocoa in Pods (explicit)
+RxRelay in Pods (explicit)
+RxSwift in Pods (explicit)
+SwiftyJSON in Pods (explicit)
+WeatherTodayTests in WeatherToday, depends on:
+WeatherToday in WeatherToday (explicit)
+Pods-WeatherTodayTests in Pods (implicit dependency via file 'Pods_WeatherTodayTests.framework' in build phase 'Link Binary')
+Alamofire in Pods (implicit dependency via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS')
+Nimble in Pods (implicit dependency via options '-framework Nimble' in build setting 'OTHER_LDFLAGS')
+OHHTTPStubs in Pods (implicit dependency via options '-framework OHHTTPStubs' in build setting 'OTHER_LDFLAGS')
+ObjectMapper in Pods (implicit dependency via options '-framework ObjectMapper' in build setting 'OTHER_LDFLAGS')
+Quick in Pods (implicit dependency via options '-framework Quick' in build setting 'OTHER_LDFLAGS')
+RxCocoa in Pods (implicit dependency via options '-framework RxCocoa' in build setting 'OTHER_LDFLAGS')
+RxRelay in Pods (implicit dependency via options '-framework RxRelay' in build setting 'OTHER_LDFLAGS')
+RxSwift in Pods (implicit dependency via options '-framework RxSwift' in build setting 'OTHER_LDFLAGS')
+SwiftyJSON in Pods (implicit dependency via options '-framework SwiftyJSON' in build setting 'OTHER_LDFLAGS')
+Pods-WeatherTodayUITests in Pods, no dependencies
+WeatherTodayUITests in WeatherToday, depends on:
+WeatherToday in WeatherToday (explicit)
+Pods-WeatherTodayUITests in Pods (implicit dependency via file 'libPods-WeatherTodayUITests.a' in build phase 'Link Binary')

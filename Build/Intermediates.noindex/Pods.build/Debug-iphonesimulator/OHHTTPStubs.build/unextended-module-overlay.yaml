@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Products/Debug-iphonesimulator/OHHTTPStubs/OHHTTPStubs.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/OHHTTPStubs.build/unextended-module.modulemap",
+    }]
+  }]
+}

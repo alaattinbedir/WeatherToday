@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
+options: "eeb322094683a44e0ba7fdd914d885978987380bc8195ab00f53d132a825ee7b"
+build_start_time: [1654172682, 870584964]
+build_end_time: [1654172683, 67919015]
+inputs:
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherTodayUITests/WeatherTodayUITests.swift": [1637914284, 989694118]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherTodayUITests/WeatherTodayUITestsLaunchTests.swift": [1637914284, 994327545]

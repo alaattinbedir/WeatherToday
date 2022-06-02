@@ -78,9 +78,49 @@ class MySessionManager: NSObject {
             failure(myError)
             return
         }
-        
-        self.sessionManager.request(baseURL + endPoint, method: .get, headers: nil).responseJSON { (responseObject) -> Void in
+
+        let url = baseURL + endPoint
+        printRequest(url: url)
+
+        self.sessionManager.request(url, method: .get, headers: nil).responseJSON { (response) -> Void in
+
+            self.printResponse(response: response.result.value,
+                               statusCode: response.response?.statusCode,
+                               url: response.request?.description)
+
+            if response.result.isSuccess {
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    let (result, errorCode) = self.isValidResponse(json: json)
+                    if result {
+                        success(json)
+                    } else {
+                        let error = self.formatedErrorMessage(errorCode: errorCode)
+                        failure(error)
+                    }
+                }
+            }
             
+            if response.result.isFailure {
+                if let error = response.result.error {
+                    let myError = MyError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription)
+                    failure(myError)
+                }
+            }
+        }
+    }
+    
+    func requestPOSTURL(_ endPoint: String, params: [String: AnyObject]?, headers: [String: String]?, success:@escaping (JSON) -> Void, failure: @escaping (MyError) -> Void) {
+        
+        guard Utilities.sharedInstance.isNetworkConnectivityAvailable() else {
+            let myError = MyError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment"))
+            failure(myError)
+            return
+        }
+        let url = baseURL + endPoint
+        printRequest(url: url)
+
+        self.sessionManager.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { (responseObject) -> Void in
             if responseObject.result.isSuccess {
                 if let value = responseObject.result.value {
                     let json = JSON(value)
@@ -102,36 +142,37 @@ class MySessionManager: NSObject {
             }
         }
     }
-    
-    func requestPOSTURL(_ strURL: String, params: [String: AnyObject]?, headers: [String: String]?, success:@escaping (JSON) -> Void, failure: @escaping (MyError) -> Void) {
-        
-        guard Utilities.sharedInstance.isNetworkConnectivityAvailable() else {
-            let myError = MyError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment"))
-            failure(myError)
-            return
+
+    private func printRequest(url: String?) {
+        print("""
+        --------------------------------------------------
+        Request Url: \(String(describing: url))
+        """)
+    }
+
+    private func printResponse(response: Any?,
+                               statusCode: Int?,
+                               url: String?) {
+        print("--------------------------------------------------")
+
+        var options: JSONSerialization.WritingOptions
+        if #available(iOS 13.0, *) {
+            options = [.prettyPrinted, .withoutEscapingSlashes]
+        } else {
+            options = [.prettyPrinted]
         }
-        
-        self.sessionManager.request(baseURL + strURL, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { (responseObject) -> Void in
-            if responseObject.result.isSuccess {
-                if let value = responseObject.result.value {
-                    let json = JSON(value)
-                    let (result, errorCode) = self.isValidResponse(json: json)
-                    if result {
-                        success(json)
-                    } else {
-                        let error = self.formatedErrorMessage(errorCode: errorCode)
-                        failure(error)
-                    }
-                }
-            }
-            
-            if responseObject.result.isFailure {
-                if let error = responseObject.result.error {
-                    let myError = MyError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription)
-                    failure(myError)
-                }
-            }
+        if let prettyJson = (response as? [String: Any?])?.toJsonStr(option: options) {
+            print(prettyJson)
+        } else {
+            print(String(describing: response))
         }
+
+        print("""
+        --------------------------------------------------
+        Response Url: \(String(describing: url))
+        Response StatusCode: \(String(describing: statusCode))
+        Response Time: \(String(describing: time))
+        """)
     }
 }
 

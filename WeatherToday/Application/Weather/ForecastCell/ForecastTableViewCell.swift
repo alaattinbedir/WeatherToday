@@ -1,6 +1,6 @@
 //
 //  ForecastTableViewCell.swift
-//  KlarnaWeatherApp
+//  WeatherTodayApp
 //
 //  Created by mac on 1.09.2019.
 //  Copyright © 2019 Alaattin Bedir. All rights reserved.

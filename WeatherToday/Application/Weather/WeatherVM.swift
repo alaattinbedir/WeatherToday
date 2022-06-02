@@ -11,20 +11,19 @@ import RxCocoa
 
 class WeatherVM {
     let disposeBag = DisposeBag()
-    let cityName = BehaviorRelay<String>(value: "Stockholm")
-    var currentLocation: (latitude:Double, longitude:Double) = (59.337239, 18.062381)
-    let weather = BehaviorRelay<Weather?>(value: nil)
+    let cityName = BehaviorRelay<String>(value: "Barcelona")
+    var currentLocation: (latitude:Double, longitude:Double) = (41.3874, 2.1686)
+    let weather = BehaviorRelay<WeatherResponse?>(value: nil)
     
     let currentDate = BehaviorRelay<Int?>(value: nil)
     let weatherType = BehaviorRelay<String?>(value: nil)
-    let currentCityTemp = BehaviorRelay<Double?>(value: nil)
-        
+    let currentCityTemp = BehaviorRelay<Double?>(value: nil)        
 }
 
 extension WeatherVM {
     func fetchCurrentWeather() {
         // Get current weather
-        WeatherApi.fetchWeather(latitude: currentLocation.latitude, longitude: currentLocation.longitude, success: { [weak self] (weather) in
+        WeatherApi().fetchWeather(latitude: currentLocation.latitude, longitude: currentLocation.longitude, success: { [weak self] (weather) in
             guard let self = self else { return }
             
             self.weather.accept(weather)

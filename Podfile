@@ -7,10 +7,11 @@ def shared_pods
   pod 'ObjectMapper'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'OHHTTPStubs/Swift'
 end
 
 def testing_pods
-  pod 'Quick'
+  pod 'Quick', '~> 5.0.1'
   pod 'Nimble'
 end
 
