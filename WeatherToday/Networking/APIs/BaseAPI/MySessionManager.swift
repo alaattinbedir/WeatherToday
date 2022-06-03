@@ -71,8 +71,8 @@ class MySessionManager: NSObject {
         
         return error
     }
-    
-    func requestGETURL(_ endPoint: String, success:@escaping (JSON) -> Void, failure:@escaping (MyError) -> Void) {
+
+    func request(methotType: HTTPMethod, _ endPoint: String, success:@escaping (JSON) -> Void, failure:@escaping (MyError) -> Void) {
         guard Utilities.sharedInstance.isNetworkConnectivityAvailable() else {
             let myError = MyError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment"))
             failure(myError)
@@ -82,7 +82,7 @@ class MySessionManager: NSObject {
         let url = baseURL + endPoint
         printRequest(url: url)
 
-        self.sessionManager.request(url, method: .get, headers: nil).responseJSON { (response) -> Void in
+        self.sessionManager.request(url, method: methotType, headers: nil).responseJSON { (response) -> Void in
 
             self.printResponse(response: response.result.value,
                                statusCode: response.response?.statusCode,
@@ -100,42 +100,9 @@ class MySessionManager: NSObject {
                     }
                 }
             }
-            
+
             if response.result.isFailure {
                 if let error = response.result.error {
-                    let myError = MyError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription)
-                    failure(myError)
-                }
-            }
-        }
-    }
-    
-    func requestPOSTURL(_ endPoint: String, params: [String: AnyObject]?, headers: [String: String]?, success:@escaping (JSON) -> Void, failure: @escaping (MyError) -> Void) {
-        
-        guard Utilities.sharedInstance.isNetworkConnectivityAvailable() else {
-            let myError = MyError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment"))
-            failure(myError)
-            return
-        }
-        let url = baseURL + endPoint
-        printRequest(url: url)
-
-        self.sessionManager.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { (responseObject) -> Void in
-            if responseObject.result.isSuccess {
-                if let value = responseObject.result.value {
-                    let json = JSON(value)
-                    let (result, errorCode) = self.isValidResponse(json: json)
-                    if result {
-                        success(json)
-                    } else {
-                        let error = self.formatedErrorMessage(errorCode: errorCode)
-                        failure(error)
-                    }
-                }
-            }
-            
-            if responseObject.result.isFailure {
-                if let error = responseObject.result.error {
                     let myError = MyError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription)
                     failure(myError)
                 }
