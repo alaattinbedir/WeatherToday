@@ -11,7 +11,7 @@ import CoreLocation
 import RxSwift
 import RxCocoa
 
-class WeatherVC: UIViewController {
+class WeatherVC: MDViewController {
     
     // MARK: - Vars & Lets
     
@@ -105,7 +105,13 @@ class WeatherVC: UIViewController {
         bind()
         configureItems()
         viewModel.fetchCurrentWeather()
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            self.changeBackground(defaultBg: false)
+            
+        }
     }
+
 }
 
 
@@ -122,17 +128,19 @@ private extension WeatherVC {
 
 extension WeatherVC {
     func configureItems() {
-        changeBackground()
+        changeBackground(defaultBg: true)
         setLocationManager()
     }
     
-    func changeBackground() {
-        if let hour = Int(Utilities.sharedInstance.getHourFromDate(date: Date().timeIntervalSince1970)) {
+    func changeBackground(defaultBg: Bool) {
+        if defaultBg, let hour = Int(Utilities.sharedInstance.getHourFromDate(date: Date().timeIntervalSince1970)) {
             if hour > sunRiseHour && hour < sunSetHour {
                 background.image = UIImage(named: "After Noon")
             } else {
                 background.image = UIImage(named: "Night")
             }
+        }else{
+            background.image = UIImage(named: "Night")
         }
     }
     
@@ -223,5 +231,15 @@ extension WeatherVC : CLLocationManagerDelegate {
         
         viewModel.currentLocation.latitude = locValue.latitude
         viewModel.currentLocation.longitude = locValue.longitude
+    }
+}
+
+extension WeatherVC: RoutingConfiguration {
+    static func transitionStyle(for _: RoutingEnum) -> (isModal: Bool, transitionStyle: RoutingTransitionStyle) {
+        return (true, RoutingTransitionStyle.none)
+    }
+
+    static func getNavigationInfo() -> NavigationRouterEnum {
+        return NavigationRouterEnum.toStoryBoard(toStoryboard: .main, toVC: .weather, toVCType: Self.self)
     }
 }

@@ -13,6 +13,22 @@
 		84268CDF2848B31F003D52EE /* WeatherVMSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268CDE2848B31F003D52EE /* WeatherVMSpec.swift */; };
 		84268CE22848B6D1003D52EE /* QuickSpec+Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268CE12848B6D1003D52EE /* QuickSpec+Await.swift */; };
 		84268CE42848C0D0003D52EE /* WeatherStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268CE32848C0D0003D52EE /* WeatherStub.swift */; };
+		8476CB53284DE2C7006E915F /* RoutingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB52284DE2C7006E915F /* RoutingEnum.swift */; };
+		8476CB55284DE3B4006E915F /* RoutingEnum+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB54284DE3B4006E915F /* RoutingEnum+Navigation.swift */; };
+		8476CB58284DE45F006E915F /* PageNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB57284DE45F006E915F /* PageNavigator.swift */; };
+		8476CB5A284DE490006E915F /* RoutingTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB59284DE490006E915F /* RoutingTransitionStyle.swift */; };
+		8476CB5C284DE4FA006E915F /* UiPageNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB5B284DE4FA006E915F /* UiPageNavigator.swift */; };
+		8476CB5E284DE5AF006E915F /* EnumCaseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB5D284DE5AF006E915F /* EnumCaseName.swift */; };
+		8476CB60284DE74B006E915F /* NavigationRouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB5F284DE74B006E915F /* NavigationRouterEnum.swift */; };
+		8476CB62284DE7C4006E915F /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB61284DE7C4006E915F /* NavigationRouter.swift */; };
+		8476CB66284DEB4D006E915F /* MDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB65284DEB4D006E915F /* MDViewController.swift */; };
+		8476CB6A284DEED3006E915F /* ModalTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB69284DEED3006E915F /* ModalTransitioningDelegate.swift */; };
+		8476CB6C284DEF01006E915F /* ModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB6B284DEF01006E915F /* ModalTransitionAnimator.swift */; };
+		8476CB6F284DF07F006E915F /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB6E284DF07F006E915F /* NibLoadableView.swift */; };
+		8476CB72284DF1E1006E915F /* Optional+Required.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB71284DF1E1006E915F /* Optional+Required.swift */; };
+		8476CB74284DF2E3006E915F /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB73284DF2E3006E915F /* ModalPresentationController.swift */; };
+		8476CB76284DF368006E915F /* UIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB75284DF368006E915F /* UIView+DropShadow.swift */; };
+		8476CB78284DF5C4006E915F /* RoutingEnum+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB77284DF5C4006E915F /* RoutingEnum+Configuration.swift */; };
 		847D7E652848CDF600AD0DBC /* Dictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D7E642848CDF600AD0DBC /* Dictionary+Json.swift */; };
 		847D7E672848CE7100AD0DBC /* SafeUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D7E662848CE7100AD0DBC /* SafeUnwrap.swift */; };
 		847D7E6A2848D25400AD0DBC /* success_weather_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 847D7E692848D25400AD0DBC /* success_weather_response.json */; };
@@ -83,6 +99,22 @@
 		84268CDE2848B31F003D52EE /* WeatherVMSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVMSpec.swift; sourceTree = "<group>"; };
 		84268CE12848B6D1003D52EE /* QuickSpec+Await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuickSpec+Await.swift"; sourceTree = "<group>"; };
 		84268CE32848C0D0003D52EE /* WeatherStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStub.swift; sourceTree = "<group>"; };
+		8476CB52284DE2C7006E915F /* RoutingEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingEnum.swift; sourceTree = "<group>"; };
+		8476CB54284DE3B4006E915F /* RoutingEnum+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutingEnum+Navigation.swift"; sourceTree = "<group>"; };
+		8476CB57284DE45F006E915F /* PageNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNavigator.swift; sourceTree = "<group>"; };
+		8476CB59284DE490006E915F /* RoutingTransitionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingTransitionStyle.swift; sourceTree = "<group>"; };
+		8476CB5B284DE4FA006E915F /* UiPageNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiPageNavigator.swift; sourceTree = "<group>"; };
+		8476CB5D284DE5AF006E915F /* EnumCaseName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCaseName.swift; sourceTree = "<group>"; };
+		8476CB5F284DE74B006E915F /* NavigationRouterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterEnum.swift; sourceTree = "<group>"; };
+		8476CB61284DE7C4006E915F /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		8476CB65284DEB4D006E915F /* MDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDViewController.swift; sourceTree = "<group>"; };
+		8476CB69284DEED3006E915F /* ModalTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitioningDelegate.swift; sourceTree = "<group>"; };
+		8476CB6B284DEF01006E915F /* ModalTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		8476CB6E284DF07F006E915F /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		8476CB71284DF1E1006E915F /* Optional+Required.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Required.swift"; sourceTree = "<group>"; };
+		8476CB73284DF2E3006E915F /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		8476CB75284DF368006E915F /* UIView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DropShadow.swift"; sourceTree = "<group>"; };
+		8476CB77284DF5C4006E915F /* RoutingEnum+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutingEnum+Configuration.swift"; sourceTree = "<group>"; };
 		847D7E642848CDF600AD0DBC /* Dictionary+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Json.swift"; sourceTree = "<group>"; };
 		847D7E662848CE7100AD0DBC /* SafeUnwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeUnwrap.swift; sourceTree = "<group>"; };
 		847D7E692848D25400AD0DBC /* success_weather_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success_weather_response.json; sourceTree = "<group>"; };
@@ -166,6 +198,87 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8476CB50284DE2A5006E915F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB56284DE448006E915F /* Navigator */,
+				8476CB51284DE2B0006E915F /* RoutingEnum */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		8476CB51284DE2B0006E915F /* RoutingEnum */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB52284DE2C7006E915F /* RoutingEnum.swift */,
+				8476CB54284DE3B4006E915F /* RoutingEnum+Navigation.swift */,
+				8476CB77284DF5C4006E915F /* RoutingEnum+Configuration.swift */,
+			);
+			path = RoutingEnum;
+			sourceTree = "<group>";
+		};
+		8476CB56284DE448006E915F /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB57284DE45F006E915F /* PageNavigator.swift */,
+				8476CB59284DE490006E915F /* RoutingTransitionStyle.swift */,
+				8476CB5B284DE4FA006E915F /* UiPageNavigator.swift */,
+				8476CB5F284DE74B006E915F /* NavigationRouterEnum.swift */,
+				8476CB61284DE7C4006E915F /* NavigationRouter.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		8476CB63284DEB2A006E915F /* CommonUi */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB64284DEB36006E915F /* BaseVC */,
+			);
+			path = CommonUi;
+			sourceTree = "<group>";
+		};
+		8476CB64284DEB36006E915F /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB65284DEB4D006E915F /* MDViewController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		8476CB67284DEEAB006E915F /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB68284DEEBB006E915F /* ModalTransitioning */,
+			);
+			path = Transitioning;
+			sourceTree = "<group>";
+		};
+		8476CB68284DEEBB006E915F /* ModalTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB69284DEED3006E915F /* ModalTransitioningDelegate.swift */,
+				8476CB6B284DEF01006E915F /* ModalTransitionAnimator.swift */,
+				8476CB73284DF2E3006E915F /* ModalPresentationController.swift */,
+			);
+			path = ModalTransitioning;
+			sourceTree = "<group>";
+		};
+		8476CB6D284DF064006E915F /* NibLoadableView */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB6E284DF07F006E915F /* NibLoadableView.swift */,
+			);
+			path = NibLoadableView;
+			sourceTree = "<group>";
+		};
+		8476CB70284DF1C6006E915F /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				8476CB71284DF1E1006E915F /* Optional+Required.swift */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
 		8479932F2847A6DF0015EBC1 /* APIStubs */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +299,11 @@
 		847D7E632848CDD100AD0DBC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8476CB70284DF1C6006E915F /* Optional */,
+				8476CB6D284DF064006E915F /* NibLoadableView */,
 				847D7E642848CDF600AD0DBC /* Dictionary+Json.swift */,
+				8476CB5D284DE5AF006E915F /* EnumCaseName.swift */,
+				8476CB75284DF368006E915F /* UIView+DropShadow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,6 +341,9 @@
 		84A379932750CE2A0071CA81 /* WeatherToday */ = {
 			isa = PBXGroup;
 			children = (
+				8476CB67284DEEAB006E915F /* Transitioning */,
+				8476CB63284DEB2A006E915F /* CommonUi */,
+				8476CB50284DE2A5006E915F /* Routing */,
 				84A379C42750CE8C0071CA81 /* AppDelegate */,
 				84A379CC2750D09D0071CA81 /* Application */,
 				847D7E632848CDD100AD0DBC /* Extensions */,
@@ -669,17 +789,33 @@
 				84A379D52750DABF0071CA81 /* Daily.swift in Sources */,
 				84A379F22750E0060071CA81 /* WeatherVC.swift in Sources */,
 				84A379E62750DD5D0071CA81 /* HourlyCollectionViewCell.swift in Sources */,
+				8476CB6F284DF07F006E915F /* NibLoadableView.swift in Sources */,
 				84A379952750CE2A0071CA81 /* AppDelegate.swift in Sources */,
+				8476CB55284DE3B4006E915F /* RoutingEnum+Navigation.swift in Sources */,
 				84A379D42750DABF0071CA81 /* Currently.swift in Sources */,
 				84A379EC2750DD820071CA81 /* Utilities.swift in Sources */,
+				8476CB62284DE7C4006E915F /* NavigationRouter.swift in Sources */,
+				8476CB72284DF1E1006E915F /* Optional+Required.swift in Sources */,
 				84A379ED2750DD820071CA81 /* Session.swift in Sources */,
+				8476CB6A284DEED3006E915F /* ModalTransitioningDelegate.swift in Sources */,
 				84A379972750CE2A0071CA81 /* SceneDelegate.swift in Sources */,
+				8476CB53284DE2C7006E915F /* RoutingEnum.swift in Sources */,
 				84A379E92750DD5D0071CA81 /* ForecastTableViewCell.swift in Sources */,
 				84FB7827275107000050E85D /* WeatherApi.swift in Sources */,
+				8476CB5E284DE5AF006E915F /* EnumCaseName.swift in Sources */,
+				8476CB6C284DEF01006E915F /* ModalTransitionAnimator.swift in Sources */,
 				847D7E672848CE7100AD0DBC /* SafeUnwrap.swift in Sources */,
 				84A379F52750E0240071CA81 /* WeatherVM.swift in Sources */,
+				8476CB5A284DE490006E915F /* RoutingTransitionStyle.swift in Sources */,
+				8476CB76284DF368006E915F /* UIView+DropShadow.swift in Sources */,
 				847D7E652848CDF600AD0DBC /* Dictionary+Json.swift in Sources */,
+				8476CB60284DE74B006E915F /* NavigationRouterEnum.swift in Sources */,
+				8476CB66284DEB4D006E915F /* MDViewController.swift in Sources */,
+				8476CB78284DF5C4006E915F /* RoutingEnum+Configuration.swift in Sources */,
+				8476CB74284DF2E3006E915F /* ModalPresentationController.swift in Sources */,
+				8476CB5C284DE4FA006E915F /* UiPageNavigator.swift in Sources */,
 				84A379D72750DABF0071CA81 /* WeatherResponse.swift in Sources */,
+				8476CB58284DE45F006E915F /* PageNavigator.swift in Sources */,
 				84A379D82750DABF0071CA81 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -873,9 +1009,11 @@
 				DEVELOPMENT_TEAM = KHRD8446CX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherToday/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use this to personalize your app experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -902,9 +1040,11 @@
 				DEVELOPMENT_TEAM = KHRD8446CX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherToday/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use this to personalize your app experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
