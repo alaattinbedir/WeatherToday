@@ -230,6 +230,13 @@ SWIFT_CLASS("_TtC12WeatherToday11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12WeatherToday7BaseAPI")
+@interface BaseAPI : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIViewController;
 @class NSString;
 @class NSBundle;
@@ -383,13 +390,6 @@ SWIFT_CLASS("_TtC12WeatherToday26ModalTransitioningDelegate")
 @interface ModalTransitioningDelegate : NSObject <UIViewControllerTransitioningDelegate>
 - (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)_ SWIFT_WARN_UNUSED_RESULT;
 - (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)_ SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC12WeatherToday16MySessionManager")
-@interface MySessionManager : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

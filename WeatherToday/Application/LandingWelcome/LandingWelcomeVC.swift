@@ -17,7 +17,7 @@ class LandingWelcomeVC: MDViewController {
     @IBOutlet weak var landingWelcomeLabel: UILabel!
 
     @IBAction func getLandingWelcome2Page(_ sender: Any) {
-        RoutingEnum.landing.navigate()
+        RoutingEnum.weather.navigate()
     }
     
     override func viewDidLoad() {

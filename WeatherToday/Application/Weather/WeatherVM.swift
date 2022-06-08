@@ -23,7 +23,9 @@ class WeatherVM {
 extension WeatherVM {
     func fetchCurrentWeather() {
         // Get current weather
-        WeatherApi().fetchWeather(latitude: currentLocation.latitude, longitude: currentLocation.longitude, success: { [weak self] (weather) in
+        WeatherApi().fetchWeather(latitude: currentLocation.latitude,
+                                  longitude: currentLocation.longitude,
+                                  success: { [weak self] (weather) in
             guard let self = self else { return }
             
             self.weather.accept(weather)

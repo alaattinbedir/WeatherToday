@@ -1286,6 +1286,188 @@
       ]
     },
     {
+      "kind": "TypeDecl",
+      "name": "Keeper",
+      "printedName": "Keeper",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "shared",
+          "printedName": "shared",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Keeper",
+              "printedName": "WeatherToday.Keeper",
+              "usr": "s:12WeatherToday6KeeperC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday6KeeperC6sharedACvpZ",
+          "mangledName": "$s12WeatherToday6KeeperC6sharedACvpZ",
+          "moduleName": "WeatherToday",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Keeper",
+                  "printedName": "WeatherToday.Keeper",
+                  "usr": "s:12WeatherToday6KeeperC"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday6KeeperC6sharedACvgZ",
+              "mangledName": "$s12WeatherToday6KeeperC6sharedACvgZ",
+              "moduleName": "WeatherToday",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "currentEnvironment",
+          "printedName": "currentEnvironment",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AppDomain",
+              "printedName": "WeatherToday.AppDomain",
+              "usr": "s:12WeatherToday9AppDomainO"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvp",
+          "mangledName": "$s12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvp",
+          "moduleName": "WeatherToday",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AppDomain",
+                  "printedName": "WeatherToday.AppDomain",
+                  "usr": "s:12WeatherToday9AppDomainO"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvg",
+              "mangledName": "$s12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvg",
+              "moduleName": "WeatherToday",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "AppDomain",
+                  "printedName": "WeatherToday.AppDomain",
+                  "usr": "s:12WeatherToday9AppDomainO"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvs",
+              "mangledName": "$s12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvs",
+              "moduleName": "WeatherToday",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvM",
+              "mangledName": "$s12WeatherToday6KeeperC18currentEnvironmentAA9AppDomainOvM",
+              "moduleName": "WeatherToday",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Keeper",
+              "printedName": "WeatherToday.Keeper",
+              "usr": "s:12WeatherToday6KeeperC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12WeatherToday6KeeperCACycfc",
+          "mangledName": "$s12WeatherToday6KeeperCACycfc",
+          "moduleName": "WeatherToday",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:12WeatherToday6KeeperC",
+      "mangledName": "$s12WeatherToday6KeeperC",
+      "moduleName": "WeatherToday",
+      "isOpen": true
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
       "kind": "Import",
       "name": "Alamofire",
       "printedName": "Alamofire",
@@ -1308,8 +1490,8 @@
     },
     {
       "kind": "TypeDecl",
-      "name": "MyError",
-      "printedName": "MyError",
+      "name": "NetworkError",
+      "printedName": "NetworkError",
       "children": [
         {
           "kind": "Var",
@@ -1332,8 +1514,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday7MyErrorC9errorCodeSSSgvp",
-          "mangledName": "$s12WeatherToday7MyErrorC9errorCodeSSSgvp",
+          "usr": "s:12WeatherToday12NetworkErrorC9errorCodeSSSgvp",
+          "mangledName": "$s12WeatherToday12NetworkErrorC9errorCodeSSSgvp",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -1364,8 +1546,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7MyErrorC9errorCodeSSSgvg",
-              "mangledName": "$s12WeatherToday7MyErrorC9errorCodeSSSgvg",
+              "usr": "s:12WeatherToday12NetworkErrorC9errorCodeSSSgvg",
+              "mangledName": "$s12WeatherToday12NetworkErrorC9errorCodeSSSgvg",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -1400,8 +1582,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7MyErrorC9errorCodeSSSgvs",
-              "mangledName": "$s12WeatherToday7MyErrorC9errorCodeSSSgvs",
+              "usr": "s:12WeatherToday12NetworkErrorC9errorCodeSSSgvs",
+              "mangledName": "$s12WeatherToday12NetworkErrorC9errorCodeSSSgvs",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -1422,8 +1604,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7MyErrorC9errorCodeSSSgvM",
-              "mangledName": "$s12WeatherToday7MyErrorC9errorCodeSSSgvM",
+              "usr": "s:12WeatherToday12NetworkErrorC9errorCodeSSSgvM",
+              "mangledName": "$s12WeatherToday12NetworkErrorC9errorCodeSSSgvM",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -1455,8 +1637,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday7MyErrorC12errorMessageSSSgvp",
-          "mangledName": "$s12WeatherToday7MyErrorC12errorMessageSSSgvp",
+          "usr": "s:12WeatherToday12NetworkErrorC12errorMessageSSSgvp",
+          "mangledName": "$s12WeatherToday12NetworkErrorC12errorMessageSSSgvp",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -1487,8 +1669,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7MyErrorC12errorMessageSSSgvg",
-              "mangledName": "$s12WeatherToday7MyErrorC12errorMessageSSSgvg",
+              "usr": "s:12WeatherToday12NetworkErrorC12errorMessageSSSgvg",
+              "mangledName": "$s12WeatherToday12NetworkErrorC12errorMessageSSSgvg",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -1523,8 +1705,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7MyErrorC12errorMessageSSSgvs",
-              "mangledName": "$s12WeatherToday7MyErrorC12errorMessageSSSgvs",
+              "usr": "s:12WeatherToday12NetworkErrorC12errorMessageSSSgvs",
+              "mangledName": "$s12WeatherToday12NetworkErrorC12errorMessageSSSgvs",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -1545,8 +1727,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7MyErrorC12errorMessageSSSgvM",
-              "mangledName": "$s12WeatherToday7MyErrorC12errorMessageSSSgvM",
+              "usr": "s:12WeatherToday12NetworkErrorC12errorMessageSSSgvM",
+              "mangledName": "$s12WeatherToday12NetworkErrorC12errorMessageSSSgvM",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -1564,14 +1746,14 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "MyError",
-              "printedName": "WeatherToday.MyError",
-              "usr": "s:12WeatherToday7MyErrorC"
+              "name": "NetworkError",
+              "printedName": "WeatherToday.NetworkError",
+              "usr": "s:12WeatherToday12NetworkErrorC"
             }
           ],
           "declKind": "Constructor",
-          "usr": "s:12WeatherToday7MyErrorCACycfc",
-          "mangledName": "$s12WeatherToday7MyErrorCACycfc",
+          "usr": "s:12WeatherToday12NetworkErrorCACycfc",
+          "mangledName": "$s12WeatherToday12NetworkErrorCACycfc",
           "moduleName": "WeatherToday",
           "init_kind": "Designated"
         },
@@ -1582,9 +1764,9 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "MyError",
-              "printedName": "WeatherToday.MyError",
-              "usr": "s:12WeatherToday7MyErrorC"
+              "name": "NetworkError",
+              "printedName": "WeatherToday.NetworkError",
+              "usr": "s:12WeatherToday12NetworkErrorC"
             },
             {
               "kind": "TypeNominal",
@@ -1616,15 +1798,15 @@
             }
           ],
           "declKind": "Constructor",
-          "usr": "s:12WeatherToday7MyErrorC9errorCode0E7MessageACSSSg_AFtcfc",
-          "mangledName": "$s12WeatherToday7MyErrorC9errorCode0E7MessageACSSSg_AFtcfc",
+          "usr": "s:12WeatherToday12NetworkErrorC9errorCode0E7MessageACSSSg_AFtcfc",
+          "mangledName": "$s12WeatherToday12NetworkErrorC9errorCode0E7MessageACSSSg_AFtcfc",
           "moduleName": "WeatherToday",
           "init_kind": "Designated"
         }
       ],
       "declKind": "Class",
-      "usr": "s:12WeatherToday7MyErrorC",
-      "mangledName": "$s12WeatherToday7MyErrorC",
+      "usr": "s:12WeatherToday12NetworkErrorC",
+      "mangledName": "$s12WeatherToday12NetworkErrorC",
       "moduleName": "WeatherToday",
       "isOpen": true,
       "conformances": [
@@ -1646,8 +1828,8 @@
     },
     {
       "kind": "TypeDecl",
-      "name": "MySessionManager",
-      "printedName": "MySessionManager",
+      "name": "BaseAPI",
+      "printedName": "BaseAPI",
       "children": [
         {
           "kind": "Var",
@@ -1656,14 +1838,14 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "MySessionManager",
-              "printedName": "WeatherToday.MySessionManager",
-              "usr": "c:@M@WeatherToday@objc(cs)MySessionManager"
+              "name": "BaseAPI",
+              "printedName": "WeatherToday.BaseAPI",
+              "usr": "c:@M@WeatherToday@objc(cs)BaseAPI"
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday16MySessionManagerC14sharedInstanceACvpZ",
-          "mangledName": "$s12WeatherToday16MySessionManagerC14sharedInstanceACvpZ",
+          "usr": "s:12WeatherToday7BaseAPIC14sharedInstanceACvpZ",
+          "mangledName": "$s12WeatherToday7BaseAPIC14sharedInstanceACvpZ",
           "moduleName": "WeatherToday",
           "static": true,
           "declAttributes": [
@@ -1681,14 +1863,14 @@
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "MySessionManager",
-                  "printedName": "WeatherToday.MySessionManager",
-                  "usr": "c:@M@WeatherToday@objc(cs)MySessionManager"
+                  "name": "BaseAPI",
+                  "printedName": "WeatherToday.BaseAPI",
+                  "usr": "c:@M@WeatherToday@objc(cs)BaseAPI"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MySessionManagerC14sharedInstanceACvgZ",
-              "mangledName": "$s12WeatherToday16MySessionManagerC14sharedInstanceACvgZ",
+              "usr": "s:12WeatherToday7BaseAPIC14sharedInstanceACvgZ",
+              "mangledName": "$s12WeatherToday7BaseAPIC14sharedInstanceACvgZ",
               "moduleName": "WeatherToday",
               "static": true,
               "implicit": true,
@@ -1712,8 +1894,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday16MySessionManagerC07sessionE033_6BA6CABF2FB0C18F0E762E62CFF652B8LL9Alamofire0dE0Cvp",
-          "mangledName": "$s12WeatherToday16MySessionManagerC07sessionE033_6BA6CABF2FB0C18F0E762E62CFF652B8LL9Alamofire0dE0Cvp",
+          "usr": "s:12WeatherToday7BaseAPIC14sessionManager33_084F626D1D148449606EFA3B4899CC28LL9Alamofire07SessionF0Cvp",
+          "mangledName": "$s12WeatherToday7BaseAPIC14sessionManager33_084F626D1D148449606EFA3B4899CC28LL9Alamofire07SessionF0Cvp",
           "moduleName": "WeatherToday",
           "isInternal": true,
           "declAttributes": [
@@ -1724,58 +1906,9 @@
           "hasStorage": true
         },
         {
-          "kind": "Var",
-          "name": "baseURL",
-          "printedName": "baseURL",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:12WeatherToday16MySessionManagerC7baseURLSSvp",
-          "mangledName": "$s12WeatherToday16MySessionManagerC7baseURLSSvp",
-          "moduleName": "WeatherToday",
-          "declAttributes": [
-            "HasInitialValue",
-            "Final",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 1,
-          "isLet": true,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MySessionManagerC7baseURLSSvg",
-              "mangledName": "$s12WeatherToday16MySessionManagerC7baseURLSSvg",
-              "moduleName": "WeatherToday",
-              "implicit": true,
-              "declAttributes": [
-                "Final"
-              ],
-              "accessorKind": "get"
-            }
-          ]
-        },
-        {
           "kind": "Function",
-          "name": "isValidResponse",
-          "printedName": "isValidResponse(json:)",
+          "name": "validateResponse",
+          "printedName": "validateResponse(json:)",
           "children": [
             {
               "kind": "TypeNominal",
@@ -1804,8 +1937,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday16MySessionManagerC15isValidResponse4jsonSb_SSt10SwiftyJSON0K0V_tF",
-          "mangledName": "$s12WeatherToday16MySessionManagerC15isValidResponse4jsonSb_SSt10SwiftyJSON0K0V_tF",
+          "usr": "s:12WeatherToday7BaseAPIC16validateResponse4jsonSb_SSt10SwiftyJSON0I0V_tF",
+          "mangledName": "$s12WeatherToday7BaseAPIC16validateResponse4jsonSb_SSt10SwiftyJSON0I0V_tF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "funcSelfKind": "NonMutating"
@@ -1817,9 +1950,9 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "MyError",
-              "printedName": "WeatherToday.MyError",
-              "usr": "s:12WeatherToday7MyErrorC"
+              "name": "NetworkError",
+              "printedName": "WeatherToday.NetworkError",
+              "usr": "s:12WeatherToday12NetworkErrorC"
             },
             {
               "kind": "TypeNominal",
@@ -1829,8 +1962,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday16MySessionManagerC20formatedErrorMessage9errorCodeAA0cG0CSS_tF",
-          "mangledName": "$s12WeatherToday16MySessionManagerC20formatedErrorMessage9errorCodeAA0cG0CSS_tF",
+          "usr": "s:12WeatherToday7BaseAPIC20formatedErrorMessage9errorCodeAA07NetworkF0CSS_tF",
+          "mangledName": "$s12WeatherToday7BaseAPIC20formatedErrorMessage9errorCodeAA07NetworkF0CSS_tF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "funcSelfKind": "NonMutating"
@@ -1838,7 +1971,7 @@
         {
           "kind": "Function",
           "name": "request",
-          "printedName": "request(methotType:_:success:failure:)",
+          "printedName": "request(methotType:endPoint:params:baseURL:contentType:headerParams:success:failure:)",
           "children": [
             {
               "kind": "TypeNominal",
@@ -1856,6 +1989,76 @@
               "name": "String",
               "printedName": "Swift.String",
               "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "[Swift.String : Any]?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Dictionary",
+                  "printedName": "[Swift.String : Any]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:SD"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "hasDefaultArg": true,
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "hasDefaultArg": true,
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "[Swift.String : Swift.String]?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Dictionary",
+                  "printedName": "[Swift.String : Swift.String]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:SD"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
             },
             {
               "kind": "TypeFunc",
@@ -1878,7 +2081,7 @@
             {
               "kind": "TypeFunc",
               "name": "Function",
-              "printedName": "(WeatherToday.MyError) -> ()",
+              "printedName": "(WeatherToday.NetworkError) -> ()",
               "children": [
                 {
                   "kind": "TypeNominal",
@@ -1887,24 +2090,162 @@
                 },
                 {
                   "kind": "TypeNominal",
-                  "name": "MyError",
-                  "printedName": "WeatherToday.MyError",
-                  "usr": "s:12WeatherToday7MyErrorC"
+                  "name": "NetworkError",
+                  "printedName": "WeatherToday.NetworkError",
+                  "usr": "s:12WeatherToday12NetworkErrorC"
                 }
               ]
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday16MySessionManagerC7request10methotType_7success7failurey9Alamofire10HTTPMethodO_SSy10SwiftyJSON0N0VcyAA0C5ErrorCctF",
-          "mangledName": "$s12WeatherToday16MySessionManagerC7request10methotType_7success7failurey9Alamofire10HTTPMethodO_SSy10SwiftyJSON0N0VcyAA0C5ErrorCctF",
+          "usr": "s:12WeatherToday7BaseAPIC7request10methotType8endPoint6params7baseURL07contentG012headerParams7success7failurey9Alamofire10HTTPMethodO_SSSDySSypGSgS2SSDyS2SGSgy10SwiftyJSON0U0VcyAA12NetworkErrorCctF",
+          "mangledName": "$s12WeatherToday7BaseAPIC7request10methotType8endPoint6params7baseURL07contentG012headerParams7success7failurey9Alamofire10HTTPMethodO_SSSDySSypGSgS2SSDyS2SGSgy10SwiftyJSON0U0VcyAA12NetworkErrorCctF",
+          "moduleName": "WeatherToday",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "networkIsReachable",
+          "printedName": "networkIsReachable()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12WeatherToday7BaseAPIC18networkIsReachableSbyF",
+          "mangledName": "$s12WeatherToday7BaseAPIC18networkIsReachableSbyF",
+          "moduleName": "WeatherToday",
+          "isOpen": true,
+          "declAttributes": [
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "hasCellularNetwork",
+          "printedName": "hasCellularNetwork()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12WeatherToday7BaseAPIC18hasCellularNetworkSbyF",
+          "mangledName": "$s12WeatherToday7BaseAPIC18hasCellularNetworkSbyF",
+          "moduleName": "WeatherToday",
+          "isOpen": true,
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "printRequest",
+          "printedName": "printRequest(url:methodType:body:headerParams:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Alamofire.HTTPMethod?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPMethod",
+                  "printedName": "Alamofire.HTTPMethod",
+                  "usr": "s:9Alamofire10HTTPMethodO"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "[Swift.String : Any]?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Dictionary",
+                  "printedName": "[Swift.String : Any]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:SD"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Dictionary",
+              "printedName": "[Swift.String : Swift.String]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:SD"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12WeatherToday7BaseAPIC12printRequest3url10methodType4body12headerParamsySSSg_9Alamofire10HTTPMethodOSgSDySSypGSgSDyS2SGtF",
+          "mangledName": "$s12WeatherToday7BaseAPIC12printRequest3url10methodType4body12headerParamsySSSg_9Alamofire10HTTPMethodOSgSDySSypGSgSDyS2SGtF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "funcSelfKind": "NonMutating"
         }
       ],
       "declKind": "Class",
-      "usr": "c:@M@WeatherToday@objc(cs)MySessionManager",
-      "mangledName": "$s12WeatherToday16MySessionManagerC",
+      "usr": "c:@M@WeatherToday@objc(cs)BaseAPI",
+      "mangledName": "$s12WeatherToday7BaseAPIC",
       "moduleName": "WeatherToday",
       "isOpen": true,
       "declAttributes": [
@@ -7387,6 +7728,104 @@
     },
     {
       "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Endpoints",
+      "printedName": "Endpoints",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "weather",
+          "printedName": "weather",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday9EndpointsV7weatherSSvpZ",
+          "mangledName": "$s12WeatherToday9EndpointsV7weatherSSvpZ",
+          "moduleName": "WeatherToday",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday9EndpointsV7weatherSSvgZ",
+              "mangledName": "$s12WeatherToday9EndpointsV7weatherSSvgZ",
+              "moduleName": "WeatherToday",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Endpoints",
+              "printedName": "WeatherToday.Endpoints",
+              "usr": "s:12WeatherToday9EndpointsV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12WeatherToday9EndpointsVACycfc",
+          "mangledName": "$s12WeatherToday9EndpointsVACycfc",
+          "moduleName": "WeatherToday",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:12WeatherToday9EndpointsV",
+      "mangledName": "$s12WeatherToday9EndpointsV",
+      "moduleName": "WeatherToday",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
       "name": "UIKit",
       "printedName": "UIKit",
       "declKind": "Import",
@@ -7985,6 +8424,464 @@
           "printedName": "LayoutConstraintItem",
           "usr": "s:7SnapKit20LayoutConstraintItemP",
           "mangledName": "$s7SnapKit20LayoutConstraintItemP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AppDomain",
+      "printedName": "AppDomain",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "allCases",
+          "printedName": "allCases",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[WeatherToday.AppDomain]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AppDomain",
+                  "printedName": "WeatherToday.AppDomain",
+                  "usr": "s:12WeatherToday9AppDomainO"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday9AppDomainO8allCasesSayACGvpZ",
+          "mangledName": "$s12WeatherToday9AppDomainO8allCasesSayACGvpZ",
+          "moduleName": "WeatherToday",
+          "static": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[WeatherToday.AppDomain]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AppDomain",
+                      "printedName": "WeatherToday.AppDomain",
+                      "usr": "s:12WeatherToday9AppDomainO"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday9AppDomainO8allCasesSayACGvgZ",
+              "mangledName": "$s12WeatherToday9AppDomainO8allCasesSayACGvgZ",
+              "moduleName": "WeatherToday",
+              "static": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "production",
+          "printedName": "production",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.AppDomain.Type) -> WeatherToday.AppDomain",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AppDomain",
+                  "printedName": "WeatherToday.AppDomain",
+                  "usr": "s:12WeatherToday9AppDomainO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.AppDomain.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AppDomain",
+                      "printedName": "WeatherToday.AppDomain",
+                      "usr": "s:12WeatherToday9AppDomainO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday9AppDomainO10productionyA2CmF",
+          "mangledName": "$s12WeatherToday9AppDomainO10productionyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 0
+        },
+        {
+          "kind": "Var",
+          "name": "development",
+          "printedName": "development",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.AppDomain.Type) -> WeatherToday.AppDomain",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AppDomain",
+                  "printedName": "WeatherToday.AppDomain",
+                  "usr": "s:12WeatherToday9AppDomainO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.AppDomain.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AppDomain",
+                      "printedName": "WeatherToday.AppDomain",
+                      "usr": "s:12WeatherToday9AppDomainO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday9AppDomainO11developmentyA2CmF",
+          "mangledName": "$s12WeatherToday9AppDomainO11developmentyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 1
+        },
+        {
+          "kind": "Var",
+          "name": "custom",
+          "printedName": "custom",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.AppDomain.Type) -> (Swift.String) -> WeatherToday.AppDomain",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(Swift.String) -> WeatherToday.AppDomain",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AppDomain",
+                      "printedName": "WeatherToday.AppDomain",
+                      "usr": "s:12WeatherToday9AppDomainO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.AppDomain.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AppDomain",
+                      "printedName": "WeatherToday.AppDomain",
+                      "usr": "s:12WeatherToday9AppDomainO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday9AppDomainO6customyACSScACmF",
+          "mangledName": "$s12WeatherToday9AppDomainO6customyACSScACmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 2
+        },
+        {
+          "kind": "Var",
+          "name": "rawValue",
+          "printedName": "rawValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday9AppDomainO8rawValueSSvp",
+          "mangledName": "$s12WeatherToday9AppDomainO8rawValueSSvp",
+          "moduleName": "WeatherToday",
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday9AppDomainO8rawValueSSvg",
+              "mangledName": "$s12WeatherToday9AppDomainO8rawValueSSvg",
+              "moduleName": "WeatherToday",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(rawValue:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "WeatherToday.AppDomain?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AppDomain",
+                  "printedName": "WeatherToday.AppDomain",
+                  "usr": "s:12WeatherToday9AppDomainO"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12WeatherToday9AppDomainO8rawValueACSgSS_tcfc",
+          "mangledName": "$s12WeatherToday9AppDomainO8rawValueACSgSS_tcfc",
+          "moduleName": "WeatherToday",
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Var",
+          "name": "domainName",
+          "printedName": "domainName",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday9AppDomainO10domainNameSSvp",
+          "mangledName": "$s12WeatherToday9AppDomainO10domainNameSSvp",
+          "moduleName": "WeatherToday",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday9AppDomainO10domainNameSSvg",
+              "mangledName": "$s12WeatherToday9AppDomainO10domainNameSSvg",
+              "moduleName": "WeatherToday",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "domainUrl",
+          "printedName": "domainUrl",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday9AppDomainO9domainUrlSSvp",
+          "mangledName": "$s12WeatherToday9AppDomainO9domainUrlSSvp",
+          "moduleName": "WeatherToday",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday9AppDomainO9domainUrlSSvg",
+              "mangledName": "$s12WeatherToday9AppDomainO9domainUrlSSvg",
+              "moduleName": "WeatherToday",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "msisdnUrl",
+          "printedName": "msisdnUrl",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday9AppDomainO9msisdnUrlSSvp",
+          "mangledName": "$s12WeatherToday9AppDomainO9msisdnUrlSSvp",
+          "moduleName": "WeatherToday",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday9AppDomainO9msisdnUrlSSvg",
+              "mangledName": "$s12WeatherToday9AppDomainO9msisdnUrlSSvg",
+              "moduleName": "WeatherToday",
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Enum",
+      "usr": "s:12WeatherToday9AppDomainO",
+      "mangledName": "$s12WeatherToday9AppDomainO",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "RawDocComment"
+      ],
+      "isEnumExhaustive": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Decodable",
+          "printedName": "Decodable",
+          "usr": "s:Se",
+          "mangledName": "$sSe"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Encodable",
+          "printedName": "Encodable",
+          "usr": "s:SE",
+          "mangledName": "$sSE"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CaseIterable",
+          "printedName": "CaseIterable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "AllCases",
+              "printedName": "AllCases",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[WeatherToday.AppDomain]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AppDomain",
+                      "printedName": "WeatherToday.AppDomain",
+                      "usr": "s:12WeatherToday9AppDomainO"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s12CaseIterableP",
+          "mangledName": "$ss12CaseIterableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "RawRepresentable",
+          "printedName": "RawRepresentable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "RawValue",
+              "printedName": "RawValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ]
+            }
+          ],
+          "usr": "s:SY",
+          "mangledName": "$sSY"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
         }
       ]
     },
@@ -11466,27 +12363,6 @@
               "accessorKind": "get"
             }
           ]
-        },
-        {
-          "kind": "Function",
-          "name": "isNetworkConnectivityAvailable",
-          "printedName": "isNetworkConnectivityAvailable()",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "s:12WeatherToday9UtilitiesC30isNetworkConnectivityAvailableSbyF",
-          "mangledName": "$s12WeatherToday9UtilitiesC30isNetworkConnectivityAvailableSbyF",
-          "moduleName": "WeatherToday",
-          "declAttributes": [
-            "Final"
-          ],
-          "funcSelfKind": "NonMutating"
         },
         {
           "kind": "Function",
@@ -16768,7 +17644,7 @@
             {
               "kind": "TypeFunc",
               "name": "Function",
-              "printedName": "(WeatherToday.MyError) -> ()",
+              "printedName": "(WeatherToday.NetworkError) -> ()",
               "children": [
                 {
                   "kind": "TypeNominal",
@@ -16777,16 +17653,16 @@
                 },
                 {
                   "kind": "TypeNominal",
-                  "name": "MyError",
-                  "printedName": "WeatherToday.MyError",
-                  "usr": "s:12WeatherToday7MyErrorC"
+                  "name": "NetworkError",
+                  "printedName": "WeatherToday.NetworkError",
+                  "usr": "s:12WeatherToday12NetworkErrorC"
                 }
               ]
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday0A3ApiC05fetchA08latitude9longitude7success7failureySd_SdyAA0A8ResponseCcyAA7MyErrorCctF",
-          "mangledName": "$s12WeatherToday0A3ApiC05fetchA08latitude9longitude7success7failureySd_SdyAA0A8ResponseCcyAA7MyErrorCctF",
+          "usr": "s:12WeatherToday0A3ApiC05fetchA08latitude9longitude7success7failureySd_SdyAA0A8ResponseCcyAA12NetworkErrorCctF",
+          "mangledName": "$s12WeatherToday0A3ApiC05fetchA08latitude9longitude7success7failureySd_SdyAA0A8ResponseCcyAA12NetworkErrorCctF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -38095,6 +38971,415 @@
       "moduleName": "WeatherToday",
       "declAttributes": [
         "AccessControl"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "MimeType",
+      "printedName": "MimeType",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "applicationJson",
+          "printedName": "applicationJson",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.MimeType.Type) -> WeatherToday.MimeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.MimeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MimeType",
+                      "printedName": "WeatherToday.MimeType",
+                      "usr": "s:12WeatherToday8MimeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday8MimeTypeO15applicationJsonyA2CmF",
+          "mangledName": "$s12WeatherToday8MimeTypeO15applicationJsonyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 0
+        },
+        {
+          "kind": "Var",
+          "name": "textHtml",
+          "printedName": "textHtml",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.MimeType.Type) -> WeatherToday.MimeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.MimeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MimeType",
+                      "printedName": "WeatherToday.MimeType",
+                      "usr": "s:12WeatherToday8MimeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday8MimeTypeO8textHtmlyA2CmF",
+          "mangledName": "$s12WeatherToday8MimeTypeO8textHtmlyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 1
+        },
+        {
+          "kind": "Var",
+          "name": "applicationPdf",
+          "printedName": "applicationPdf",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.MimeType.Type) -> WeatherToday.MimeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.MimeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MimeType",
+                      "printedName": "WeatherToday.MimeType",
+                      "usr": "s:12WeatherToday8MimeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday8MimeTypeO14applicationPdfyA2CmF",
+          "mangledName": "$s12WeatherToday8MimeTypeO14applicationPdfyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 2
+        },
+        {
+          "kind": "Var",
+          "name": "formUrlEncoded",
+          "printedName": "formUrlEncoded",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.MimeType.Type) -> WeatherToday.MimeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.MimeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MimeType",
+                      "printedName": "WeatherToday.MimeType",
+                      "usr": "s:12WeatherToday8MimeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday8MimeTypeO14formUrlEncodedyA2CmF",
+          "mangledName": "$s12WeatherToday8MimeTypeO14formUrlEncodedyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 3
+        },
+        {
+          "kind": "Var",
+          "name": "imagePNG",
+          "printedName": "imagePNG",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.MimeType.Type) -> WeatherToday.MimeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.MimeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MimeType",
+                      "printedName": "WeatherToday.MimeType",
+                      "usr": "s:12WeatherToday8MimeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday8MimeTypeO8imagePNGyA2CmF",
+          "mangledName": "$s12WeatherToday8MimeTypeO8imagePNGyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 4
+        },
+        {
+          "kind": "Var",
+          "name": "empty",
+          "printedName": "empty",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.MimeType.Type) -> WeatherToday.MimeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.MimeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MimeType",
+                      "printedName": "WeatherToday.MimeType",
+                      "usr": "s:12WeatherToday8MimeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday8MimeTypeO5emptyyA2CmF",
+          "mangledName": "$s12WeatherToday8MimeTypeO5emptyyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 5
+        },
+        {
+          "kind": "Var",
+          "name": "base64ForHTML",
+          "printedName": "base64ForHTML",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.MimeType.Type) -> WeatherToday.MimeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.MimeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MimeType",
+                      "printedName": "WeatherToday.MimeType",
+                      "usr": "s:12WeatherToday8MimeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday8MimeTypeO13base64ForHTMLyA2CmF",
+          "mangledName": "$s12WeatherToday8MimeTypeO13base64ForHTMLyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 6
+        },
+        {
+          "kind": "Var",
+          "name": "rawValue",
+          "printedName": "rawValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday8MimeTypeO8rawValueSSvp",
+          "mangledName": "$s12WeatherToday8MimeTypeO8rawValueSSvp",
+          "moduleName": "WeatherToday",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday8MimeTypeO8rawValueSSvg",
+              "mangledName": "$s12WeatherToday8MimeTypeO8rawValueSSvg",
+              "moduleName": "WeatherToday",
+              "implicit": true,
+              "declAttributes": [
+                "Inlinable"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(rawValue:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "WeatherToday.MimeType?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MimeType",
+                  "printedName": "WeatherToday.MimeType",
+                  "usr": "s:12WeatherToday8MimeTypeO"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12WeatherToday8MimeTypeO8rawValueACSgSS_tcfc",
+          "mangledName": "$s12WeatherToday8MimeTypeO8rawValueACSgSS_tcfc",
+          "moduleName": "WeatherToday",
+          "implicit": true,
+          "declAttributes": [
+            "Inlinable"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Enum",
+      "usr": "s:12WeatherToday8MimeTypeO",
+      "mangledName": "$s12WeatherToday8MimeTypeO",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "AccessControl",
+        "RawDocComment"
+      ],
+      "enumRawTypeName": "String",
+      "isEnumExhaustive": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "RawRepresentable",
+          "printedName": "RawRepresentable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "RawValue",
+              "printedName": "RawValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ]
+            }
+          ],
+          "usr": "s:SY",
+          "mangledName": "$sSY"
+        }
       ]
     },
     {
