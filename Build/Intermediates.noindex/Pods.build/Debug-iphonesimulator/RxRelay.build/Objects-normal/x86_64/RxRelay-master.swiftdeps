@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "32ad2ece1e119c486b2d7b4b8fff1d68ac8252129cc8666665ed7870b993e95b"
-build_start_time: [1654172676, 296297073]
-build_end_time: [1654172676, 370185852]
+build_start_time: [1654690158, 159636020]
+build_end_time: [1654690158, 222784042]
 inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/RxRelay/RxRelay/BehaviorRelay.swift": [1637916520, 711507081]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/RxRelay/RxRelay/Observable+Bind.swift": [1637916520, 710963249]

@@ -105,11 +105,6 @@ class WeatherVC: MDViewController {
         bind()
         configureItems()
         viewModel.fetchCurrentWeather()
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-            self.changeBackground(defaultBg: false)
-            
-        }
     }
 
 }
@@ -128,19 +123,17 @@ private extension WeatherVC {
 
 extension WeatherVC {
     func configureItems() {
-        changeBackground(defaultBg: true)
+        changeBackground(defaultBg: false)
         setLocationManager()
     }
     
     func changeBackground(defaultBg: Bool) {
-        if defaultBg, let hour = Int(Utilities.sharedInstance.getHourFromDate(date: Date().timeIntervalSince1970)) {
+        if let hour = Int(Utilities.sharedInstance.getHourFromDate(date: Date().timeIntervalSince1970)) {
             if hour > sunRiseHour && hour < sunSetHour {
                 background.image = UIImage(named: "After Noon")
             } else {
                 background.image = UIImage(named: "Night")
             }
-        }else{
-            background.image = UIImage(named: "Night")
         }
     }
     
@@ -240,6 +233,6 @@ extension WeatherVC: RoutingConfiguration {
     }
 
     static func getNavigationInfo() -> NavigationRouterEnum {
-        return NavigationRouterEnum.toStoryBoard(toStoryboard: .main, toVC: .weather, toVCType: Self.self)
+        return NavigationRouterEnum.toViewController(toVCType: Self.self, hidesBottomBarWhenPushed: true)
     }
 }

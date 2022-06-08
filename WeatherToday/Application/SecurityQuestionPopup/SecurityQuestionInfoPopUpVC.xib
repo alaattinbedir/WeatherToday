@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecurityQuestionInfoPopUpVC" customModule="WeatherToday" customModuleProvider="target">
+            <connections>
+                <outlet property="infoMesage" destination="713-aG-ets" id="mNo-BV-1wx"/>
+                <outlet property="view" destination="4Fn-Oe-Ni8" id="SvL-4I-nqq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4Fn-Oe-Ni8">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDe-rp-D1D">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNK-dL-L1E" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hB7-ib-pkC">
+                                    <rect key="frame" x="0.0" y="563" width="414" height="289"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wTj-QQ-56j">
+                                            <rect key="frame" x="16" y="24" width="382" height="233"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="109.5" placeholderIntrinsicHeight="50" text="General.InfoTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="713-aG-ets">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="25"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="DAX-6a-UDp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                                                    <color key="textColor" red="0.27983555199999999" green="0.62642312050000004" blue="0.88630557060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="resourceKey" value="General.InfoTitle"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="109.5" placeholderIntrinsicHeight="50" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xu7-KC-R87">
+                                                    <rect key="frame" x="0.0" y="45" width="382" height="50"/>
+                                                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                                    <color key="textColor" red="0.1608090103" green="0.16072314979999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CAt-sA-SWg" userLabel="SW Buttons">
+                                                    <rect key="frame" x="0.0" y="115" width="382" height="118"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="54" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFr-La-7pe" customClass="FormButton" customModule="MobilDeniz_Internal" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="54"/>
+                                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="resourceKey" value="Dashboard.SecurityQuestionCreateSecurityQuestionButton"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="6"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="54" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXU-DQ-SeV" customClass="FormButton" customModule="MobilDeniz_Internal" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="64" width="382" height="54"/>
+                                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.2370761633" green="0.49116396899999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="resourceKey" value="Dashboard.SecurityQuestionCreateLaterButton"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="formButtonStyle">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="6"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                                    <color key="value" red="0.22551411390000001" green="0.50754785540000003" blue="0.80787599089999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="wTj-QQ-56j" firstAttribute="leading" secondItem="hB7-ib-pkC" secondAttribute="leading" constant="16" id="9Y5-u8-v25"/>
+                                        <constraint firstAttribute="trailing" secondItem="wTj-QQ-56j" secondAttribute="trailing" constant="16" id="m5G-Ku-DG4"/>
+                                        <constraint firstAttribute="bottom" secondItem="wTj-QQ-56j" secondAttribute="bottom" constant="32" id="mmb-eK-xdV"/>
+                                        <constraint firstItem="wTj-QQ-56j" firstAttribute="top" secondItem="hB7-ib-pkC" secondAttribute="top" constant="24" id="s1L-4j-Nw0"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="hB7-ib-pkC" secondAttribute="bottom" id="BwZ-Bu-z2J"/>
+                                <constraint firstAttribute="trailing" secondItem="hB7-ib-pkC" secondAttribute="trailing" id="DhR-LM-tRo"/>
+                                <constraint firstItem="hB7-ib-pkC" firstAttribute="leading" secondItem="aNK-dL-L1E" secondAttribute="leading" id="gHj-OM-g1A"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aNK-dL-L1E" firstAttribute="centerY" secondItem="kDe-rp-D1D" secondAttribute="centerY" priority="750" id="1M7-FW-I7e"/>
+                        <constraint firstAttribute="trailing" secondItem="aNK-dL-L1E" secondAttribute="trailing" id="7O3-11-4D6"/>
+                        <constraint firstItem="aNK-dL-L1E" firstAttribute="width" secondItem="kDe-rp-D1D" secondAttribute="width" id="Hr9-gt-jXD"/>
+                        <constraint firstItem="aNK-dL-L1E" firstAttribute="top" secondItem="kDe-rp-D1D" secondAttribute="top" id="e2i-m5-YJD"/>
+                        <constraint firstAttribute="bottom" secondItem="aNK-dL-L1E" secondAttribute="bottom" id="gE9-7U-7TP"/>
+                        <constraint firstItem="aNK-dL-L1E" firstAttribute="leading" secondItem="kDe-rp-D1D" secondAttribute="leading" id="nd0-oL-GVg"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Nf8-cp-1Jl"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kDe-rp-D1D" secondAttribute="bottom" id="1XO-Cn-DYD"/>
+                <constraint firstItem="kDe-rp-D1D" firstAttribute="trailing" secondItem="Nf8-cp-1Jl" secondAttribute="trailing" id="T0o-er-iL7"/>
+                <constraint firstItem="kDe-rp-D1D" firstAttribute="top" secondItem="Nf8-cp-1Jl" secondAttribute="top" id="iRI-lZ-7Sz"/>
+                <constraint firstItem="kDe-rp-D1D" firstAttribute="width" secondItem="4Fn-Oe-Ni8" secondAttribute="width" id="qw2-Ec-8Fo"/>
+                <constraint firstItem="kDe-rp-D1D" firstAttribute="leading" secondItem="Nf8-cp-1Jl" secondAttribute="leading" id="wCf-5Q-tD5"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="145"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

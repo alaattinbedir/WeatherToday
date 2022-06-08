@@ -8,6 +8,9 @@ def shared_pods
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'OHHTTPStubs/Swift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SnapKit'
+  pod 'lottie-ios'
 end
 
 def testing_pods

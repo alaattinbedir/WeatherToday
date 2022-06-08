@@ -230,10 +230,71 @@ SWIFT_CLASS("_TtC12WeatherToday11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIViewController;
+@class NSString;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12WeatherToday6BaseNC")
+@interface BaseNC : UINavigationController
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (void)pushViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated;
+- (void)setViewControllers:(NSArray<UIViewController *> * _Nonnull)viewControllers animated:(BOOL)animated;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass SWIFT_UNAVAILABLE;
+@end
+
+
+@interface BaseNC (SWIFT_EXTENSION(WeatherToday)) <UINavigationControllerDelegate>
+- (void)navigationController:(UINavigationController * _Nonnull)_ willShowViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)_;
+- (void)navigationController:(UINavigationController * _Nonnull)_ didShowViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)_;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday22BaseNibLoadableControl")
+@interface BaseNibLoadableControl : UIControl
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday19BaseNibLoadableView")
+@interface BaseNibLoadableView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday16MDViewController")
+@interface MDViewController : UIViewController
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNotification;
+
+SWIFT_CLASS("_TtC12WeatherToday6BaseVC")
+@interface BaseVC : MDViewController
+- (nonnull instancetype)init;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)loadingEndedWithNot:(NSNotification * _Nonnull)_;
+- (void)closePageForSelector;
+- (IBAction)closePage;
+@end
+
+
 @class UILabel;
 @class UIImageView;
-@class NSString;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12WeatherToday18DailyTableViewCell")
 @interface DailyTableViewCell : UITableViewCell
@@ -270,10 +331,108 @@ SWIFT_CLASS("_TtC12WeatherToday24HourlyCollectionViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC12WeatherToday9LandingVC")
+@interface LandingVC : MDViewController
+- (IBAction)getWeather:(id _Nonnull)sender;
+- (IBAction)getLandingPage:(id _Nonnull)sender;
+- (IBAction)popUp:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC12WeatherToday16LandingWelcomeVC")
+@interface LandingWelcomeVC : MDViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified landingWelcomeLabel;
+- (IBAction)getLandingWelcome2Page:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class UIPanGestureRecognizer;
+@class UIGestureRecognizer;
+
+SWIFT_CLASS("_TtC12WeatherToday27ModalPresentationController")
+@interface ModalPresentationController : UIPresentationController
+- (nonnull instancetype)initWithPresentedViewController:(UIViewController * _Nonnull)presentedViewController presentingViewController:(UIViewController * _Nullable)presentingViewController OBJC_DESIGNATED_INITIALIZER;
+- (void)onPanWithPan:(UIPanGestureRecognizer * _Nonnull)pan;
+- (void)presentationTransitionWillBegin;
+- (void)dismissalTransitionWillBegin;
+@property (nonatomic, readonly) CGRect frameOfPresentedViewInContainerView;
+- (void)dismissSelfWithGesture:(UIGestureRecognizer * _Nonnull)_;
+@end
+
+@protocol UIViewControllerContextTransitioning;
+
+SWIFT_CLASS("_TtC12WeatherToday23ModalTransitionAnimator")
+@interface ModalTransitionAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+- (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)_ SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday26ModalTransitioningDelegate")
+@interface ModalTransitioningDelegate : NSObject <UIViewControllerTransitioningDelegate>
+- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)_ SWIFT_WARN_UNUSED_RESULT;
+- (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)_ SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC12WeatherToday16MySessionManager")
 @interface MySessionManager : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@class UITouch;
+@class UIEvent;
+@class SCLButton;
+@class UITapGestureRecognizer;
+
+SWIFT_CLASS("_TtC12WeatherToday12SCLAlertView")
+@interface SCLAlertView : UIViewController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)_ OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)_ withEvent:(UIEvent * _Nullable)event;
+- (void)buttonTapped:(SCLButton * _Nonnull)btn;
+- (void)buttonTapDown:(SCLButton * _Nonnull)btn;
+- (void)buttonRelease:(SCLButton * _Nonnull)btn;
+- (void)keyboardWillShow:(NSNotification * _Nonnull)notification;
+- (void)keyboardWillHide:(NSNotification * _Nonnull)_;
+- (void)tapped:(UITapGestureRecognizer * _Nonnull)gestureRecognizer;
+- (void)updateShowTimeout;
+- (void)hideView;
+- (void)hideViewTimeout;
+@end
+
+
+
+SWIFT_CLASS("_TtC12WeatherToday20SCLAlertViewStyleKit")
+@interface SCLAlertViewStyleKit : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday9SCLButton")
+@interface SCLButton : UIButton
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIWindow;
@@ -291,12 +450,55 @@ SWIFT_CLASS("_TtC12WeatherToday13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12WeatherToday27SecurityQuestionInfoPopUpVC")
+@interface SecurityQuestionInfoPopUpVC : BaseVC
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified infoMesage;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (IBAction)createSecurityQuestion;
+- (IBAction)createAfter;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+@interface UINavigationController (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable childViewControllerForStatusBarStyle;
+@end
+
+
+
+
+@class UIColor;
+
+@interface UIView (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic) IBInspectable CGFloat cornerRadius;
+@property (nonatomic) IBInspectable CGFloat borderWidth;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull borderUIColor;
+@property (nonatomic) IBInspectable BOOL masksToBounds;
+@property (nonatomic) IBInspectable CGFloat zPosition;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable testAutomationIdentifier;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull shadowColor;
+@property (nonatomic) IBInspectable float shadowOpacity;
+@property (nonatomic) IBInspectable CGFloat shadowRadius;
+@property (nonatomic) IBInspectable CGSize shadowOffset;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(WeatherToday))
+- (void)customBackButtonPressed;
+@end
+
 @class UITableView;
 @class UICollectionView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC12WeatherToday9WeatherVC")
-@interface WeatherVC : UIViewController
+@interface WeatherVC : MDViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cityNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified weatherTypeLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified weatherImageView;
@@ -317,6 +519,7 @@ SWIFT_CLASS("_TtC12WeatherToday9WeatherVC")
 @interface WeatherVC (SWIFT_EXTENSION(WeatherToday)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
+
 
 @class NSIndexPath;
 
