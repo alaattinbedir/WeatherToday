@@ -29,7 +29,7 @@ class NavigationRouter {
     }
 
     static func push(fromVC: UIViewController,
-                     toVC: MDViewController,
+                     toVC: BaseViewController,
                      animated: Bool = true,
                      data: Any? = nil,
                      routingEnum: RoutingEnum? = nil,
@@ -64,7 +64,7 @@ class NavigationRouter {
     }
 
     static func present(fromVC: UIViewController,
-                        toVC: MDViewController,
+                        toVC: BaseViewController,
                         animated: Bool = true,
                         data: Any? = nil,
                         routingEnum: RoutingEnum? = nil,
@@ -88,7 +88,7 @@ class NavigationRouter {
                          replace: Bool = false,
                          data: Any? = nil,
                          completion: (() -> Void)? = nil) {
-        guard let destinationViewController = destination.getDestinationViewController() as? MDViewController else { return }
+        guard let destinationViewController = destination.getDestinationViewController() as? BaseViewController else { return }
         destinationViewController.routingEnum = routingEnum
         destinationViewController.data = data
 
@@ -135,7 +135,7 @@ class NavigationRouter {
 
             if case let .storyboard(storyboardID, viewControllerId) = self,
                let destinationVC = UIStoryboard(name: storyboardID.rawValue, bundle: nil)
-               .instantiateViewController(withIdentifier: viewControllerId.rawValue) as? MDViewController {
+               .instantiateViewController(withIdentifier: viewControllerId.rawValue) as? BaseViewController {
                 return destinationVC
             }
 

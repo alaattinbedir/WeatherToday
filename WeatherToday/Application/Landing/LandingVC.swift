@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LandingVC: MDViewController {
+class LandingVC: BaseViewController {
 
     private func appendAction(actions: inout [(title: String, action: () -> Void)], titleKey: String?, rawValue: String?) -> [(title: String, action: () -> Void)] {
         if let titleKey = titleKey {

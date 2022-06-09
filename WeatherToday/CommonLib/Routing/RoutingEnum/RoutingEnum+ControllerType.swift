@@ -8,7 +8,7 @@
 import Foundation
 
 extension RoutingEnum {
-    func getClassType() -> MDViewController.Type? {
+    func getClassType() -> BaseViewController.Type? {
         let navigationInfo = getNavigationInfo(fromVC: nil)
         switch navigationInfo {
         case let .toStoryBoard(_, _, toVCType):

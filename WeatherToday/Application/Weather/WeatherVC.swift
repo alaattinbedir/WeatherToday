@@ -11,7 +11,7 @@ import CoreLocation
 import RxSwift
 import RxCocoa
 
-class WeatherVC: MDViewController {
+class WeatherVC: BaseViewController {
     
     // MARK: - Vars & Lets
     

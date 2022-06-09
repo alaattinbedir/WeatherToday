@@ -12,5 +12,5 @@ public protocol LoggerType: AnyObject {
     func e(tag: String, _ items: Any..., error: Error)
     func i(tag: String, _ items: Any...)
     func v(tag: String, _ items: Any...)
-    func analytic(event: MDLoggerEvent)
+    func analytic(event: LoggerEvent)
 }

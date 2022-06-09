@@ -7,13 +7,13 @@
 
 import Foundation
 
-public class Logger: MDLoggerType {
+public class Logger: LoggerType {
     public static let shared: Logger = {
         let logger = Logger()
         return logger
     }()
 
-    private var loggers: [MDLoggerType] = []
+    private var loggers: [LoggerType] = []
 
     public func w(tag: String, _ items: Any..., error: Error?) {
         loggers.forEach { $0.w(tag: tag, items, error: error) }
@@ -31,15 +31,15 @@ public class Logger: MDLoggerType {
         loggers.forEach { $0.v(tag: tag, items) }
     }
 
-    public func analytic(event: MDLoggerEvent) {
+    public func analytic(event: LoggerEvent) {
         loggers.forEach { $0.analytic(event: event) }
     }
 
-    public func addNewLogger(_ logger: MDLoggerType) {
+    public func addNewLogger(_ logger: LoggerType) {
         loggers.append(logger)
     }
 
-    public func removeLogger(_ logger: MDLoggerType) {
+    public func removeLogger(_ logger: LoggerType) {
         loggers.removeAll { $0 === logger }
     }
 }

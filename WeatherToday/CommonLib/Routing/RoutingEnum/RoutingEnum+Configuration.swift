@@ -39,7 +39,7 @@ extension RoutingConfiguration {
     }
 }
 
-extension RoutingConfiguration where Self: MDViewController {
+extension RoutingConfiguration where Self: BaseViewController {
     static func getNavigationInfo() -> NavigationRouterEnum {
         return NavigationRouterEnum.toViewController(toVCType: Self.self, hidesBottomBarWhenPushed: false)
     }

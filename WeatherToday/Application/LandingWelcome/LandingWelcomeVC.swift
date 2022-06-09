@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 
 
-class LandingWelcomeVC: MDViewController {
+class LandingWelcomeVC: BaseViewController {
 
     @IBOutlet weak var landingWelcomeLabel: UILabel!
 

@@ -9,9 +9,9 @@ import Foundation
 
 enum NavigationRouterEnum {
     case none
-    case toStoryBoard(toStoryboard: StoryboardID, toVC: ViewControllerId, toVCType: MDViewController.Type)
-    case toViewController(toVCType: MDViewController.Type, hidesBottomBarWhenPushed: Bool = false)
-    case toTab(tabIndex: Int, toVCType: MDViewController.Type)
+    case toStoryBoard(toStoryboard: StoryboardID, toVC: ViewControllerId, toVCType: BaseViewController.Type)
+    case toViewController(toVCType: BaseViewController.Type, hidesBottomBarWhenPushed: Bool = false)
+    case toTab(tabIndex: Int, toVCType: BaseViewController.Type)
     case safari(url: String)
     case popPage(popCount: Int)
     case popToRoot(animated: Bool)

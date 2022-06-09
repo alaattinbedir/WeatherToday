@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class BaseVC: MDViewController {
+class BaseVC: BaseViewController {
 
     convenience init() {
         self.init(nibName: nil, bundle: nil)

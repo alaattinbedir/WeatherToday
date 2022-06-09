@@ -139,7 +139,7 @@ class UiPageNavigator: PageNavigator {
         }
     }
 
-    private func configureController(_ openTransitionStyle: RoutingTransitionStyle, _ controller: MDViewController, _ showAsPopup: Bool, _: UIViewController) {
+    private func configureController(_ openTransitionStyle: RoutingTransitionStyle, _ controller: BaseViewController, _ showAsPopup: Bool, _: UIViewController) {
         if openTransitionStyle.isModal() {
             controller.modalPresentationStyle = .custom
             controller.transitioningDelegate = openTransitionStyle.getDelegate()
