@@ -6,7 +6,7 @@
 //
 import Foundation
 
-public protocol MDLoggerEvent {
+public protocol LoggerEvent {
     var event: String { get }
     var params: [String: Any]? { get }
 }

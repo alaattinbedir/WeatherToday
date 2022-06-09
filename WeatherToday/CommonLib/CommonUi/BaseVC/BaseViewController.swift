@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MDViewController: UIViewController {
+class BaseViewController: UIViewController {
 
     var isPresentedModally = false
     

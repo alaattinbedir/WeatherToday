@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol MDLoggerType: AnyObject {
+public protocol LoggerType: AnyObject {
     func w(tag: String, _ items: Any..., error: Error?)
     func e(tag: String, _ items: Any..., error: Error)
     func i(tag: String, _ items: Any...)
