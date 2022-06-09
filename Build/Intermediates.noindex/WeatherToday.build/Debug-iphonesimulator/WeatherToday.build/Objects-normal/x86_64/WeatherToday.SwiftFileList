@@ -22,6 +22,7 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/UIView/UIView+IBInspectable.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/Navigator/NavigationRouter.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/Logger.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/BaseAPI/BaseApiData.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/String/String+Utils.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/Optional/Optional+Required.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Session/SessionKeeper.swift
@@ -49,10 +50,10 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Encoding/Encoders/URLQuesryEncoder/URLQueryValueRepresentable/URLQueryValueRepresentable.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Encoding/Encoders/URLQuesryEncoder/URLQueryBuilder.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/Navigator/NavigationRouterEnum.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/MDLoggerType.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/MDLoggerEvent.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/LoggerType.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/LoggerEvent.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Http/MimeType.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/CommonUi/BaseVC/MDViewController.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/CommonUi/BaseVC/BaseViewController.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/RoutingEnum/RoutingEnum+Configuration.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Transitioning/ModalTransitioning/ModalPresentationController.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/RoutingEnum/RoutingEnum+ControllerType.swift

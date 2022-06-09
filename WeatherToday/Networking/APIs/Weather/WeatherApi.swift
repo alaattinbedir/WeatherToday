@@ -14,32 +14,39 @@ class WeatherApi {
     // Get weather data from service
     func fetchWeather(latitude:(Double),
                       longitude:(Double),
-                      success:@escaping (WeatherResponse) -> Void,
-                      failure:@escaping (NetworkError) -> Void) {
+                      succeed:@escaping (WeatherResponse) -> Void,
+                      failed:@escaping (NetworkError) -> Void) {
         
         // Set up current coordinate url
         let urlCoordinate = "\(latitude),\(longitude)"
-        
-        BaseAPI.sharedInstance.request(methotType:.get,
-                                       endPoint: urlCoordinate,
-                                       params: nil,
-                                       success: { (responseJSON) in
-            // Get json object from response
-            let weather = responseJSON.object
-            
-            // Map json to Weather object
-            guard let weatherObject:WeatherResponse = Mapper<WeatherResponse>().map(JSONObject: weather) else {
-                let myError = NetworkError(errorCode: "MAPPING_RESPONSE_ERROR", errorMessage: NSLocalizedString("Error mapping response", comment: "comment"))
-                failure(myError)
-                return
-            }
-            
-            // Send object to calling module
-            success(weatherObject)
-            
-        }, failure: { (error) in
-            print(error)
-            failure(error)
-        })
+
+        BaseAPI.shared.request(methotType: .get, endPoint: urlCoordinate, params: nil) { (response: WeatherResponse) in
+            succeed(response)
+        } failed: { (errorMessage: NetworkError) in
+            failed(errorMessage)
+        }
+
+
+//        BaseAPI.shared.request(methotType: .get,
+//                               endPoint: urlCoordinate,
+//                               params: nil,
+//                               success: { (responseJSON) in
+//            // Get json object from response
+//            let weather = responseJSON.object
+//
+//            // Map json to Weather object
+//            guard let weatherObject:WeatherResponse = Mapper<WeatherResponse>().map(JSONObject: weather) else {
+//                let myError = NetworkError(errorCode: "MAPPING_RESPONSE_ERROR", errorMessage: NSLocalizedString("Error mapping response", comment: "comment"))
+//                failure(myError)
+//                return
+//            }
+//
+//            // Send object to calling module
+//            success(weatherObject)
+//
+//        }, failure: { (error) in
+//            print(error)
+//            failure(error)
+//        })
     }
 }

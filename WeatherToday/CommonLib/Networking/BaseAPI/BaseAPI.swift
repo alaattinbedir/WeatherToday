@@ -25,7 +25,7 @@ class NetworkError: Error {
 }
 
 class BaseAPI: NSObject {
-    static let sharedInstance = BaseAPI()
+    static let shared = BaseAPI()
     private var sessionManager: SessionManager
 
     private override init() {
@@ -69,18 +69,19 @@ class BaseAPI: NSObject {
         return error
     }
 
-    func request(methotType: HTTPMethod,
-                 endPoint: String,
-                 params: ([String: Any])?,
-                 baseURL: String = Keeper.shared.currentEnvironment.domainUrl,
-                 contentType: String = MimeType.applicationJson.rawValue,
-                 headerParams: ([String: String])? = nil,
-                 success:@escaping (JSON) -> Void,
-                 failure:@escaping (NetworkError) -> Void) {
+    func request<S: BaseMappable, F: NetworkError>(methotType: HTTPMethod,
+                                                   endPoint: String,
+                                                   params: ([String: Any])?,
+                                                   baseURL: String = Keeper.shared.currentEnvironment.domainUrl,
+                                                   contentType: String = MimeType.applicationJson.rawValue,
+                                                   headerParams: ([String: String])? = nil,
+                                                   succeed:@escaping (S) -> Void,
+                                                   failed:@escaping (F) -> Void) {
 
         guard networkIsReachable() else {
-            let myError = NetworkError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment"))
-            failure(myError)
+            if let myError = NetworkError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
+                failed(myError)
+            }
             return
         }
 
@@ -94,42 +95,129 @@ class BaseAPI: NSObject {
             }
         }
 
-        let headerParams = self.prepareHeaderForSession(endPoint, methotType, bodyParams, headerParams, contentType)
+        let headerParams = prepareHeaderForSession(endPoint, methotType, bodyParams, headerParams, contentType)
 
-        self.printRequest(url: url, methodType: methotType, body: bodyParams, headerParams: headerParams)
+        printRequest(url: url, methodType: methotType, body: bodyParams, headerParams: headerParams)
 
-        self.sessionManager.request(url,
+        let networkRequest = sessionManager.request(url,
                                     method: methotType,
                                     parameters: bodyParams,
                                     headers: headerParams)
                             .validate(contentType: [contentType])
                             .validate(statusCode: 200 ..< 600)
-                            .responseJSON { (response) -> Void in
+
+        handleJsonResponse(dataRequest: networkRequest,
+                                 succeed: succeed,
+                                 failed: failed)
+    }
+
+    // MARK: Handle Default Json Response
+
+    // swiftlint:disable cyclomatic_complexity
+    private func handleJsonResponse<S: BaseMappable, F: NetworkError>(dataRequest: DataRequest,
+                                                                      succeed: @escaping (S) -> Void,
+                                                                      failed: @escaping (F) -> Void) {
+        dataRequest.responseJSON { [weak self] response in
+            guard let self = self else { return }
 
             self.printResponse(response: response.result.value,
                                statusCode: response.response?.statusCode,
                                url: response.request?.description)
 
             if response.result.isSuccess {
-                if let value = response.result.value {
-                    let json = JSON(value)
-                    let (result, errorCode) = self.validateResponse(json: json)
-                    if result {
-                        success(json)
-                    } else {
-                        let error = self.formatedErrorMessage(errorCode: errorCode)
-                        failure(error)
-                    }
+                switch StatusCodeType.toStatusType(httpStatusCode: response.response?.statusCode) {
+                    case .successStatus:
+                        self.handleSuccessfullResponseObject(dataRequest: dataRequest, jsonResponse: response, succeed: succeed)
+                    case .errorStatus:
+                        self.handleFailureResponseObject(dataRequest: dataRequest, jsonResponse: response, failed: failed)
+                    default:
+                        print("default")
                 }
             }
 
             if response.result.isFailure {
                 if let error = response.result.error {
-                    let myError = NetworkError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription)
-                    failure(myError)
+                    if let myError = NetworkError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription) as? F {
+                        failed(myError)
+                    }
                 }
             }
         }
+    }
+
+    private func handleSuccessfullResponseObject<S: BaseMappable>(dataRequest: DataRequest,
+                                                                 jsonResponse: DataResponse<Any>,
+                                                                 succeed: @escaping (S) -> Void) {
+        let urlString = dataRequest.request?.urlRequest?.url?.absoluteString ?? "noUrl"
+
+        guard jsonResponse.result.isSuccess else {
+            Logger.shared.w(tag: "handleSuccessfullResponseObject", "not success", urlString, error: jsonResponse.result.error)
+            return
+        }
+
+        guard let jsonValue = jsonResponse.result.value else {
+            Logger.shared.w(tag: "handleSuccessfullResponseObject", "nil jsonValue", urlString, error: jsonResponse.result.error)
+            return
+        }
+
+        guard let jsonDict = jsonValue as? [String: Any] else {
+            Logger.shared.w(tag: "handleSuccessfullResponseObject", "not dict jsonValue", urlString, error: jsonResponse.result.error)
+            return
+        }
+
+        if let obj = Mapper<S>().map(JSON: jsonDict) {
+            succeed(obj)
+            return
+        }
+
+        Logger.shared.w(tag: "handleSuccessfullResponseObject", "Mapper problem", urlString, error: jsonResponse.result.error)
+    }
+
+    private func handleFailureResponseObject<F: NetworkError>(dataRequest: DataRequest,
+                                                             jsonResponse: DataResponse<Any>,
+                                                             failed: @escaping (F) -> Void) {
+        let urlString = dataRequest.request?.urlRequest?.url?.absoluteString ?? "noUrl"
+
+        let defaultError = NetworkError(errorCode: "NETWORK_ERROR", errorMessage: jsonResponse.result.error?.localizedDescription) as? F
+
+        guard jsonResponse.result.isSuccess else {
+            Logger.shared.w(tag: "handleFailureResponseObject", "not success", urlString, error: jsonResponse.result.error)
+            if F.self == NetworkError.self, let error = defaultError {
+                failed(error)
+            }
+            return
+        }
+
+        guard let jsonValue = jsonResponse.result.value else {
+            Logger.shared.w(tag: "handleFailureResponseObject", "nil jsonValue", urlString, error: jsonResponse.result.error)
+            if F.self == NetworkError.self, let error = defaultError {
+                failed(error)
+            }
+            return
+        }
+
+        guard let jsonDict = jsonValue as? [String: Any] else {
+            Logger.shared.w(tag: "handleFailureResponseObject", "not dict jsonValue", urlString, error: jsonResponse.result.error)
+            if F.self == NetworkError.self, let error = defaultError {
+                failed(error)
+            }
+            return
+        }
+
+//        if let obj = Mapper<F>().map(JSON: jsonDict) {
+//            if let errorMessage = obj as? ErrorMessage {
+//                errorMessage.httpStatus = response.response?.statusCode
+//                GAEvent(screenName: MDLoggerEventStorage.lastSentScreenName, serviceErrorMessage: errorMessage, serviceError: nil)?.send()
+//            }
+//            failed(obj)
+//            return
+//        }
+
+        if F.self == NetworkError.self, let error = defaultError {
+            failed(error)
+        }
+
+        Logger.shared.w(tag: "handleFailureResponseObject", "Mapper problem", urlString, error: jsonResponse.result.error)
     }
 
     private func prepareHeaderForSession(_: String,

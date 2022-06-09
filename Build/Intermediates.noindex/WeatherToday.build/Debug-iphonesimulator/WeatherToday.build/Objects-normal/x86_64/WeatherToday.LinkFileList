@@ -22,6 +22,7 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/UIView+IBInspectable.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/NavigationRouter.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/Logger.o
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/BaseApiData.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/String+Utils.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/Optional+Required.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/SessionKeeper.o
@@ -49,10 +50,10 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/URLQueryValueRepresentable.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/URLQueryBuilder.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/NavigationRouterEnum.o
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/MDLoggerType.o
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/MDLoggerEvent.o
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/LoggerType.o
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/LoggerEvent.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/MimeType.o
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/MDViewController.o
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/BaseViewController.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/RoutingEnum+Configuration.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/ModalPresentationController.o
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/WeatherToday.build/Debug-iphonesimulator/WeatherToday.build/Objects-normal/x86_64/RoutingEnum+ControllerType.o

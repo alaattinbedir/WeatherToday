@@ -25,15 +25,15 @@ extension WeatherVM {
         // Get current weather
         WeatherApi().fetchWeather(latitude: currentLocation.latitude,
                                   longitude: currentLocation.longitude,
-                                  success: { [weak self] (weather) in
+                                   succeed: { [weak self] (weather) in
             guard let self = self else { return }
-            
+
             self.weather.accept(weather)
             self.currentDate.accept(weather.currently?.time)
             self.weatherType.accept(weather.currently?.summary)
             self.currentCityTemp.accept(weather.currently?.temperature)
-            
-        }, failure: { (error) in
+
+        }, failed: { (error) in
             print(error)
         })
     }

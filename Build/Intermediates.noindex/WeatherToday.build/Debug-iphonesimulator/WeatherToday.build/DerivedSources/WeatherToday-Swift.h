@@ -274,8 +274,8 @@ SWIFT_CLASS("_TtC12WeatherToday19BaseNibLoadableView")
 @end
 
 
-SWIFT_CLASS("_TtC12WeatherToday16MDViewController")
-@interface MDViewController : UIViewController
+SWIFT_CLASS("_TtC12WeatherToday18BaseViewController")
+@interface BaseViewController : UIViewController
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
@@ -287,7 +287,7 @@ SWIFT_CLASS("_TtC12WeatherToday16MDViewController")
 @class NSNotification;
 
 SWIFT_CLASS("_TtC12WeatherToday6BaseVC")
-@interface BaseVC : MDViewController
+@interface BaseVC : BaseViewController
 - (nonnull instancetype)init;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -298,6 +298,7 @@ SWIFT_CLASS("_TtC12WeatherToday6BaseVC")
 - (void)closePageForSelector;
 - (IBAction)closePage;
 @end
+
 
 
 @class UILabel;
@@ -339,7 +340,7 @@ SWIFT_CLASS("_TtC12WeatherToday24HourlyCollectionViewCell")
 
 
 SWIFT_CLASS("_TtC12WeatherToday9LandingVC")
-@interface LandingVC : MDViewController
+@interface LandingVC : BaseViewController
 - (IBAction)getWeather:(id _Nonnull)sender;
 - (IBAction)getLandingPage:(id _Nonnull)sender;
 - (IBAction)popUp:(id _Nonnull)sender;
@@ -352,14 +353,13 @@ SWIFT_CLASS("_TtC12WeatherToday9LandingVC")
 
 
 SWIFT_CLASS("_TtC12WeatherToday16LandingWelcomeVC")
-@interface LandingWelcomeVC : MDViewController
+@interface LandingWelcomeVC : BaseViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified landingWelcomeLabel;
 - (IBAction)getLandingWelcome2Page:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 @class UIPanGestureRecognizer;
@@ -498,7 +498,7 @@ SWIFT_CLASS("_TtC12WeatherToday27SecurityQuestionInfoPopUpVC")
 @class UICollectionView;
 
 SWIFT_CLASS("_TtC12WeatherToday9WeatherVC")
-@interface WeatherVC : MDViewController
+@interface WeatherVC : BaseViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cityNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified weatherTypeLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified weatherImageView;

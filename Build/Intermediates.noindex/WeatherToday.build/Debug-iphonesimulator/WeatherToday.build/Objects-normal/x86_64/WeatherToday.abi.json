@@ -1833,8 +1833,8 @@
       "children": [
         {
           "kind": "Var",
-          "name": "sharedInstance",
-          "printedName": "sharedInstance",
+          "name": "shared",
+          "printedName": "shared",
           "children": [
             {
               "kind": "TypeNominal",
@@ -1844,8 +1844,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday7BaseAPIC14sharedInstanceACvpZ",
-          "mangledName": "$s12WeatherToday7BaseAPIC14sharedInstanceACvpZ",
+          "usr": "s:12WeatherToday7BaseAPIC6sharedACvpZ",
+          "mangledName": "$s12WeatherToday7BaseAPIC6sharedACvpZ",
           "moduleName": "WeatherToday",
           "static": true,
           "declAttributes": [
@@ -1869,8 +1869,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7BaseAPIC14sharedInstanceACvgZ",
-              "mangledName": "$s12WeatherToday7BaseAPIC14sharedInstanceACvgZ",
+              "usr": "s:12WeatherToday7BaseAPIC6sharedACvgZ",
+              "mangledName": "$s12WeatherToday7BaseAPIC6sharedACvgZ",
               "moduleName": "WeatherToday",
               "static": true,
               "implicit": true,
@@ -1971,7 +1971,7 @@
         {
           "kind": "Function",
           "name": "request",
-          "printedName": "request(methotType:endPoint:params:baseURL:contentType:headerParams:success:failure:)",
+          "printedName": "request(methotType:endPoint:params:baseURL:contentType:headerParams:succeed:failed:)",
           "children": [
             {
               "kind": "TypeNominal",
@@ -2063,7 +2063,7 @@
             {
               "kind": "TypeFunc",
               "name": "Function",
-              "printedName": "(SwiftyJSON.JSON) -> ()",
+              "printedName": "(τ_0_0) -> ()",
               "children": [
                 {
                   "kind": "TypeNominal",
@@ -2072,16 +2072,15 @@
                 },
                 {
                   "kind": "TypeNominal",
-                  "name": "JSON",
-                  "printedName": "SwiftyJSON.JSON",
-                  "usr": "s:10SwiftyJSON0B0V"
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
                 }
               ]
             },
             {
               "kind": "TypeFunc",
               "name": "Function",
-              "printedName": "(WeatherToday.NetworkError) -> ()",
+              "printedName": "(τ_0_1) -> ()",
               "children": [
                 {
                   "kind": "TypeNominal",
@@ -2090,17 +2089,18 @@
                 },
                 {
                   "kind": "TypeNominal",
-                  "name": "NetworkError",
-                  "printedName": "WeatherToday.NetworkError",
-                  "usr": "s:12WeatherToday12NetworkErrorC"
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
                 }
               ]
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday7BaseAPIC7request10methotType8endPoint6params7baseURL07contentG012headerParams7success7failurey9Alamofire10HTTPMethodO_SSSDySSypGSgS2SSDyS2SGSgy10SwiftyJSON0U0VcyAA12NetworkErrorCctF",
-          "mangledName": "$s12WeatherToday7BaseAPIC7request10methotType8endPoint6params7baseURL07contentG012headerParams7success7failurey9Alamofire10HTTPMethodO_SSSDySSypGSgS2SSDyS2SGSgy10SwiftyJSON0U0VcyAA12NetworkErrorCctF",
+          "usr": "s:12WeatherToday7BaseAPIC7request10methotType8endPoint6params7baseURL07contentG012headerParams7succeed6failedy9Alamofire10HTTPMethodO_SSSDySSypGSgS2SSDyS2SGSgyxcyq_ct12ObjectMapper0C8MappableRzAA12NetworkErrorCRb_r0_lF",
+          "mangledName": "$s12WeatherToday7BaseAPIC7request10methotType8endPoint6params7baseURL07contentG012headerParams7succeed6failedy9Alamofire10HTTPMethodO_SSSDySSypGSgS2SSDyS2SGSgyxcyq_ct12ObjectMapper0C8MappableRzAA12NetworkErrorCRb_r0_lF",
           "moduleName": "WeatherToday",
+          "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : ObjectMapper.BaseMappable, τ_0_1 : WeatherToday.NetworkError>",
+          "sugared_genericSig": "<S, F where S : ObjectMapper.BaseMappable, F : WeatherToday.NetworkError>",
           "isOpen": true,
           "funcSelfKind": "NonMutating"
         },
@@ -5241,10 +5241,10 @@
         "Custom",
         "ObjC"
       ],
-      "superclassUsr": "c:@M@WeatherToday@objc(cs)MDViewController",
+      "superclassUsr": "c:@M@WeatherToday@objc(cs)BaseViewController",
       "inheritsConvenienceInitializers": true,
       "superclassNames": [
-        "WeatherToday.MDViewController",
+        "WeatherToday.BaseViewController",
         "UIKit.UIViewController",
         "UIKit.UIResponder",
         "ObjectiveC.NSObject"
@@ -13066,10 +13066,10 @@
         "Custom",
         "ObjC"
       ],
-      "superclassUsr": "c:@M@WeatherToday@objc(cs)MDViewController",
+      "superclassUsr": "c:@M@WeatherToday@objc(cs)BaseViewController",
       "inheritsConvenienceInitializers": true,
       "superclassNames": [
-        "WeatherToday.MDViewController",
+        "WeatherToday.BaseViewController",
         "UIKit.UIViewController",
         "UIKit.UIResponder",
         "ObjectiveC.NSObject"
@@ -13288,9 +13288,9 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "MDViewController",
-              "printedName": "WeatherToday.MDViewController",
-              "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+              "name": "BaseViewController",
+              "printedName": "WeatherToday.BaseViewController",
+              "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
             },
             {
               "kind": "TypeNominal",
@@ -13337,8 +13337,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday16NavigationRouterC4push6fromVC02toG08animated4data11routingEnum7replaceySo16UIViewControllerC_AA06MDViewO0CSbypSgAA07RoutingL0OSgSbtFZ",
-          "mangledName": "$s12WeatherToday16NavigationRouterC4push6fromVC02toG08animated4data11routingEnum7replaceySo16UIViewControllerC_AA06MDViewO0CSbypSgAA07RoutingL0OSgSbtFZ",
+          "usr": "s:12WeatherToday16NavigationRouterC4push6fromVC02toG08animated4data11routingEnum7replaceySo16UIViewControllerC_AA08BaseViewO0CSbypSgAA07RoutingL0OSgSbtFZ",
+          "mangledName": "$s12WeatherToday16NavigationRouterC4push6fromVC02toG08animated4data11routingEnum7replaceySo16UIViewControllerC_AA08BaseViewO0CSbypSgAA07RoutingL0OSgSbtFZ",
           "moduleName": "WeatherToday",
           "static": true,
           "declAttributes": [
@@ -13466,9 +13466,9 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "MDViewController",
-              "printedName": "WeatherToday.MDViewController",
-              "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+              "name": "BaseViewController",
+              "printedName": "WeatherToday.BaseViewController",
+              "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
             },
             {
               "kind": "TypeNominal",
@@ -13534,8 +13534,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday16NavigationRouterC7present6fromVC02toG08animated4data11routingEnum10completionySo16UIViewControllerC_AA06MDViewO0CSbypSgAA07RoutingL0OSgyycSgtFZ",
-          "mangledName": "$s12WeatherToday16NavigationRouterC7present6fromVC02toG08animated4data11routingEnum10completionySo16UIViewControllerC_AA06MDViewO0CSbypSgAA07RoutingL0OSgyycSgtFZ",
+          "usr": "s:12WeatherToday16NavigationRouterC7present6fromVC02toG08animated4data11routingEnum10completionySo16UIViewControllerC_AA08BaseViewO0CSbypSgAA07RoutingL0OSgyycSgtFZ",
+          "mangledName": "$s12WeatherToday16NavigationRouterC7present6fromVC02toG08animated4data11routingEnum10completionySo16UIViewControllerC_AA08BaseViewO0CSbypSgAA07RoutingL0OSgyycSgtFZ",
           "moduleName": "WeatherToday",
           "static": true,
           "declAttributes": [
@@ -14448,21 +14448,21 @@
             {
               "kind": "TypeNominal",
               "name": "Array",
-              "printedName": "[WeatherToday.MDLoggerType]",
+              "printedName": "[WeatherToday.LoggerType]",
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "MDLoggerType",
-                  "printedName": "WeatherToday.MDLoggerType",
-                  "usr": "s:12WeatherToday12MDLoggerTypeP"
+                  "name": "LoggerType",
+                  "printedName": "WeatherToday.LoggerType",
+                  "usr": "s:12WeatherToday10LoggerTypeP"
                 }
               ],
               "usr": "s:Sa"
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday6LoggerC7loggers33_710496E50609E8B996427900508B972FLLSayAA12MDLoggerType_pGvp",
-          "mangledName": "$s12WeatherToday6LoggerC7loggers33_710496E50609E8B996427900508B972FLLSayAA12MDLoggerType_pGvp",
+          "usr": "s:12WeatherToday6LoggerC7loggers33_710496E50609E8B996427900508B972FLLSayAA0C4Type_pGvp",
+          "mangledName": "$s12WeatherToday6LoggerC7loggers33_710496E50609E8B996427900508B972FLLSayAA0C4Type_pGvp",
           "moduleName": "WeatherToday",
           "isInternal": true,
           "declAttributes": [
@@ -14665,14 +14665,14 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "MDLoggerEvent",
-              "printedName": "WeatherToday.MDLoggerEvent",
-              "usr": "s:12WeatherToday13MDLoggerEventP"
+              "name": "LoggerEvent",
+              "printedName": "WeatherToday.LoggerEvent",
+              "usr": "s:12WeatherToday11LoggerEventP"
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday6LoggerC8analytic5eventyAA13MDLoggerEvent_p_tF",
-          "mangledName": "$s12WeatherToday6LoggerC8analytic5eventyAA13MDLoggerEvent_p_tF",
+          "usr": "s:12WeatherToday6LoggerC8analytic5eventyAA0C5Event_p_tF",
+          "mangledName": "$s12WeatherToday6LoggerC8analytic5eventyAA0C5Event_p_tF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -14692,14 +14692,14 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "MDLoggerType",
-              "printedName": "WeatherToday.MDLoggerType",
-              "usr": "s:12WeatherToday12MDLoggerTypeP"
+              "name": "LoggerType",
+              "printedName": "WeatherToday.LoggerType",
+              "usr": "s:12WeatherToday10LoggerTypeP"
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday6LoggerC06addNewC0yyAA12MDLoggerType_pF",
-          "mangledName": "$s12WeatherToday6LoggerC06addNewC0yyAA12MDLoggerType_pF",
+          "usr": "s:12WeatherToday6LoggerC06addNewC0yyAA0C4Type_pF",
+          "mangledName": "$s12WeatherToday6LoggerC06addNewC0yyAA0C4Type_pF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -14719,14 +14719,14 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "MDLoggerType",
-              "printedName": "WeatherToday.MDLoggerType",
-              "usr": "s:12WeatherToday12MDLoggerTypeP"
+              "name": "LoggerType",
+              "printedName": "WeatherToday.LoggerType",
+              "usr": "s:12WeatherToday10LoggerTypeP"
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday6LoggerC06removeC0yyAA12MDLoggerType_pF",
-          "mangledName": "$s12WeatherToday6LoggerC06removeC0yyAA12MDLoggerType_pF",
+          "usr": "s:12WeatherToday6LoggerC06removeC0yyAA0C4Type_pF",
+          "mangledName": "$s12WeatherToday6LoggerC06removeC0yyAA0C4Type_pF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -14766,10 +14766,335 @@
       "conformances": [
         {
           "kind": "Conformance",
-          "name": "MDLoggerType",
-          "printedName": "MDLoggerType",
-          "usr": "s:12WeatherToday12MDLoggerTypeP",
-          "mangledName": "$s12WeatherToday12MDLoggerTypeP"
+          "name": "LoggerType",
+          "printedName": "LoggerType",
+          "usr": "s:12WeatherToday10LoggerTypeP",
+          "mangledName": "$s12WeatherToday10LoggerTypeP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "StatusCodeType",
+      "printedName": "StatusCodeType",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "successStatus",
+          "printedName": "successStatus",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.StatusCodeType.Type) -> WeatherToday.StatusCodeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "StatusCodeType",
+                  "printedName": "WeatherToday.StatusCodeType",
+                  "usr": "s:12WeatherToday14StatusCodeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.StatusCodeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "StatusCodeType",
+                      "printedName": "WeatherToday.StatusCodeType",
+                      "usr": "s:12WeatherToday14StatusCodeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday14StatusCodeTypeO07successC0yA2CmF",
+          "mangledName": "$s12WeatherToday14StatusCodeTypeO07successC0yA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 0
+        },
+        {
+          "kind": "Var",
+          "name": "warningStatus",
+          "printedName": "warningStatus",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.StatusCodeType.Type) -> WeatherToday.StatusCodeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "StatusCodeType",
+                  "printedName": "WeatherToday.StatusCodeType",
+                  "usr": "s:12WeatherToday14StatusCodeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.StatusCodeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "StatusCodeType",
+                      "printedName": "WeatherToday.StatusCodeType",
+                      "usr": "s:12WeatherToday14StatusCodeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday14StatusCodeTypeO07warningC0yA2CmF",
+          "mangledName": "$s12WeatherToday14StatusCodeTypeO07warningC0yA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 1
+        },
+        {
+          "kind": "Var",
+          "name": "errorStatus",
+          "printedName": "errorStatus",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.StatusCodeType.Type) -> WeatherToday.StatusCodeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "StatusCodeType",
+                  "printedName": "WeatherToday.StatusCodeType",
+                  "usr": "s:12WeatherToday14StatusCodeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.StatusCodeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "StatusCodeType",
+                      "printedName": "WeatherToday.StatusCodeType",
+                      "usr": "s:12WeatherToday14StatusCodeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday14StatusCodeTypeO05errorC0yA2CmF",
+          "mangledName": "$s12WeatherToday14StatusCodeTypeO05errorC0yA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 2
+        },
+        {
+          "kind": "Var",
+          "name": "unknownStatus",
+          "printedName": "unknownStatus",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.StatusCodeType.Type) -> WeatherToday.StatusCodeType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "StatusCodeType",
+                  "printedName": "WeatherToday.StatusCodeType",
+                  "usr": "s:12WeatherToday14StatusCodeTypeO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.StatusCodeType.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "StatusCodeType",
+                      "printedName": "WeatherToday.StatusCodeType",
+                      "usr": "s:12WeatherToday14StatusCodeTypeO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday14StatusCodeTypeO07unknownC0yA2CmF",
+          "mangledName": "$s12WeatherToday14StatusCodeTypeO07unknownC0yA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 3
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(rawValue:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "WeatherToday.StatusCodeType?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "StatusCodeType",
+                  "printedName": "WeatherToday.StatusCodeType",
+                  "usr": "s:12WeatherToday14StatusCodeTypeO"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12WeatherToday14StatusCodeTypeO8rawValueACSgSi_tcfc",
+          "mangledName": "$s12WeatherToday14StatusCodeTypeO8rawValueACSgSi_tcfc",
+          "moduleName": "WeatherToday",
+          "implicit": true,
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Var",
+          "name": "rawValue",
+          "printedName": "rawValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday14StatusCodeTypeO8rawValueSivp",
+          "mangledName": "$s12WeatherToday14StatusCodeTypeO8rawValueSivp",
+          "moduleName": "WeatherToday",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday14StatusCodeTypeO8rawValueSivg",
+              "mangledName": "$s12WeatherToday14StatusCodeTypeO8rawValueSivg",
+              "moduleName": "WeatherToday",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "toStatusType",
+          "printedName": "toStatusType(httpStatusCode:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "StatusCodeType",
+              "printedName": "WeatherToday.StatusCodeType",
+              "usr": "s:12WeatherToday14StatusCodeTypeO"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.Int?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12WeatherToday14StatusCodeTypeO02tocE004httpcD0ACSiSg_tFZ",
+          "mangledName": "$s12WeatherToday14StatusCodeTypeO02tocE004httpcD0ACSiSg_tFZ",
+          "moduleName": "WeatherToday",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Enum",
+      "usr": "s:12WeatherToday14StatusCodeTypeO",
+      "mangledName": "$s12WeatherToday14StatusCodeTypeO",
+      "moduleName": "WeatherToday",
+      "enumRawTypeName": "Int",
+      "isEnumExhaustive": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "RawRepresentable",
+          "printedName": "RawRepresentable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "RawValue",
+              "printedName": "RawValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ]
+            }
+          ],
+          "usr": "s:SY",
+          "mangledName": "$sSY"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
         }
       ]
     },
@@ -16928,18 +17253,18 @@
             {
               "kind": "TypeNominal",
               "name": "Optional",
-              "printedName": "WeatherToday.MDViewController.Type?",
+              "printedName": "WeatherToday.BaseViewController.Type?",
               "children": [
                 {
                   "kind": "TypeNominal",
                   "name": "Metatype",
-                  "printedName": "WeatherToday.MDViewController.Type",
+                  "printedName": "WeatherToday.BaseViewController.Type",
                   "children": [
                     {
                       "kind": "TypeNominal",
-                      "name": "MDViewController",
-                      "printedName": "WeatherToday.MDViewController",
-                      "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+                      "name": "BaseViewController",
+                      "printedName": "WeatherToday.BaseViewController",
+                      "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
                     }
                   ]
                 }
@@ -16948,8 +17273,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday11RoutingEnumO12getClassTypeAA16MDViewControllerCmSgyF",
-          "mangledName": "$s12WeatherToday11RoutingEnumO12getClassTypeAA16MDViewControllerCmSgyF",
+          "usr": "s:12WeatherToday11RoutingEnumO12getClassTypeAA18BaseViewControllerCmSgyF",
+          "mangledName": "$s12WeatherToday11RoutingEnumO12getClassTypeAA18BaseViewControllerCmSgyF",
           "moduleName": "WeatherToday",
           "funcSelfKind": "NonMutating"
         },
@@ -18012,7 +18337,7 @@
         {
           "kind": "Function",
           "name": "fetchWeather",
-          "printedName": "fetchWeather(latitude:longitude:success:failure:)",
+          "printedName": "fetchWeather(latitude:longitude:succeed:failed:)",
           "children": [
             {
               "kind": "TypeNominal",
@@ -18069,8 +18394,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday0A3ApiC05fetchA08latitude9longitude7success7failureySd_SdyAA0A8ResponseCcyAA12NetworkErrorCctF",
-          "mangledName": "$s12WeatherToday0A3ApiC05fetchA08latitude9longitude7success7failureySd_SdyAA0A8ResponseCcyAA12NetworkErrorCctF",
+          "usr": "s:12WeatherToday0A3ApiC05fetchA08latitude9longitude7succeed6failedySd_SdyAA0A8ResponseCcyAA12NetworkErrorCctF",
+          "mangledName": "$s12WeatherToday0A3ApiC05fetchA08latitude9longitude7succeed6failedySd_SdyAA0A8ResponseCcyAA12NetworkErrorCctF",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -18648,10 +18973,10 @@
         "Custom",
         "ObjC"
       ],
-      "superclassUsr": "c:@M@WeatherToday@objc(cs)MDViewController",
+      "superclassUsr": "c:@M@WeatherToday@objc(cs)BaseViewController",
       "inheritsConvenienceInitializers": true,
       "superclassNames": [
-        "WeatherToday.MDViewController",
+        "WeatherToday.BaseViewController",
         "UIKit.UIViewController",
         "UIKit.UIResponder",
         "ObjectiveC.NSObject"
@@ -38255,12 +38580,12 @@
             {
               "kind": "TypeFunc",
               "name": "Function",
-              "printedName": "(WeatherToday.NavigationRouterEnum.Type) -> (WeatherToday.StoryboardID, WeatherToday.ViewControllerId, WeatherToday.MDViewController.Type) -> WeatherToday.NavigationRouterEnum",
+              "printedName": "(WeatherToday.NavigationRouterEnum.Type) -> (WeatherToday.StoryboardID, WeatherToday.ViewControllerId, WeatherToday.BaseViewController.Type) -> WeatherToday.NavigationRouterEnum",
               "children": [
                 {
                   "kind": "TypeFunc",
                   "name": "Function",
-                  "printedName": "(WeatherToday.StoryboardID, WeatherToday.ViewControllerId, WeatherToday.MDViewController.Type) -> WeatherToday.NavigationRouterEnum",
+                  "printedName": "(WeatherToday.StoryboardID, WeatherToday.ViewControllerId, WeatherToday.BaseViewController.Type) -> WeatherToday.NavigationRouterEnum",
                   "children": [
                     {
                       "kind": "TypeNominal",
@@ -38271,7 +38596,7 @@
                     {
                       "kind": "TypeNominal",
                       "name": "Tuple",
-                      "printedName": "(toStoryboard: WeatherToday.StoryboardID, toVC: WeatherToday.ViewControllerId, toVCType: WeatherToday.MDViewController.Type)",
+                      "printedName": "(toStoryboard: WeatherToday.StoryboardID, toVC: WeatherToday.ViewControllerId, toVCType: WeatherToday.BaseViewController.Type)",
                       "children": [
                         {
                           "kind": "TypeNominal",
@@ -38288,13 +38613,13 @@
                         {
                           "kind": "TypeNominal",
                           "name": "Metatype",
-                          "printedName": "WeatherToday.MDViewController.Type",
+                          "printedName": "WeatherToday.BaseViewController.Type",
                           "children": [
                             {
                               "kind": "TypeNominal",
-                              "name": "MDViewController",
-                              "printedName": "WeatherToday.MDViewController",
-                              "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+                              "name": "BaseViewController",
+                              "printedName": "WeatherToday.BaseViewController",
+                              "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
                             }
                           ]
                         }
@@ -38319,8 +38644,8 @@
             }
           ],
           "declKind": "EnumElement",
-          "usr": "s:12WeatherToday20NavigationRouterEnumO12toStoryBoardyAcA12StoryboardIDO_AA16ViewControllerIdOAA06MDViewL0CmtcACmF",
-          "mangledName": "$s12WeatherToday20NavigationRouterEnumO12toStoryBoardyAcA12StoryboardIDO_AA16ViewControllerIdOAA06MDViewL0CmtcACmF",
+          "usr": "s:12WeatherToday20NavigationRouterEnumO12toStoryBoardyAcA12StoryboardIDO_AA16ViewControllerIdOAA04BasekL0CmtcACmF",
+          "mangledName": "$s12WeatherToday20NavigationRouterEnumO12toStoryBoardyAcA12StoryboardIDO_AA16ViewControllerIdOAA04BasekL0CmtcACmF",
           "moduleName": "WeatherToday",
           "fixedbinaryorder": 1
         },
@@ -38332,12 +38657,12 @@
             {
               "kind": "TypeFunc",
               "name": "Function",
-              "printedName": "(WeatherToday.NavigationRouterEnum.Type) -> (WeatherToday.MDViewController.Type, Swift.Bool) -> WeatherToday.NavigationRouterEnum",
+              "printedName": "(WeatherToday.NavigationRouterEnum.Type) -> (WeatherToday.BaseViewController.Type, Swift.Bool) -> WeatherToday.NavigationRouterEnum",
               "children": [
                 {
                   "kind": "TypeFunc",
                   "name": "Function",
-                  "printedName": "(WeatherToday.MDViewController.Type, Swift.Bool) -> WeatherToday.NavigationRouterEnum",
+                  "printedName": "(WeatherToday.BaseViewController.Type, Swift.Bool) -> WeatherToday.NavigationRouterEnum",
                   "children": [
                     {
                       "kind": "TypeNominal",
@@ -38348,18 +38673,18 @@
                     {
                       "kind": "TypeNominal",
                       "name": "Tuple",
-                      "printedName": "(toVCType: WeatherToday.MDViewController.Type, hidesBottomBarWhenPushed: Swift.Bool)",
+                      "printedName": "(toVCType: WeatherToday.BaseViewController.Type, hidesBottomBarWhenPushed: Swift.Bool)",
                       "children": [
                         {
                           "kind": "TypeNominal",
                           "name": "Metatype",
-                          "printedName": "WeatherToday.MDViewController.Type",
+                          "printedName": "WeatherToday.BaseViewController.Type",
                           "children": [
                             {
                               "kind": "TypeNominal",
-                              "name": "MDViewController",
-                              "printedName": "WeatherToday.MDViewController",
-                              "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+                              "name": "BaseViewController",
+                              "printedName": "WeatherToday.BaseViewController",
+                              "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
                             }
                           ]
                         },
@@ -38390,8 +38715,8 @@
             }
           ],
           "declKind": "EnumElement",
-          "usr": "s:12WeatherToday20NavigationRouterEnumO16toViewControlleryAcA06MDViewH0Cm_SbtcACmF",
-          "mangledName": "$s12WeatherToday20NavigationRouterEnumO16toViewControlleryAcA06MDViewH0Cm_SbtcACmF",
+          "usr": "s:12WeatherToday20NavigationRouterEnumO16toViewControlleryAcA04BasegH0Cm_SbtcACmF",
+          "mangledName": "$s12WeatherToday20NavigationRouterEnumO16toViewControlleryAcA04BasegH0Cm_SbtcACmF",
           "moduleName": "WeatherToday",
           "fixedbinaryorder": 2
         },
@@ -38403,12 +38728,12 @@
             {
               "kind": "TypeFunc",
               "name": "Function",
-              "printedName": "(WeatherToday.NavigationRouterEnum.Type) -> (Swift.Int, WeatherToday.MDViewController.Type) -> WeatherToday.NavigationRouterEnum",
+              "printedName": "(WeatherToday.NavigationRouterEnum.Type) -> (Swift.Int, WeatherToday.BaseViewController.Type) -> WeatherToday.NavigationRouterEnum",
               "children": [
                 {
                   "kind": "TypeFunc",
                   "name": "Function",
-                  "printedName": "(Swift.Int, WeatherToday.MDViewController.Type) -> WeatherToday.NavigationRouterEnum",
+                  "printedName": "(Swift.Int, WeatherToday.BaseViewController.Type) -> WeatherToday.NavigationRouterEnum",
                   "children": [
                     {
                       "kind": "TypeNominal",
@@ -38419,7 +38744,7 @@
                     {
                       "kind": "TypeNominal",
                       "name": "Tuple",
-                      "printedName": "(tabIndex: Swift.Int, toVCType: WeatherToday.MDViewController.Type)",
+                      "printedName": "(tabIndex: Swift.Int, toVCType: WeatherToday.BaseViewController.Type)",
                       "children": [
                         {
                           "kind": "TypeNominal",
@@ -38430,13 +38755,13 @@
                         {
                           "kind": "TypeNominal",
                           "name": "Metatype",
-                          "printedName": "WeatherToday.MDViewController.Type",
+                          "printedName": "WeatherToday.BaseViewController.Type",
                           "children": [
                             {
                               "kind": "TypeNominal",
-                              "name": "MDViewController",
-                              "printedName": "WeatherToday.MDViewController",
-                              "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+                              "name": "BaseViewController",
+                              "printedName": "WeatherToday.BaseViewController",
+                              "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
                             }
                           ]
                         }
@@ -38461,8 +38786,8 @@
             }
           ],
           "declKind": "EnumElement",
-          "usr": "s:12WeatherToday20NavigationRouterEnumO5toTabyACSi_AA16MDViewControllerCmtcACmF",
-          "mangledName": "$s12WeatherToday20NavigationRouterEnumO5toTabyACSi_AA16MDViewControllerCmtcACmF",
+          "usr": "s:12WeatherToday20NavigationRouterEnumO5toTabyACSi_AA18BaseViewControllerCmtcACmF",
+          "mangledName": "$s12WeatherToday20NavigationRouterEnumO5toTabyACSi_AA18BaseViewControllerCmtcACmF",
           "moduleName": "WeatherToday",
           "fixedbinaryorder": 3
         },
@@ -39010,8 +39335,8 @@
     },
     {
       "kind": "TypeDecl",
-      "name": "MDLoggerType",
-      "printedName": "MDLoggerType",
+      "name": "LoggerType",
+      "printedName": "LoggerType",
       "children": [
         {
           "kind": "Function",
@@ -39058,11 +39383,11 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday12MDLoggerTypeP1w3tag_5errorySS_ypds5Error_pSgtF",
-          "mangledName": "$s12WeatherToday12MDLoggerTypeP1w3tag_5errorySS_ypds5Error_pSgtF",
+          "usr": "s:12WeatherToday10LoggerTypeP1w3tag_5errorySS_ypds5Error_pSgtF",
+          "mangledName": "$s12WeatherToday10LoggerTypeP1w3tag_5errorySS_ypds5Error_pSgtF",
           "moduleName": "WeatherToday",
-          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDLoggerType>",
-          "sugared_genericSig": "<Self where Self : WeatherToday.MDLoggerType>",
+          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.LoggerType>",
+          "sugared_genericSig": "<Self where Self : WeatherToday.LoggerType>",
           "protocolReq": true,
           "reqNewWitnessTableEntry": true,
           "funcSelfKind": "NonMutating"
@@ -39104,11 +39429,11 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday12MDLoggerTypeP1e3tag_5errorySS_ypds5Error_ptF",
-          "mangledName": "$s12WeatherToday12MDLoggerTypeP1e3tag_5errorySS_ypds5Error_ptF",
+          "usr": "s:12WeatherToday10LoggerTypeP1e3tag_5errorySS_ypds5Error_ptF",
+          "mangledName": "$s12WeatherToday10LoggerTypeP1e3tag_5errorySS_ypds5Error_ptF",
           "moduleName": "WeatherToday",
-          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDLoggerType>",
-          "sugared_genericSig": "<Self where Self : WeatherToday.MDLoggerType>",
+          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.LoggerType>",
+          "sugared_genericSig": "<Self where Self : WeatherToday.LoggerType>",
           "protocolReq": true,
           "reqNewWitnessTableEntry": true,
           "funcSelfKind": "NonMutating"
@@ -39144,11 +39469,11 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday12MDLoggerTypeP1i3tag_ySS_ypdtF",
-          "mangledName": "$s12WeatherToday12MDLoggerTypeP1i3tag_ySS_ypdtF",
+          "usr": "s:12WeatherToday10LoggerTypeP1i3tag_ySS_ypdtF",
+          "mangledName": "$s12WeatherToday10LoggerTypeP1i3tag_ySS_ypdtF",
           "moduleName": "WeatherToday",
-          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDLoggerType>",
-          "sugared_genericSig": "<Self where Self : WeatherToday.MDLoggerType>",
+          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.LoggerType>",
+          "sugared_genericSig": "<Self where Self : WeatherToday.LoggerType>",
           "protocolReq": true,
           "reqNewWitnessTableEntry": true,
           "funcSelfKind": "NonMutating"
@@ -39184,11 +39509,11 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday12MDLoggerTypeP1v3tag_ySS_ypdtF",
-          "mangledName": "$s12WeatherToday12MDLoggerTypeP1v3tag_ySS_ypdtF",
+          "usr": "s:12WeatherToday10LoggerTypeP1v3tag_ySS_ypdtF",
+          "mangledName": "$s12WeatherToday10LoggerTypeP1v3tag_ySS_ypdtF",
           "moduleName": "WeatherToday",
-          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDLoggerType>",
-          "sugared_genericSig": "<Self where Self : WeatherToday.MDLoggerType>",
+          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.LoggerType>",
+          "sugared_genericSig": "<Self where Self : WeatherToday.LoggerType>",
           "protocolReq": true,
           "reqNewWitnessTableEntry": true,
           "funcSelfKind": "NonMutating"
@@ -39205,25 +39530,25 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "MDLoggerEvent",
-              "printedName": "WeatherToday.MDLoggerEvent",
-              "usr": "s:12WeatherToday13MDLoggerEventP"
+              "name": "LoggerEvent",
+              "printedName": "WeatherToday.LoggerEvent",
+              "usr": "s:12WeatherToday11LoggerEventP"
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday12MDLoggerTypeP8analytic5eventyAA0C5Event_p_tF",
-          "mangledName": "$s12WeatherToday12MDLoggerTypeP8analytic5eventyAA0C5Event_p_tF",
+          "usr": "s:12WeatherToday10LoggerTypeP8analytic5eventyAA0C5Event_p_tF",
+          "mangledName": "$s12WeatherToday10LoggerTypeP8analytic5eventyAA0C5Event_p_tF",
           "moduleName": "WeatherToday",
-          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDLoggerType>",
-          "sugared_genericSig": "<Self where Self : WeatherToday.MDLoggerType>",
+          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.LoggerType>",
+          "sugared_genericSig": "<Self where Self : WeatherToday.LoggerType>",
           "protocolReq": true,
           "reqNewWitnessTableEntry": true,
           "funcSelfKind": "NonMutating"
         }
       ],
       "declKind": "Protocol",
-      "usr": "s:12WeatherToday12MDLoggerTypeP",
-      "mangledName": "$s12WeatherToday12MDLoggerTypeP",
+      "usr": "s:12WeatherToday10LoggerTypeP",
+      "mangledName": "$s12WeatherToday10LoggerTypeP",
       "moduleName": "WeatherToday",
       "genericSig": "<τ_0_0 : AnyObject>",
       "sugared_genericSig": "<Self : AnyObject>",
@@ -39243,8 +39568,8 @@
     },
     {
       "kind": "TypeDecl",
-      "name": "MDLoggerEvent",
-      "printedName": "MDLoggerEvent",
+      "name": "LoggerEvent",
+      "printedName": "LoggerEvent",
       "children": [
         {
           "kind": "Var",
@@ -39259,8 +39584,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday13MDLoggerEventP5eventSSvp",
-          "mangledName": "$s12WeatherToday13MDLoggerEventP5eventSSvp",
+          "usr": "s:12WeatherToday11LoggerEventP5eventSSvp",
+          "mangledName": "$s12WeatherToday11LoggerEventP5eventSSvp",
           "moduleName": "WeatherToday",
           "protocolReq": true,
           "accessors": [
@@ -39277,11 +39602,11 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday13MDLoggerEventP5eventSSvg",
-              "mangledName": "$s12WeatherToday13MDLoggerEventP5eventSSvg",
+              "usr": "s:12WeatherToday11LoggerEventP5eventSSvg",
+              "mangledName": "$s12WeatherToday11LoggerEventP5eventSSvg",
               "moduleName": "WeatherToday",
-              "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDLoggerEvent>",
-              "sugared_genericSig": "<Self where Self : WeatherToday.MDLoggerEvent>",
+              "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.LoggerEvent>",
+              "sugared_genericSig": "<Self where Self : WeatherToday.LoggerEvent>",
               "protocolReq": true,
               "reqNewWitnessTableEntry": true,
               "accessorKind": "get"
@@ -39322,8 +39647,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday13MDLoggerEventP6paramsSDySSypGSgvp",
-          "mangledName": "$s12WeatherToday13MDLoggerEventP6paramsSDySSypGSgvp",
+          "usr": "s:12WeatherToday11LoggerEventP6paramsSDySSypGSgvp",
+          "mangledName": "$s12WeatherToday11LoggerEventP6paramsSDySSypGSgvp",
           "moduleName": "WeatherToday",
           "protocolReq": true,
           "accessors": [
@@ -39361,11 +39686,11 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday13MDLoggerEventP6paramsSDySSypGSgvg",
-              "mangledName": "$s12WeatherToday13MDLoggerEventP6paramsSDySSypGSgvg",
+              "usr": "s:12WeatherToday11LoggerEventP6paramsSDySSypGSgvg",
+              "mangledName": "$s12WeatherToday11LoggerEventP6paramsSDySSypGSgvg",
               "moduleName": "WeatherToday",
-              "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDLoggerEvent>",
-              "sugared_genericSig": "<Self where Self : WeatherToday.MDLoggerEvent>",
+              "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.LoggerEvent>",
+              "sugared_genericSig": "<Self where Self : WeatherToday.LoggerEvent>",
               "protocolReq": true,
               "reqNewWitnessTableEntry": true,
               "accessorKind": "get"
@@ -39374,8 +39699,8 @@
         }
       ],
       "declKind": "Protocol",
-      "usr": "s:12WeatherToday13MDLoggerEventP",
-      "mangledName": "$s12WeatherToday13MDLoggerEventP",
+      "usr": "s:12WeatherToday11LoggerEventP",
+      "mangledName": "$s12WeatherToday11LoggerEventP",
       "moduleName": "WeatherToday",
       "declAttributes": [
         "AccessControl"
@@ -39809,8 +40134,8 @@
     },
     {
       "kind": "TypeDecl",
-      "name": "MDViewController",
-      "printedName": "MDViewController",
+      "name": "BaseViewController",
+      "printedName": "BaseViewController",
       "children": [
         {
           "kind": "Var",
@@ -39825,8 +40150,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday16MDViewControllerC18isPresentedModallySbvp",
-          "mangledName": "$s12WeatherToday16MDViewControllerC18isPresentedModallySbvp",
+          "usr": "s:12WeatherToday18BaseViewControllerC18isPresentedModallySbvp",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC18isPresentedModallySbvp",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -39850,8 +40175,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC18isPresentedModallySbvg",
-              "mangledName": "$s12WeatherToday16MDViewControllerC18isPresentedModallySbvg",
+              "usr": "s:12WeatherToday18BaseViewControllerC18isPresentedModallySbvg",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC18isPresentedModallySbvg",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -39875,8 +40200,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC18isPresentedModallySbvs",
-              "mangledName": "$s12WeatherToday16MDViewControllerC18isPresentedModallySbvs",
+              "usr": "s:12WeatherToday18BaseViewControllerC18isPresentedModallySbvs",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC18isPresentedModallySbvs",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -39894,8 +40219,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC18isPresentedModallySbvM",
-              "mangledName": "$s12WeatherToday16MDViewControllerC18isPresentedModallySbvM",
+              "usr": "s:12WeatherToday18BaseViewControllerC18isPresentedModallySbvM",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC18isPresentedModallySbvM",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -39923,8 +40248,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday16MDViewControllerC4dataypSgvp",
-          "mangledName": "$s12WeatherToday16MDViewControllerC4dataypSgvp",
+          "usr": "s:12WeatherToday18BaseViewControllerC4dataypSgvp",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC4dataypSgvp",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -39955,8 +40280,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC4dataypSgvg",
-              "mangledName": "$s12WeatherToday16MDViewControllerC4dataypSgvg",
+              "usr": "s:12WeatherToday18BaseViewControllerC4dataypSgvg",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC4dataypSgvg",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -39987,8 +40312,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC4dataypSgvs",
-              "mangledName": "$s12WeatherToday16MDViewControllerC4dataypSgvs",
+              "usr": "s:12WeatherToday18BaseViewControllerC4dataypSgvs",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC4dataypSgvs",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -40006,8 +40331,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC4dataypSgvM",
-              "mangledName": "$s12WeatherToday16MDViewControllerC4dataypSgvM",
+              "usr": "s:12WeatherToday18BaseViewControllerC4dataypSgvM",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC4dataypSgvM",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -40036,8 +40361,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvp",
-          "mangledName": "$s12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvp",
+          "usr": "s:12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvp",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvp",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -40069,8 +40394,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvg",
-              "mangledName": "$s12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvg",
+              "usr": "s:12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvg",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvg",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -40102,8 +40427,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvs",
-              "mangledName": "$s12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvs",
+              "usr": "s:12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvs",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvs",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -40121,8 +40446,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvM",
-              "mangledName": "$s12WeatherToday16MDViewControllerC11routingEnumAA07RoutingF0OSgvM",
+              "usr": "s:12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvM",
+              "mangledName": "$s12WeatherToday18BaseViewControllerC11routingEnumAA07RoutingG0OSgvM",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -40142,8 +40467,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@WeatherToday@objc(cs)MDViewController(im)viewDidLoad",
-          "mangledName": "$s12WeatherToday16MDViewControllerC11viewDidLoadyyF",
+          "usr": "c:@M@WeatherToday@objc(cs)BaseViewController(im)viewDidLoad",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC11viewDidLoadyyF",
           "moduleName": "WeatherToday",
           "overriding": true,
           "isOpen": true,
@@ -40174,8 +40499,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@WeatherToday@objc(cs)MDViewController(im)viewWillAppear:",
-          "mangledName": "$s12WeatherToday16MDViewControllerC14viewWillAppearyySbF",
+          "usr": "c:@M@WeatherToday@objc(cs)BaseViewController(im)viewWillAppear:",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC14viewWillAppearyySbF",
           "moduleName": "WeatherToday",
           "overriding": true,
           "isOpen": true,
@@ -40206,8 +40531,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@WeatherToday@objc(cs)MDViewController(im)viewDidDisappear:",
-          "mangledName": "$s12WeatherToday16MDViewControllerC16viewDidDisappearyySbF",
+          "usr": "c:@M@WeatherToday@objc(cs)BaseViewController(im)viewDidDisappear:",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC16viewDidDisappearyySbF",
           "moduleName": "WeatherToday",
           "overriding": true,
           "isOpen": true,
@@ -40238,8 +40563,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@WeatherToday@objc(cs)MDViewController(im)viewDidAppear:",
-          "mangledName": "$s12WeatherToday16MDViewControllerC13viewDidAppearyySbF",
+          "usr": "c:@M@WeatherToday@objc(cs)BaseViewController(im)viewDidAppear:",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC13viewDidAppearyySbF",
           "moduleName": "WeatherToday",
           "overriding": true,
           "isOpen": true,
@@ -40259,9 +40584,9 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "MDViewController",
-              "printedName": "WeatherToday.MDViewController",
-              "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+              "name": "BaseViewController",
+              "printedName": "WeatherToday.BaseViewController",
+              "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
             },
             {
               "kind": "TypeNominal",
@@ -40293,8 +40618,8 @@
             }
           ],
           "declKind": "Constructor",
-          "usr": "c:@M@WeatherToday@objc(cs)MDViewController(im)initWithNibName:bundle:",
-          "mangledName": "$s12WeatherToday16MDViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+          "usr": "c:@M@WeatherToday@objc(cs)BaseViewController(im)initWithNibName:bundle:",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
           "moduleName": "WeatherToday",
           "overriding": true,
           "implicit": true,
@@ -40315,13 +40640,13 @@
             {
               "kind": "TypeNominal",
               "name": "Optional",
-              "printedName": "WeatherToday.MDViewController?",
+              "printedName": "WeatherToday.BaseViewController?",
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "MDViewController",
-                  "printedName": "WeatherToday.MDViewController",
-                  "usr": "c:@M@WeatherToday@objc(cs)MDViewController"
+                  "name": "BaseViewController",
+                  "printedName": "WeatherToday.BaseViewController",
+                  "usr": "c:@M@WeatherToday@objc(cs)BaseViewController"
                 }
               ],
               "usr": "s:Sq"
@@ -40334,8 +40659,8 @@
             }
           ],
           "declKind": "Constructor",
-          "usr": "c:@M@WeatherToday@objc(cs)MDViewController(im)initWithCoder:",
-          "mangledName": "$s12WeatherToday16MDViewControllerC5coderACSgSo7NSCoderC_tcfc",
+          "usr": "c:@M@WeatherToday@objc(cs)BaseViewController(im)initWithCoder:",
+          "mangledName": "$s12WeatherToday18BaseViewControllerC5coderACSgSo7NSCoderC_tcfc",
           "moduleName": "WeatherToday",
           "overriding": true,
           "implicit": true,
@@ -40350,8 +40675,8 @@
         }
       ],
       "declKind": "Class",
-      "usr": "c:@M@WeatherToday@objc(cs)MDViewController",
-      "mangledName": "$s12WeatherToday16MDViewControllerC",
+      "usr": "c:@M@WeatherToday@objc(cs)BaseViewController",
+      "mangledName": "$s12WeatherToday18BaseViewControllerC",
       "moduleName": "WeatherToday",
       "isOpen": true,
       "declAttributes": [
@@ -40850,11 +41175,11 @@
             }
           ],
           "declKind": "Func",
-          "usr": "s:12WeatherToday20RoutingConfigurationPA2A16MDViewControllerCRbzrlE17getNavigationInfoAA0H10RouterEnumOyFZ",
-          "mangledName": "$s12WeatherToday20RoutingConfigurationPA2A16MDViewControllerCRbzrlE17getNavigationInfoAA0H10RouterEnumOyFZ",
+          "usr": "s:12WeatherToday20RoutingConfigurationPA2A18BaseViewControllerCRbzrlE17getNavigationInfoAA0I10RouterEnumOyFZ",
+          "mangledName": "$s12WeatherToday20RoutingConfigurationPA2A18BaseViewControllerCRbzrlE17getNavigationInfoAA0I10RouterEnumOyFZ",
           "moduleName": "WeatherToday",
-          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.MDViewController, τ_0_0 : WeatherToday.RoutingConfiguration>",
-          "sugared_genericSig": "<Self where Self : WeatherToday.MDViewController, Self : WeatherToday.RoutingConfiguration>",
+          "genericSig": "<τ_0_0 where τ_0_0 : WeatherToday.BaseViewController, τ_0_0 : WeatherToday.RoutingConfiguration>",
+          "sugared_genericSig": "<Self where Self : WeatherToday.BaseViewController, Self : WeatherToday.RoutingConfiguration>",
           "static": true,
           "funcSelfKind": "NonMutating"
         }
@@ -42627,10 +42952,10 @@
         "Custom",
         "ObjC"
       ],
-      "superclassUsr": "c:@M@WeatherToday@objc(cs)MDViewController",
+      "superclassUsr": "c:@M@WeatherToday@objc(cs)BaseViewController",
       "inheritsConvenienceInitializers": true,
       "superclassNames": [
-        "WeatherToday.MDViewController",
+        "WeatherToday.BaseViewController",
         "UIKit.UIViewController",
         "UIKit.UIResponder",
         "ObjectiveC.NSObject"
@@ -51521,7 +51846,7 @@
       "inheritsConvenienceInitializers": true,
       "superclassNames": [
         "WeatherToday.BaseVC",
-        "WeatherToday.MDViewController",
+        "WeatherToday.BaseViewController",
         "UIKit.UIViewController",
         "UIKit.UIResponder",
         "ObjectiveC.NSObject"
