@@ -24,7 +24,7 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/Logger.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/String/String+Utils.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/Optional/Optional+Required.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Session/Session.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Session/SessionKeeper.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Transitioning/ModalTransitioning/ModalTransitioningDelegate.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/AppDelegate/SceneDelegate.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/UIFont/UIFont+DeviceSpesific.swift

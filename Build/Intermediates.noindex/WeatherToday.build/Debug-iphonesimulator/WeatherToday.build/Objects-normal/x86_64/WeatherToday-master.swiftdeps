@@ -1,23 +1,23 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "74066189cfebc298267c0f2c820677d11fa0a2fbd8bb1e13f6c7986f45ff9b90"
-build_start_time: [1654711434, 15681982]
-build_end_time: [1654711434, 974268913]
+build_start_time: [1654786226, 726917028]
+build_end_time: [1654786228, 766384124]
 inputs:
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/AppDelegate/AppDelegate.swift": [1654706877, 181857109]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/AppDelegate/AppDelegate.swift": [1654785583, 107644081]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/AppDelegate/SceneDelegate.swift": [1654706877, 182742118]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Landing/LandingVC.swift": [1654706877, 183376550]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/LandingWelcome/LandingWelcomeVC.swift": [1654710224, 773271560]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Landing/LandingVC.swift": [1654785601, 541743040]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/LandingWelcome/LandingWelcomeVC.swift": [1654785597, 740297794]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/SecurityQuestionPopup/SecurityQuestionInfoPopUpVC.swift"
-  : [1654706877, 184916257]
+  : [1654785592, 431233406]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/DailyCell/DailyTableViewCell.swift": [1654171697, 615593433]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/ForecastCell/ForecastTableViewCell.swift"
   : [1654171699, 345635414]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/HourlyCell/HourlyCollectionViewCell.swift"
   : [1654171695, 510863780]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/WeatherVC.swift": [1654706877, 185814857]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/WeatherVC.swift": [1654776133, 161714553]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/WeatherVM.swift": [1654711420, 777863979]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/CommonUi/BaseNC/BaseNC.swift": [1654706877, 186604976]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/CommonUi/BaseVC/BaseVC.swift": [1654706877, 187037706]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/CommonUi/BaseNC/BaseNC.swift": [1654785552, 322542190]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/CommonUi/BaseVC/BaseVC.swift": [1654785559, 772160053]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/CommonUi/BaseVC/MDViewController.swift": [1654706877, 187231302]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Components/ScreenActivityIndicator/ActivityIndicatorLoadableView.swift"
   : [1654706877, 187662363]
@@ -25,13 +25,13 @@ inputs:
   : [1654706877, 187991142]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Components/ScreenActivityIndicator/ScreenActivityIndicator.swift"
   : [1654706877, 188295364]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Components/WarningView/WarningManager.swift": [1654706877, 188692092]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Components/WarningView/WarningManager.swift": [1654785402, 299635410]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Components/WarningView/WarningType.swift": [1654706877, 188998460]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/Dictionary/Dictionary+Json.swift": [1654706877, 190065860]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/Dictionary/Dictionary+Json.swift": [1654776634, 125635147]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/Dictionary/Dictionary+Mapping.swift": [1654706877, 190368652]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/New Group/EnumCaseName.swift": [1654706877, 190928936]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/NibLoadableView/NibLoadableView.swift"
-  : [1654706877, 191627025]
+  : [1654785500, 964087009]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/Observable/NSNotification/NSNotification+Extension.swift"
   : [1654706877, 192415714]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/Optional/Optional+Required.swift": [1654706877, 193027257]
@@ -42,16 +42,16 @@ inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/UIView/UIView+DropShadow.swift": [1654706877, 195722818]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Extensions/UIView/UIView+IBInspectable.swift": [1654706877, 196169853]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Frameworks/SCLAlertView/SCLAlertView.swift": [1654706877, 197368860]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Frameworks/SCLAlertView/SCLExtensions.swift": [1654706877, 197890758]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/Logger.swift": [1654706877, 198538541]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Frameworks/SCLAlertView/SCLExtensions.swift": [1654776700, 132943153]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/Logger.swift": [1654776550, 98500013]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/MDLoggerEvent.swift": [1654706877, 199080944]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/Logger/MDLoggerType.swift": [1654706877, 199541091]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Helpers/New Group/SafeUnwrap.swift": [1654706877, 199975967]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/BaseAPI/BaseAPI.swift": [1654711425, 221291542]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/BaseAPI/BaseAPI.swift": [1654711440, 135907649]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Encoding/Encoders/ParameterEncoder.swift"
   : [1654706877, 201199054]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Encoding/Encoders/URLQuesryEncoder/URLQueryBuilder.swift"
-  : [1654706877, 201790571]
+  : [1654776476, 881550312]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Encoding/Encoders/URLQuesryEncoder/URLQueryValueRepresentable/URLQueryValueRepresentable.swift"
   : [1654706877, 202381372]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Http/MimeType.swift": [1654711430, 688141822]
@@ -61,14 +61,14 @@ inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/Navigator/RoutingTransitionStyle.swift": [1654706877, 204216718]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/Navigator/UiPageNavigator.swift": [1654706877, 204577445]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/RoutingEnum/RoutingEnum+Configuration.swift"
-  : [1654706877, 204989910]
+  : [1654776669, 384950160]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/RoutingEnum/RoutingEnum+ControllerType.swift"
-  : [1654706877, 205466747]
+  : [1654785544, 384344100]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/RoutingEnum/RoutingEnum+Navigation.swift"
   : [1654706877, 205823898]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Routing/RoutingEnum/RoutingEnum.swift": [1654706877, 206108331]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Transitioning/ModalTransitioning/ModalPresentationController.swift"
-  : [1654706877, 206773042]
+  : [1654785573, 554652452]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Transitioning/ModalTransitioning/ModalTransitionAnimator.swift"
   : [1654706877, 207194328]
   ? "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Transitioning/ModalTransitioning/ModalTransitioningDelegate.swift"
@@ -79,10 +79,10 @@ inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Weather/Hourly.swift": [1654169532, 192076683]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Weather/WeatherResponse.swift": [1654169520, 330722808]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Networking/APIs/Weather/WeatherApi.swift": [1654711379, 51162242]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppColor.swift": [1654706877, 189422369]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppFont.swift": [1654706877, 189769268]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppColor.swift": [1654786213, 855891466]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppFont.swift": [1654786053, 51485776]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/ServiceConstants/AppDomain.swift": [1654709931, 532509803]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/ServiceConstants/Endpoints.swift": [1654710110, 514963626]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Session/Keeper.swift": [1654709856, 209620237]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Session/Session.swift": [1637913566, 20030021]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Session/Keeper.swift": [1654776457, 527095317]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Session/SessionKeeper.swift": [1654786221, 815159797]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Utilities/Utilities.swift": [1654707912, 865204811]

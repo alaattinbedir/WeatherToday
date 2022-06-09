@@ -57,10 +57,10 @@ struct AppFont {
     }
 
     enum Style: String {
-        case regular = "OpenSans"
-        case light = "OpenSans-Light"
-        case semiBold = "OpenSans-Semibold"
-        case bold = "OpenSans-Bold"
+        case regular = "Verdana"
+        case light = "Verdana-Light"
+        case semiBold = "Verdana-Semibold"
+        case bold = "Verdana-Bold"
     }
 }
 

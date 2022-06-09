@@ -512,7 +512,6 @@ SWIFT_CLASS("_TtC12WeatherToday9WeatherVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class CLLocationManager;
 @class CLLocation;
 

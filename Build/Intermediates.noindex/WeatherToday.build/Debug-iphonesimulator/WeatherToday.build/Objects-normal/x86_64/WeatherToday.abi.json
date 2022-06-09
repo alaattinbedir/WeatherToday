@@ -14908,13 +14908,64 @@
     },
     {
       "kind": "TypeDecl",
-      "name": "Session",
-      "printedName": "Session",
+      "name": "SessionKeeper",
+      "printedName": "SessionKeeper",
       "children": [
         {
           "kind": "Var",
-          "name": "Authorization",
-          "printedName": "Authorization",
+          "name": "shared",
+          "printedName": "shared",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SessionKeeper",
+              "printedName": "WeatherToday.SessionKeeper",
+              "usr": "s:12WeatherToday13SessionKeeperC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12WeatherToday13SessionKeeperC6sharedACvpZ",
+          "mangledName": "$s12WeatherToday13SessionKeeperC6sharedACvpZ",
+          "moduleName": "WeatherToday",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionKeeper",
+                  "printedName": "WeatherToday.SessionKeeper",
+                  "usr": "s:12WeatherToday13SessionKeeperC"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12WeatherToday13SessionKeeperC6sharedACvgZ",
+              "mangledName": "$s12WeatherToday13SessionKeeperC6sharedACvgZ",
+              "moduleName": "WeatherToday",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "loginUserName",
+          "printedName": "loginUserName",
           "children": [
             {
               "kind": "TypeNominal",
@@ -14932,8 +14983,8 @@
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday7SessionC13AuthorizationSSSgvp",
-          "mangledName": "$s12WeatherToday7SessionC13AuthorizationSSSgvp",
+          "usr": "s:12WeatherToday13SessionKeeperC13loginUserNameSSSgvp",
+          "mangledName": "$s12WeatherToday13SessionKeeperC13loginUserNameSSSgvp",
           "moduleName": "WeatherToday",
           "isOpen": true,
           "declAttributes": [
@@ -14964,8 +15015,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7SessionC13AuthorizationSSSgvg",
-              "mangledName": "$s12WeatherToday7SessionC13AuthorizationSSSgvg",
+              "usr": "s:12WeatherToday13SessionKeeperC13loginUserNameSSSgvg",
+              "mangledName": "$s12WeatherToday13SessionKeeperC13loginUserNameSSSgvg",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -15000,8 +15051,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7SessionC13AuthorizationSSSgvs",
-              "mangledName": "$s12WeatherToday7SessionC13AuthorizationSSSgvs",
+              "usr": "s:12WeatherToday13SessionKeeperC13loginUserNameSSSgvs",
+              "mangledName": "$s12WeatherToday13SessionKeeperC13loginUserNameSSSgvs",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -15022,8 +15073,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7SessionC13AuthorizationSSSgvM",
-              "mangledName": "$s12WeatherToday7SessionC13AuthorizationSSSgvM",
+              "usr": "s:12WeatherToday13SessionKeeperC13loginUserNameSSSgvM",
+              "mangledName": "$s12WeatherToday13SessionKeeperC13loginUserNameSSSgvM",
               "moduleName": "WeatherToday",
               "implicit": true,
               "isOpen": true,
@@ -15041,38 +15092,351 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "Session",
-              "printedName": "WeatherToday.Session",
-              "usr": "s:12WeatherToday7SessionC"
+              "name": "SessionKeeper",
+              "printedName": "WeatherToday.SessionKeeper",
+              "usr": "s:12WeatherToday13SessionKeeperC"
             }
           ],
           "declKind": "Constructor",
-          "usr": "s:12WeatherToday7SessionCACycfc",
-          "mangledName": "$s12WeatherToday7SessionCACycfc",
+          "usr": "s:12WeatherToday13SessionKeeperCACycfc",
+          "mangledName": "$s12WeatherToday13SessionKeeperCACycfc",
           "moduleName": "WeatherToday",
+          "implicit": true,
           "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:12WeatherToday13SessionKeeperC",
+      "mangledName": "$s12WeatherToday13SessionKeeperC",
+      "moduleName": "WeatherToday",
+      "isOpen": true,
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SessionStatus",
+      "printedName": "SessionStatus",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "undefined",
+          "printedName": "undefined",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.SessionStatus.Type) -> WeatherToday.SessionStatus",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionStatus",
+                  "printedName": "WeatherToday.SessionStatus",
+                  "usr": "s:12WeatherToday13SessionStatusO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.SessionStatus.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SessionStatus",
+                      "printedName": "WeatherToday.SessionStatus",
+                      "usr": "s:12WeatherToday13SessionStatusO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday13SessionStatusO9undefinedyA2CmF",
+          "mangledName": "$s12WeatherToday13SessionStatusO9undefinedyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 0
         },
         {
           "kind": "Var",
-          "name": "sharedInstance",
-          "printedName": "sharedInstance",
+          "name": "logined",
+          "printedName": "logined",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.SessionStatus.Type) -> WeatherToday.SessionStatus",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionStatus",
+                  "printedName": "WeatherToday.SessionStatus",
+                  "usr": "s:12WeatherToday13SessionStatusO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.SessionStatus.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SessionStatus",
+                      "printedName": "WeatherToday.SessionStatus",
+                      "usr": "s:12WeatherToday13SessionStatusO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday13SessionStatusO7loginedyA2CmF",
+          "mangledName": "$s12WeatherToday13SessionStatusO7loginedyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 1
+        },
+        {
+          "kind": "Var",
+          "name": "serviceSessionExpire",
+          "printedName": "serviceSessionExpire",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.SessionStatus.Type) -> WeatherToday.SessionStatus",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionStatus",
+                  "printedName": "WeatherToday.SessionStatus",
+                  "usr": "s:12WeatherToday13SessionStatusO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.SessionStatus.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SessionStatus",
+                      "printedName": "WeatherToday.SessionStatus",
+                      "usr": "s:12WeatherToday13SessionStatusO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday13SessionStatusO07serviceC6ExpireyA2CmF",
+          "mangledName": "$s12WeatherToday13SessionStatusO07serviceC6ExpireyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 2
+        },
+        {
+          "kind": "Var",
+          "name": "securityError",
+          "printedName": "securityError",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.SessionStatus.Type) -> WeatherToday.SessionStatus",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionStatus",
+                  "printedName": "WeatherToday.SessionStatus",
+                  "usr": "s:12WeatherToday13SessionStatusO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.SessionStatus.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SessionStatus",
+                      "printedName": "WeatherToday.SessionStatus",
+                      "usr": "s:12WeatherToday13SessionStatusO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday13SessionStatusO13securityErroryA2CmF",
+          "mangledName": "$s12WeatherToday13SessionStatusO13securityErroryA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 3
+        },
+        {
+          "kind": "Var",
+          "name": "logOffSession",
+          "printedName": "logOffSession",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.SessionStatus.Type) -> WeatherToday.SessionStatus",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionStatus",
+                  "printedName": "WeatherToday.SessionStatus",
+                  "usr": "s:12WeatherToday13SessionStatusO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.SessionStatus.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SessionStatus",
+                      "printedName": "WeatherToday.SessionStatus",
+                      "usr": "s:12WeatherToday13SessionStatusO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday13SessionStatusO06logOffC0yA2CmF",
+          "mangledName": "$s12WeatherToday13SessionStatusO06logOffC0yA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 4
+        },
+        {
+          "kind": "Var",
+          "name": "appTerminated",
+          "printedName": "appTerminated",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.SessionStatus.Type) -> WeatherToday.SessionStatus",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionStatus",
+                  "printedName": "WeatherToday.SessionStatus",
+                  "usr": "s:12WeatherToday13SessionStatusO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.SessionStatus.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SessionStatus",
+                      "printedName": "WeatherToday.SessionStatus",
+                      "usr": "s:12WeatherToday13SessionStatusO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday13SessionStatusO13appTerminatedyA2CmF",
+          "mangledName": "$s12WeatherToday13SessionStatusO13appTerminatedyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 5
+        },
+        {
+          "kind": "Var",
+          "name": "appBackgroundTimeout",
+          "printedName": "appBackgroundTimeout",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(WeatherToday.SessionStatus.Type) -> WeatherToday.SessionStatus",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SessionStatus",
+                  "printedName": "WeatherToday.SessionStatus",
+                  "usr": "s:12WeatherToday13SessionStatusO"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Metatype",
+                  "printedName": "WeatherToday.SessionStatus.Type",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SessionStatus",
+                      "printedName": "WeatherToday.SessionStatus",
+                      "usr": "s:12WeatherToday13SessionStatusO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "EnumElement",
+          "usr": "s:12WeatherToday13SessionStatusO20appBackgroundTimeoutyA2CmF",
+          "mangledName": "$s12WeatherToday13SessionStatusO20appBackgroundTimeoutyA2CmF",
+          "moduleName": "WeatherToday",
+          "fixedbinaryorder": 6
+        },
+        {
+          "kind": "Function",
+          "name": "__derived_enum_equals",
+          "printedName": "__derived_enum_equals(_:_:)",
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "Session",
-              "printedName": "WeatherToday.Session",
-              "usr": "s:12WeatherToday7SessionC"
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SessionStatus",
+              "printedName": "WeatherToday.SessionStatus",
+              "usr": "s:12WeatherToday13SessionStatusO"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SessionStatus",
+              "printedName": "WeatherToday.SessionStatus",
+              "usr": "s:12WeatherToday13SessionStatusO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12WeatherToday13SessionStatusO21__derived_enum_equalsySbAC_ACtFZ",
+          "mangledName": "$s12WeatherToday13SessionStatusO21__derived_enum_equalsySbAC_ACtFZ",
+          "moduleName": "WeatherToday",
+          "static": true,
+          "implicit": true,
+          "declAttributes": [
+            "Implements"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "hashValue",
+          "printedName": "hashValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
             }
           ],
           "declKind": "Var",
-          "usr": "s:12WeatherToday7SessionC14sharedInstanceACvpZ",
-          "mangledName": "$s12WeatherToday7SessionC14sharedInstanceACvpZ",
+          "usr": "s:12WeatherToday13SessionStatusO9hashValueSivp",
+          "mangledName": "$s12WeatherToday13SessionStatusO9hashValueSivp",
           "moduleName": "WeatherToday",
-          "static": true,
-          "isOpen": true,
-          "declAttributes": [
-            "AccessControl"
-          ],
+          "implicit": true,
           "accessors": [
             {
               "kind": "Accessor",
@@ -15081,29 +15445,73 @@
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "Session",
-                  "printedName": "WeatherToday.Session",
-                  "usr": "s:12WeatherToday7SessionC"
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:12WeatherToday7SessionC14sharedInstanceACvgZ",
-              "mangledName": "$s12WeatherToday7SessionC14sharedInstanceACvgZ",
+              "usr": "s:12WeatherToday13SessionStatusO9hashValueSivg",
+              "mangledName": "$s12WeatherToday13SessionStatusO9hashValueSivg",
               "moduleName": "WeatherToday",
-              "static": true,
-              "isOpen": true,
+              "implicit": true,
               "accessorKind": "get"
             }
           ]
+        },
+        {
+          "kind": "Function",
+          "name": "hash",
+          "printedName": "hash(into:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Hasher",
+              "printedName": "Swift.Hasher",
+              "paramValueOwnership": "InOut",
+              "usr": "s:s6HasherV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12WeatherToday13SessionStatusO4hash4intoys6HasherVz_tF",
+          "mangledName": "$s12WeatherToday13SessionStatusO4hash4intoys6HasherVz_tF",
+          "moduleName": "WeatherToday",
+          "implicit": true,
+          "funcSelfKind": "NonMutating"
         }
       ],
-      "declKind": "Class",
-      "usr": "s:12WeatherToday7SessionC",
-      "mangledName": "$s12WeatherToday7SessionC",
+      "declKind": "Enum",
+      "usr": "s:12WeatherToday13SessionStatusO",
+      "mangledName": "$s12WeatherToday13SessionStatusO",
       "moduleName": "WeatherToday",
-      "isOpen": true,
-      "declAttributes": [
-        "RawDocComment"
+      "isEnumExhaustive": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
       ]
     },
     {
