@@ -54,21 +54,6 @@ class BaseAPI: NSObject {
         return response
     }
     
-    func formatedErrorMessage(errorCode: String) -> NetworkError {
-        var error: NetworkError
-        
-        switch errorCode {
-        case "MAP_ERROR":
-            error = NetworkError(errorCode: errorCode, errorMessage: NSLocalizedString("Error mapping response", comment: "comment"))
-        case "BAD_RESPONSE":
-            error = NetworkError(errorCode: errorCode, errorMessage: NSLocalizedString("Error bad response", comment: "comment"))
-        default:
-            error = NetworkError(errorCode: errorCode, errorMessage: NSLocalizedString("An unknown error has occurred", comment: "comment"))
-        }
-        
-        return error
-    }
-
     func request<S: BaseMappable, F: NetworkError>(methotType: HTTPMethod,
                                                    endPoint: String,
                                                    params: ([String: Any])?,
