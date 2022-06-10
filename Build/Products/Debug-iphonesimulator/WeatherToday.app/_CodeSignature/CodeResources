@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		1NcbyiOBuuMTLcgWf6bpnf/PFZs=
+		X/j7CIxWo9EtyAISJVVwfGC4rBU=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		QybZHunf1LkQtMkNDqDUqY7zBak=
+		x96owka1nTRq4vIc9pTLr7/eXI8=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/IQKeyboardManagerSwift</key>
 		<data>
-		xktAtyrOFF0eSI9kTfiAd2jgWmg=
+		koiXmI64inmr0kR5TCWsbNjDXk0=
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/Lottie.framework/Lottie</key>
 		<data>
-		pMKmHeCRM15G1hSet1OzwUZLO2Q=
+		3a1O6W10h72bT5BzlIvQer56S/E=
 		</data>
 		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Frameworks/OHHTTPStubs.framework/OHHTTPStubs</key>
 		<data>
-		CA3IpY0augLTXy3pgE5yTNCVRUU=
+		HO1++bUujPmzkHzmjSRGIhXJ4Bs=
 		</data>
 		<key>Frameworks/OHHTTPStubs.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
 		<data>
-		Pm6XKlkBELUPCcnDgWvulp/aSdA=
+		V+Wo0YiZE8mSRA3qGwydN1jMi2w=
 		</data>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Frameworks/RxCocoa.framework/RxCocoa</key>
 		<data>
-		REHN5FNKzIHg+tAAjQR5CH5yx2Q=
+		RfTkvvmgQri39KVkG0edYk8AT+w=
 		</data>
 		<key>Frameworks/RxCocoa.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Frameworks/RxRelay.framework/RxRelay</key>
 		<data>
-		3tsxX5A/m959WIjWXii90YnVxQI=
+		BO0lYOWKQjbACjZCEyqK5zlo568=
 		</data>
 		<key>Frameworks/RxRelay.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Frameworks/RxSwift.framework/RxSwift</key>
 		<data>
-		dDfH1eGElcjMZ4C65hidWwq+4ys=
+		C6tYoA/fQHhtcGaEyvSAfVXOtw4=
 		</data>
 		<key>Frameworks/RxSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Frameworks/SnapKit.framework/SnapKit</key>
 		<data>
-		eHvBQKBWFNFEvs0Q5nVVSI1R6+Y=
+		49cMJ2hlLmxx8Du2+WBbms9tY/M=
 		</data>
 		<key>Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Frameworks/SwiftyJSON.framework/SwiftyJSON</key>
 		<data>
-		3rSRUaGS3CLDGeFS0528Dy3Q0Ug=
+		WZQ09GxFCB2y2waZDUEqmKBfUT0=
 		</data>
 		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -172,170 +172,6 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/DailyTableViewCell.nib</key>
-		<data>
-		N3FC/Ww9FSwMjTrBBNY+d8BmZco=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Alamofire.framework/Alamofire</key>
-		<data>
-		QybZHunf1LkQtMkNDqDUqY7zBak=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Alamofire.framework/Info.plist</key>
-		<data>
-		bFBCiwH44cwkJxWJuys2g4QmyKU=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
-		<data>
-		01tG6f283gnnrNVsvaky4x0WWRQ=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/IQKeyboardManagerSwift</key>
-		<data>
-		xktAtyrOFF0eSI9kTfiAd2jgWmg=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
-		<data>
-		8LyS7og3B0xf32HgKBr/pEkO3tY=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/_CodeSignature/CodeResources</key>
-		<data>
-		+Qae97Zx66p7vRSrNvhdPtJIKqc=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Lottie.framework/Info.plist</key>
-		<data>
-		iNOnnFU7gcQr+0HB347CvD+cDp4=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Lottie.framework/Lottie</key>
-		<data>
-		pMKmHeCRM15G1hSet1OzwUZLO2Q=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Z2WoiGpPRYOcxfFYvo7wFO5y6gA=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Nimble.framework/Info.plist</key>
-		<data>
-		uDvzoO07kbF/44OOhgg6JTgRou8=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Nimble.framework/Nimble</key>
-		<data>
-		yI4Er2TMIpJ+XrT4tgEOL/raO6s=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Nimble.framework/_CodeSignature/CodeResources</key>
-		<data>
-		MzlkGd3EARhXMlFhUOoPxMleNqA=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/OHHTTPStubs.framework/Info.plist</key>
-		<data>
-		IjmMLrT1q66IVTmDW+8yIb/7w0M=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/OHHTTPStubs.framework/OHHTTPStubs</key>
-		<data>
-		CA3IpY0augLTXy3pgE5yTNCVRUU=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/OHHTTPStubs.framework/_CodeSignature/CodeResources</key>
-		<data>
-		yTkN3BvVH5GwQu9cuKizKVKLcBI=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/ObjectMapper.framework/Info.plist</key>
-		<data>
-		soFPrjjrwfy8UGFH0syLJY13hyU=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/ObjectMapper.framework/ObjectMapper</key>
-		<data>
-		Pm6XKlkBELUPCcnDgWvulp/aSdA=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
-		<data>
-		rGxX7N1P8eh7OVgVnzJqZUULYdw=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Quick.framework/Info.plist</key>
-		<data>
-		o4QcZY53Qhcxg268xzoogjXyOJ4=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Quick.framework/Quick</key>
-		<data>
-		USSYpKxkUY4CpFAHsrmBZdmKt+A=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Quick.framework/_CodeSignature/CodeResources</key>
-		<data>
-		tyLN/zl+E1g6MxDCb8gkemfKOUA=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxCocoa.framework/Info.plist</key>
-		<data>
-		UkSGNlGKyEMMCcYdkn1a0vF+zPY=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxCocoa.framework/RxCocoa</key>
-		<data>
-		REHN5FNKzIHg+tAAjQR5CH5yx2Q=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxCocoa.framework/_CodeSignature/CodeResources</key>
-		<data>
-		dhqdlTBu9+uzDOi1MCJkLkZYhig=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxRelay.framework/Info.plist</key>
-		<data>
-		eWUhigGgA2vBAMU3PgX2KH74E0o=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxRelay.framework/RxRelay</key>
-		<data>
-		3tsxX5A/m959WIjWXii90YnVxQI=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxRelay.framework/_CodeSignature/CodeResources</key>
-		<data>
-		VwqLO1dOj5GVl/+8FRIEAmXi9d8=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxSwift.framework/Info.plist</key>
-		<data>
-		3V7ig6BFcyde4Yewa3qh1DBLRa8=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxSwift.framework/RxSwift</key>
-		<data>
-		dDfH1eGElcjMZ4C65hidWwq+4ys=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxSwift.framework/_CodeSignature/CodeResources</key>
-		<data>
-		iVAtsHdpQgfEKvhMrrIo0v3ZefI=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SnapKit.framework/Info.plist</key>
-		<data>
-		vx00PSbT0DJFvsUx6ZHyLohxxsk=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SnapKit.framework/SnapKit</key>
-		<data>
-		eHvBQKBWFNFEvs0Q5nVVSI1R6+Y=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
-		<data>
-		scz5TDAaZumrB8WmoiAzpbRKPNo=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SwiftyJSON.framework/Info.plist</key>
-		<data>
-		iJW+jw4BDVimL4F5ZfeGGECvWQU=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SwiftyJSON.framework/SwiftyJSON</key>
-		<data>
-		3rSRUaGS3CLDGeFS0528Dy3Q0Ug=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
-		<data>
-		9YMAtnQz+bPD5/AKRUvC4sxAtBY=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/Info.plist</key>
-		<data>
-		pEKZiOCsdtze5zH2+rOA50RZbE8=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/WeatherTodayTests</key>
-		<data>
-		dpBMvAn2vaNnvvYP9r3hEV784+Y=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/_CodeSignature/CodeResources</key>
-		<data>
-		8NSdpIQFA9mcQhJhaPUWkJCaWNc=
-		</data>
-		<key>PlugIns/WeatherTodayTests.xctest/success_weather_response.json</key>
-		<data>
-		XFpNraF4kfAGcYbpokJupIzS2IY=
-		</data>
 		<key>SecurityQuestionInfoPopUpVC.nib</key>
 		<data>
 		ruduUaoyAmVr8dG/+3+YmSCv3l0=
@@ -351,7 +187,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pa/DQH1NlFKqIDZK09jVWMlhLbX4To7USznve+5CnVk=
+			jVqHdTS6n/nKucND1oqg+rq9JT8U+JUUqN23eZcV3rE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -386,7 +222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			trIaJzyL4D4nqsIWYCYaVVoxKIw463H/exY1VTKBiZ8=
+			YkMucKPDB4S53wwICXYK0dp1Z4tWCYIGqzg295ojnv0=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
@@ -407,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ftUmr8/l4SQtu2HXVmCvqGabldZZ7VQ524jGRvfS+gM=
+			bwxcPZ/gJvJKOK0UP3UvgN1zTQm2a7cQULOweFjRl6o=
 			</data>
 		</dict>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
@@ -435,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MoNv+u+MebjLECYK/o1B7qfq0hWSrirOZtW2KvF/vSA=
+			glyoSgRRAE9qHNUa8MVRQkCKRDdEdFjbbcr+HAOrWDk=
 			</data>
 		</dict>
 		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
@@ -456,7 +292,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Up6/dH4dsrc3w/xDOn4KeePyBUicdbgynNP4GLHG3o=
+			O1QXe9Hq5q8uh7hs34JDXQXsHW6TaueQEafApMIs1IM=
 			</data>
 		</dict>
 		<key>Frameworks/OHHTTPStubs.framework/_CodeSignature/CodeResources</key>
@@ -477,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wW+/ohF4fbo4quZOOE3RePAVwrTS1k3JUMBxiCpc1qQ=
+			qJdXdhJRBubUjm8F8eVBLkeHsh1KntbZ3a/QuduB6nM=
 			</data>
 		</dict>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
@@ -498,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xM5vb1IavfgY8R75AdILtrqj43SL1f2IGVncD+fPA1Q=
+			gZHTQRBOJpJk7WUPq3zmM+pjTjS9IZBJvEHmFyMxi4s=
 			</data>
 		</dict>
 		<key>Frameworks/RxCocoa.framework/_CodeSignature/CodeResources</key>
@@ -519,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rRpr1IIX0K4CgrNWSkqu66gExzrPnrfofyhh2Lqy14Q=
+			w8nNaMJ4eU5BxbvcRz6QlkZMHuByrYPU5TZIXGpbbfA=
 			</data>
 		</dict>
 		<key>Frameworks/RxRelay.framework/_CodeSignature/CodeResources</key>
@@ -540,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			izUGjdP9IFNPS66XTLstnDMq1iiAKPFx+jB8bqGpZsY=
+			dnKaGm4w2tCbnlhIavkjA6At+rByM7y88Juzc8cN328=
 			</data>
 		</dict>
 		<key>Frameworks/RxSwift.framework/_CodeSignature/CodeResources</key>
@@ -561,7 +397,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zwv3v8GbyBDP3Uo6wfvFb6Yy1b0DYLrEKRjERN/8Wzc=
+			Z1Lre/M5NPDDVvw0adfWcGQCZrS/e85z3vyE3e2JzxQ=
 			</data>
 		</dict>
 		<key>Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
@@ -582,7 +418,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W0ij1XQ8cK2sdLeYmdSJScdQf+cPOoCbcO7aS4PSPbM=
+			gnwO6kEVLwMSLS9wI64Q+qPMfLVu+1+DkOmmIO0wYdo=
 			</data>
 		</dict>
 		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
@@ -625,293 +461,6 @@
 			<key>hash2</key>
 			<data>
 			4EAoQKEbCCyRTvnCzgF/DZih0FHNaOiDqf45kPZcSSM=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/DailyTableViewCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9G12LocyUuit2T0a7YzSpWAJKjG/PJx2LCJwthepNmE=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Alamofire.framework/Alamofire</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			trIaJzyL4D4nqsIWYCYaVVoxKIw463H/exY1VTKBiZ8=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Alamofire.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fyp7e92vC6N+7VWD02Xo5V4XRn75re0Jx5vb1j2fStk=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ip6BegJO++L8P/C+CSkrfcGw7RiRlTqJp+vqNtfY0mw=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/IQKeyboardManagerSwift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ftUmr8/l4SQtu2HXVmCvqGabldZZ7VQ524jGRvfS+gM=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GQ//bSscf0DnU1G0XFOjP40sn5JmZfwSYgeeTH9IlyA=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			djFmV4Tcx1BcCjeFShLcnthSFUoK094VObV+hKUFq2M=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Lottie.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZF1mPe4yPn8xH9qAjxhVxRed294JG02rleKCj6owCr8=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Lottie.framework/Lottie</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MoNv+u+MebjLECYK/o1B7qfq0hWSrirOZtW2KvF/vSA=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7KtRkthcXfQzcXTnR/Ak4V3r1cVLFLXAjr6zj10ucNA=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Nimble.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QHHRTdej8Bzydl5pq5EeqW/t7YgFtOhFUnEKT6PqUYM=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Nimble.framework/Nimble</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XNLGSbS4q7h3LNsfLEsgVJDjyvS483xaA+XnXciOszo=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Nimble.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qamWLU/8hrblQqnEa1+FsoINHFtxc2AA1Nn1VbypojQ=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/OHHTTPStubs.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Qjt6/CmX8ozHE2hQDKQERwqiHsFYmQvRaaffv5Lq8x8=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/OHHTTPStubs.framework/OHHTTPStubs</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7Up6/dH4dsrc3w/xDOn4KeePyBUicdbgynNP4GLHG3o=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/OHHTTPStubs.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Fpi72kzgdUid70narf0Fe3UU4F3pjPCFT8yILx8izGI=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/ObjectMapper.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			W6K3NQnxpN6zUM72t7N4LgKKysLxPQ1AmmcKVYKhU1k=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/ObjectMapper.framework/ObjectMapper</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wW+/ohF4fbo4quZOOE3RePAVwrTS1k3JUMBxiCpc1qQ=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WWrTZidh6DfWQVcWvS6iThFJhKrtQV8anl6QnnjpVNE=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Quick.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jPRC5rH0QKbxGf2smgF8Mcfw8ZwwNAzIf0mFLPkc/qY=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Quick.framework/Quick</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1l75uvssYlC3Stue51zkM067mxsOVJWsp9kioEQ9PwA=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/Quick.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Q7UQ5HizMj4rflfkBXmf6nzYC1wYOaeGtdPiUd1hvSs=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxCocoa.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uHqafl+4r66TWmCABtCGQeeaxNSY6iJ4E2pwsNfg7HA=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxCocoa.framework/RxCocoa</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xM5vb1IavfgY8R75AdILtrqj43SL1f2IGVncD+fPA1Q=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxCocoa.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			b3zUHNZwpdCaxlQdAJdQoyZmLMr8mo82TDpGG4ShpmM=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxRelay.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NBzLaRRZNY9NQSq9Yv+xsQIKWJgj50x3a4j1jLchR1k=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxRelay.framework/RxRelay</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rRpr1IIX0K4CgrNWSkqu66gExzrPnrfofyhh2Lqy14Q=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxRelay.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eYQ/ZHtprPELkdTHiV/Vdm5AMCb0MVU8TRWcV9CfhgQ=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxSwift.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nEBGVT15FIynx7/JMHN97u2NVHjnNV4NaYrPdw8ziD0=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxSwift.framework/RxSwift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			izUGjdP9IFNPS66XTLstnDMq1iiAKPFx+jB8bqGpZsY=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/RxSwift.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			evD6LlPcAMumbKTkx9jQvXwqjQi67n9db+G5ncC5mV8=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SnapKit.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3VVdYQNaJMNJ1nWGS1P2iDJdamhrBtpB/KJdUwtSprQ=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SnapKit.framework/SnapKit</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zwv3v8GbyBDP3Uo6wfvFb6Yy1b0DYLrEKRjERN/8Wzc=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			i2QAVwenFJhBVRK46fT2+o0NZele6hd2bOdXu8XgpLk=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SwiftyJSON.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pefwOQvGLy1/+iIxDKjjPJEiVYqyucuSArMtYL9+T8o=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SwiftyJSON.framework/SwiftyJSON</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			W0ij1XQ8cK2sdLeYmdSJScdQf+cPOoCbcO7aS4PSPbM=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eh1OVL0NwMngT1hPXq3rtY01wJQTnNc5C/U7pnjd4H8=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			K1HUj+EXW30QNWmYgT+7lFMkexSLUPr0SuN0WPtoi+0=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/WeatherTodayTests</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zRNC1OxSqbcFa+QbwmVinJxtQ5rGblE6/R259N/66qM=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pGDCAdS3yRAMboZ056JgZvsKikE44NqvvbfO65bJQ6o=
-			</data>
-		</dict>
-		<key>PlugIns/WeatherTodayTests.xctest/success_weather_response.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GegkeLkSk5EesotcG5FFyXsMC4oHdTaeOwjV3ZcpEus=
 			</data>
 		</dict>
 		<key>SecurityQuestionInfoPopUpVC.nib</key>

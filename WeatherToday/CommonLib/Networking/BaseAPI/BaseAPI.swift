@@ -11,16 +11,34 @@ import Alamofire
 import SwiftyJSON
 import ObjectMapper
 
-class NetworkError: Error {
+class ErrorMessage: NSObject, NetworkError, Mappable {
     var errorCode: String?
-    var errorMessage: String?
+    var message: String?
+    var httpStatus: Int?
     
-    init() {
+    required init?(map _: Map) {
+        // Empty function body
     }
-    
-    init(errorCode: String?, errorMessage: String?) {
+
+    override init() {
+        // Empty function body
+    }
+
+    convenience init(errorCode: String?, errorMessage: String?) {
+        self.init()
         self.errorCode = errorCode
-        self.errorMessage = errorMessage
+        self.message = errorMessage
+    }
+
+    required init(with error: NetworkErrorType, httpStatus: HTTPStatusCode?) {
+        super.init()
+        message = error.localizedDescription
+        self.httpStatus = httpStatus?.rawValue
+    }
+
+    func mapping(map: Map) {
+        message <- map["Message"]
+        errorCode <- map["ErrorCode"]
     }
 }
 
@@ -54,7 +72,7 @@ class BaseAPI: NSObject {
         return response
     }
     
-    func request<S: BaseMappable, F: NetworkError>(methotType: HTTPMethod,
+    func request<S: BaseMappable, F: ErrorMessage>(methotType: HTTPMethod,
                                                    endPoint: String,
                                                    params: ([String: Any])?,
                                                    baseURL: String = Keeper.shared.currentEnvironment.domainUrl,
@@ -64,7 +82,7 @@ class BaseAPI: NSObject {
                                                    failed:@escaping (F) -> Void) {
 
         guard networkIsReachable() else {
-            if let myError = NetworkError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
+            if let myError = ErrorMessage(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
                 failed(myError)
             }
             return
@@ -99,7 +117,7 @@ class BaseAPI: NSObject {
     // MARK: Handle Default Json Response
 
     // swiftlint:disable cyclomatic_complexity
-    private func handleJsonResponse<S: BaseMappable, F: NetworkError>(dataRequest: DataRequest,
+    private func handleJsonResponse<S: BaseMappable, F: ErrorMessage>(dataRequest: DataRequest,
                                                                       succeed: @escaping (S) -> Void,
                                                                       failed: @escaping (F) -> Void) {
         dataRequest.responseJSON { [weak self] response in
@@ -122,7 +140,7 @@ class BaseAPI: NSObject {
 
             if response.result.isFailure {
                 if let error = response.result.error {
-                    if let myError = NetworkError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription) as? F {
+                    if let myError = ErrorMessage(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription) as? F {
                         failed(myError)
                     }
                 }
@@ -158,16 +176,16 @@ class BaseAPI: NSObject {
         Logger.shared.w(tag: "handleSuccessfullResponseObject", "Mapper problem", urlString, error: jsonResponse.result.error)
     }
 
-    private func handleFailureResponseObject<F: NetworkError>(dataRequest: DataRequest,
+    private func handleFailureResponseObject<F: ErrorMessage>(dataRequest: DataRequest,
                                                              jsonResponse: DataResponse<Any>,
                                                              failed: @escaping (F) -> Void) {
         let urlString = dataRequest.request?.urlRequest?.url?.absoluteString ?? "noUrl"
 
-        let defaultError = NetworkError(errorCode: "NETWORK_ERROR", errorMessage: jsonResponse.result.error?.localizedDescription) as? F
+        let defaultError = ErrorMessage(errorCode: "NETWORK_ERROR", errorMessage: jsonResponse.result.error?.localizedDescription) as? F
 
         guard jsonResponse.result.isSuccess else {
             Logger.shared.w(tag: "handleFailureResponseObject", "not success", urlString, error: jsonResponse.result.error)
-            if F.self == NetworkError.self, let error = defaultError {
+            if F.self == ErrorMessage.self, let error = defaultError {
                 failed(error)
             }
             return
@@ -175,7 +193,7 @@ class BaseAPI: NSObject {
 
         guard let jsonValue = jsonResponse.result.value else {
             Logger.shared.w(tag: "handleFailureResponseObject", "nil jsonValue", urlString, error: jsonResponse.result.error)
-            if F.self == NetworkError.self, let error = defaultError {
+            if F.self == ErrorMessage.self, let error = defaultError {
                 failed(error)
             }
             return
@@ -183,7 +201,7 @@ class BaseAPI: NSObject {
 
         guard let jsonDict = jsonValue as? [String: Any] else {
             Logger.shared.w(tag: "handleFailureResponseObject", "not dict jsonValue", urlString, error: jsonResponse.result.error)
-            if F.self == NetworkError.self, let error = defaultError {
+            if F.self == ErrorMessage.self, let error = defaultError {
                 failed(error)
             }
             return
@@ -198,7 +216,7 @@ class BaseAPI: NSObject {
 //            return
 //        }
 
-        if F.self == NetworkError.self, let error = defaultError {
+        if F.self == ErrorMessage.self, let error = defaultError {
             failed(error)
         }
 

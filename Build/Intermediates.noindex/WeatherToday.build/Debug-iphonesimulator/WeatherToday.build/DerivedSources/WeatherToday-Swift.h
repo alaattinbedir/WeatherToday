@@ -317,6 +317,20 @@ SWIFT_CLASS("_TtC12WeatherToday18DailyTableViewCell")
 @end
 
 
+
+SWIFT_CLASS("_TtC12WeatherToday13EmptyResponse")
+@interface EmptyResponse : NSObject
+@property (nonatomic) NSInteger statusCode;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday12ErrorMessage")
+@interface ErrorMessage : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12WeatherToday21ForecastTableViewCell")
 @interface ForecastTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dayLabel;
@@ -326,6 +340,7 @@ SWIFT_CLASS("_TtC12WeatherToday21ForecastTableViewCell")
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 SWIFT_CLASS("_TtC12WeatherToday24HourlyCollectionViewCell")
@@ -361,6 +376,16 @@ SWIFT_CLASS("_TtC12WeatherToday16LandingWelcomeVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@class CLLocationManager;
+@class CLLocation;
+
+SWIFT_CLASS("_TtC12WeatherToday17MDLocationManager")
+@interface MDLocationManager : NSObject <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)_ didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)locationManager:(CLLocationManager * _Nonnull)_ didFailWithError:(NSError * _Nonnull)_;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class UIPanGestureRecognizer;
 @class UIGestureRecognizer;
@@ -467,9 +492,11 @@ SWIFT_CLASS("_TtC12WeatherToday27SecurityQuestionInfoPopUpVC")
 
 
 
+
 @interface UINavigationController (SWIFT_EXTENSION(WeatherToday))
 @property (nonatomic, readonly, strong) UIViewController * _Nullable childViewControllerForStatusBarStyle;
 @end
+
 
 
 
@@ -494,6 +521,17 @@ SWIFT_CLASS("_TtC12WeatherToday27SecurityQuestionInfoPopUpVC")
 - (void)customBackButtonPressed;
 @end
 
+@class NSURLSession;
+@class NSURLAuthenticationChallenge;
+@class NSURLCredential;
+
+SWIFT_CLASS("_TtC12WeatherToday27URLSessionSSLPinnigDelegate")
+@interface URLSessionSSLPinnigDelegate : NSObject <NSURLSessionDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)_ didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UITableView;
 @class UICollectionView;
 
@@ -512,8 +550,6 @@ SWIFT_CLASS("_TtC12WeatherToday9WeatherVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocationManager;
-@class CLLocation;
 
 @interface WeatherVC (SWIFT_EXTENSION(WeatherToday)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;

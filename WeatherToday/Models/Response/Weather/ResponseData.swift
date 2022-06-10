@@ -14,7 +14,7 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 import Foundation
 import ObjectMapper
 
-struct Data : Mappable {
+public struct ResponseData : Mappable {
 	var time : Int?
 	var summary : String?
 	var icon : String?
@@ -56,11 +56,11 @@ struct Data : Mappable {
 	var apparentTemperatureMax : Double?
 	var apparentTemperatureMaxTime : Int?
 
-	init?(map: Map) {
+	public init?(map: Map) {
 
 	}
 
-	mutating func mapping(map: Map) {
+	public mutating func mapping(map: Map) {
 
 		time <- map["time"]
 		summary <- map["summary"]

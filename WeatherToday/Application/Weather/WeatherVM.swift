@@ -23,18 +23,33 @@ class WeatherVM {
 extension WeatherVM {
     func fetchCurrentWeather() {
         // Get current weather
-        WeatherApi().fetchWeather(latitude: currentLocation.latitude,
-                                  longitude: currentLocation.longitude,
-                                   succeed: { [weak self] (weather) in
-            guard let self = self else { return }
+//        WeatherApi().fetchWeather(latitude: currentLocation.latitude,
+//                                  longitude: currentLocation.longitude,
+//                                   succeed: { [weak self] (weather) in
+//            guard let self = self else { return }
+//
+//            self.weather.accept(weather)
+//            self.currentDate.accept(weather.currently?.time)
+//            self.weatherType.accept(weather.currently?.summary)
+//            self.currentCityTemp.accept(weather.currently?.temperature)
+//
+//        }, failed: { (error) in
+//            print(error)
+//        })
 
-            self.weather.accept(weather)
-            self.currentDate.accept(weather.currently?.time)
-            self.weatherType.accept(weather.currently?.summary)
-            self.currentCityTemp.accept(weather.currently?.temperature)
+        WeatherEP(latitude: currentLocation.latitude,
+                  longitude: currentLocation.longitude)
+            .execute()
+            .onSucceeded { [weak self] (weather) in
+                guard let self = self else { return }
 
-        }, failed: { (error) in
-            print(error)
-        })
+                self.weather.accept(weather)
+                self.currentDate.accept(weather.currently?.time)
+                self.weatherType.accept(weather.currently?.summary)
+                self.currentCityTemp.accept(weather.currently?.temperature)
+            }
+            .onError { (error) in
+                    print(error)
+            }
     }
 }
