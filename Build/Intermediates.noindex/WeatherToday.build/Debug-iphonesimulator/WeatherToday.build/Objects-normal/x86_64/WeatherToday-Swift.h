@@ -318,6 +318,7 @@ SWIFT_CLASS("_TtC12WeatherToday18DailyTableViewCell")
 
 
 
+
 SWIFT_CLASS("_TtC12WeatherToday13EmptyResponse")
 @interface EmptyResponse : NSObject
 @property (nonatomic) NSInteger statusCode;
@@ -531,6 +532,7 @@ SWIFT_CLASS("_TtC12WeatherToday27URLSessionSSLPinnigDelegate")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 @class UITableView;
 @class UICollectionView;
