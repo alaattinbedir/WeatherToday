@@ -11,7 +11,7 @@ class WeatherEP: Endpoint, MappableEndpointExecuter {
     typealias SuccessType = WeatherResponse
     typealias ErrorType = ErrorMessage
 
-    var path: String = "{0},{1}"
+    var path: String = Endpoints.weather
     let method: HTTPMethodEnum = .get
 
     init(latitude: Double, longitude: Double) {
