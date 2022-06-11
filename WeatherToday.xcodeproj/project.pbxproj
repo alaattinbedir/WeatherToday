@@ -12,7 +12,6 @@
 		6495316ADE1ECE38990FA360 /* libPods-WeatherTodayUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FA4C4D0ED75BB4CEC96893 /* libPods-WeatherTodayUITests.a */; };
 		84090798284FBF3600483264 /* LandingWelcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84090797284FBF3600483264 /* LandingWelcome.storyboard */; };
 		8409079A284FBF5900483264 /* LandingWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84090799284FBF5900483264 /* LandingWelcomeVC.swift */; };
-		8409079D284FC9F200483264 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409079C284FC9F200483264 /* AppColor.swift */; };
 		840907A0284FCA3A00483264 /* UiColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409079F284FCA3A00483264 /* UiColor+AppColors.swift */; };
 		840907A4284FCD0F00483264 /* NSNotification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907A3284FCD0F00483264 /* NSNotification+Extension.swift */; };
 		840907AA284FD7D700483264 /* LandingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840907A9284FD7D700483264 /* LandingVC.xib */; };
@@ -25,7 +24,6 @@
 		840907C62850AA8600483264 /* SecurityQuestionInfoPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840907C52850AA8600483264 /* SecurityQuestionInfoPopUpVC.xib */; };
 		840907CA2850BEB100483264 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907C92850BEB100483264 /* SCLAlertView.swift */; };
 		840907CC2850BED500483264 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907CB2850BED500483264 /* SCLExtensions.swift */; };
-		840907CE2850BF2700483264 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907CD2850BF2700483264 /* AppFont.swift */; };
 		840907D12850BF8C00483264 /* UIFont+DeviceSpesific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907D02850BF8C00483264 /* UIFont+DeviceSpesific.swift */; };
 		840907D42850C05700483264 /* ScreenActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907D32850C05700483264 /* ScreenActivityIndicator.swift */; };
 		840907D62850C0EA00483264 /* ActivityIndicatorLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907D52850C0EA00483264 /* ActivityIndicatorLoadableView.swift */; };
@@ -250,8 +248,6 @@
 		84A961FD2853BD26002C2A17 /* JanusTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A961FB2853BD26002C2A17 /* JanusTransactions.swift */; };
 		84A962062853EB37002C2A17 /* AppStringResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A962052853EB37002C2A17 /* AppStringResources.swift */; };
 		84A962072853EB37002C2A17 /* AppStringResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A962052853EB37002C2A17 /* AppStringResources.swift */; };
-		84A962092853EED4002C2A17 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A962082853EED4002C2A17 /* AppConstants.swift */; };
-		84A9620A2853EED4002C2A17 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A962082853EED4002C2A17 /* AppConstants.swift */; };
 		84DCFB4E28521A0800EE18F4 /* Keeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84189B67285113100018974D /* Keeper.swift */; };
 		84DCFB4F28521A1200EE18F4 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84189B63285110990018974D /* MimeType.swift */; };
 		84DCFB5128521A6500EE18F4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907E02850C39100483264 /* Logger.swift */; };
@@ -299,8 +295,6 @@
 		84DCFB7C28523DC100EE18F4 /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383E62284E8DD30048AA21 /* LandingVC.swift */; };
 		84DCFB7D28523DD600EE18F4 /* AppDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84189B6A285113C50018974D /* AppDomain.swift */; };
 		84DCFB7E28523DDA00EE18F4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84189B6C2851150F0018974D /* Endpoints.swift */; };
-		84DCFB7F28523DEA00EE18F4 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409079C284FC9F200483264 /* AppColor.swift */; };
-		84DCFB8028523DF000EE18F4 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840907CD2850BF2700483264 /* AppFont.swift */; };
 		84DCFB822852919900EE18F4 /* BaseApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCFB812852919900EE18F4 /* BaseApiData.swift */; };
 		84DCFB832852919900EE18F4 /* BaseApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCFB812852919900EE18F4 /* BaseApiData.swift */; };
 		84DF99D02853969F0097B022 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF99CF2853969F0097B022 /* Endpoint.swift */; };
@@ -382,7 +376,6 @@
 		5AFA8213D000C277AF1E290A /* Pods-WeatherToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherToday.release.xcconfig"; path = "Target Support Files/Pods-WeatherToday/Pods-WeatherToday.release.xcconfig"; sourceTree = "<group>"; };
 		84090797284FBF3600483264 /* LandingWelcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingWelcome.storyboard; sourceTree = "<group>"; };
 		84090799284FBF5900483264 /* LandingWelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingWelcomeVC.swift; sourceTree = "<group>"; };
-		8409079C284FC9F200483264 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		8409079F284FCA3A00483264 /* UiColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiColor+AppColors.swift"; sourceTree = "<group>"; };
 		840907A3284FCD0F00483264 /* NSNotification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extension.swift"; sourceTree = "<group>"; };
 		840907A9284FD7D700483264 /* LandingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingVC.xib; sourceTree = "<group>"; };
@@ -395,7 +388,6 @@
 		840907C52850AA8600483264 /* SecurityQuestionInfoPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecurityQuestionInfoPopUpVC.xib; sourceTree = "<group>"; };
 		840907C92850BEB100483264 /* SCLAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		840907CB2850BED500483264 /* SCLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
-		840907CD2850BF2700483264 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		840907D02850BF8C00483264 /* UIFont+DeviceSpesific.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+DeviceSpesific.swift"; sourceTree = "<group>"; };
 		840907D32850C05700483264 /* ScreenActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenActivityIndicator.swift; sourceTree = "<group>"; };
 		840907D52850C0EA00483264 /* ActivityIndicatorLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorLoadableView.swift; sourceTree = "<group>"; };
@@ -588,7 +580,6 @@
 		84A961F52853B8C5002C2A17 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
 		84A961FB2853BD26002C2A17 /* JanusTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanusTransactions.swift; sourceTree = "<group>"; };
 		84A962052853EB37002C2A17 /* AppStringResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStringResources.swift; sourceTree = "<group>"; };
-		84A962082853EED4002C2A17 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		84DCFB812852919900EE18F4 /* BaseApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiData.swift; sourceTree = "<group>"; };
 		84DF99CF2853969F0097B022 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		84DF99D2285396F10097B022 /* HTTPMethodEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodEnum.swift; sourceTree = "<group>"; };
@@ -698,16 +689,6 @@
 				84090797284FBF3600483264 /* LandingWelcome.storyboard */,
 			);
 			path = LandingWelcome;
-			sourceTree = "<group>";
-		};
-		8409079B284FC9DC00483264 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				8409079C284FC9F200483264 /* AppColor.swift */,
-				840907CD2850BF2700483264 /* AppFont.swift */,
-				84A962082853EED4002C2A17 /* AppConstants.swift */,
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		8409079E284FCA1E00483264 /* UIColor */ = {
@@ -1487,7 +1468,6 @@
 			isa = PBXGroup;
 			children = (
 				84A379C92750CFED0071CA81 /* Response */,
-				84A961F42853B8B5002C2A17 /* Common */,
 				84A379C82750CFE00071CA81 /* Request */,
 			);
 			path = Models;
@@ -1503,6 +1483,7 @@
 		84A379C92750CFED0071CA81 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				84A961F42853B8B5002C2A17 /* Common */,
 				84A379D92750DADB0071CA81 /* Weather */,
 			);
 			path = Response;
@@ -1540,7 +1521,6 @@
 				84A961CE2853AEF3002C2A17 /* ObjectConverter */,
 				84A961C32853AC55002C2A17 /* SystemServices */,
 				84189B662851129B0018974D /* Utilities */,
-				8409079B284FC9DC00483264 /* Constants */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -2186,7 +2166,6 @@
 				84A379E72750DD5D0071CA81 /* DailyTableViewCell.swift in Sources */,
 				846FB4362854BD5E0027E5A5 /* SharingHelper.swift in Sources */,
 				840907CC2850BED500483264 /* SCLExtensions.swift in Sources */,
-				84A962092853EED4002C2A17 /* AppConstants.swift in Sources */,
 				84189B68285113100018974D /* Keeper.swift in Sources */,
 				846FB3CA285404C60027E5A5 /* AppFile.swift in Sources */,
 				84DF99F928539B740097B022 /* MappableEndpointExecuter.swift in Sources */,
@@ -2209,7 +2188,6 @@
 				840907D42850C05700483264 /* ScreenActivityIndicator.swift in Sources */,
 				846FB3F62854B78A0027E5A5 /* TraficPenaltySerialNumberValidator.swift in Sources */,
 				84A961FC2853BD26002C2A17 /* JanusTransactions.swift in Sources */,
-				8409079D284FC9F200483264 /* AppColor.swift in Sources */,
 				84189B6D2851150F0018974D /* Endpoints.swift in Sources */,
 				84DF99E7285398770097B022 /* NetworkErrorType.swift in Sources */,
 				84A379E62750DD5D0071CA81 /* HourlyCollectionViewCell.swift in Sources */,
@@ -2379,7 +2357,6 @@
 				846FB3E82854B68A0027E5A5 /* EmailValidator.swift in Sources */,
 				84A961E42853B54A002C2A17 /* ObservableNetworkActivityInterceptor.swift in Sources */,
 				84A379D72750DABF0071CA81 /* WeatherResponse.swift in Sources */,
-				840907CE2850BF2700483264 /* AppFont.swift in Sources */,
 				846FB42E2854BC820027E5A5 /* SpeechPermission.swift in Sources */,
 				846FB3F22854B75D0027E5A5 /* TraficPenaltyDocumentDateValidator.swift in Sources */,
 				8476CB58284DE45F006E915F /* PageNavigator.swift in Sources */,
@@ -2412,7 +2389,6 @@
 				84DCFB5B28523CF900EE18F4 /* WarningManager.swift in Sources */,
 				84268CE22848B6D1003D52EE /* QuickSpec+Await.swift in Sources */,
 				846FB46A2854C5BD0027E5A5 /* URLQueryBuilder.swift in Sources */,
-				84DCFB8028523DF000EE18F4 /* AppFont.swift in Sources */,
 				84DCFB5328521AC800EE18F4 /* BaseViewController.swift in Sources */,
 				84A961F32853B86B002C2A17 /* MappableEndpointExecuter+ObjectMapper.swift in Sources */,
 				84DF9A0E28539CD90097B022 /* ResponseInterceptor.swift in Sources */,
@@ -2427,7 +2403,6 @@
 				84DCFB5F28523D1A00EE18F4 /* URLQueryValueRepresentable.swift in Sources */,
 				84DF9A212853A1000097B022 /* UrlSessionNetworkDispatcher.swift in Sources */,
 				84DCFB6328523D3900EE18F4 /* String+Merge.swift in Sources */,
-				84A9620A2853EED4002C2A17 /* AppConstants.swift in Sources */,
 				84DCFB4F28521A1200EE18F4 /* MimeType.swift in Sources */,
 				84DCFB5728521AEC00EE18F4 /* ActivityIndicatorPresenter.swift in Sources */,
 				84A961CC2853AE57002C2A17 /* ResponseLoggerInterceptor.swift in Sources */,
@@ -2501,7 +2476,6 @@
 				84DCFB6228523D3500EE18F4 /* String+Utils.swift in Sources */,
 				84DCFB7228523D8800EE18F4 /* RoutingEnum+ControllerType.swift in Sources */,
 				84DF9A1828539FB30097B022 /* Endpoint+BuildRequest.swift in Sources */,
-				84DCFB7F28523DEA00EE18F4 /* AppColor.swift in Sources */,
 				84DF99FE28539BD30097B022 /* NetworkResponseObserver.swift in Sources */,
 				84DCFB5928521AF700EE18F4 /* SCLAlertView.swift in Sources */,
 				84DCFB6828523D5400EE18F4 /* UiColor+AppColors.swift in Sources */,
