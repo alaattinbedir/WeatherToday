@@ -152,6 +152,9 @@
 		846FB4AD2854DAEE0027E5A5 /* PhotosHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB4AC2854DAEE0027E5A5 /* PhotosHelper.swift */; };
 		846FB4B02854DB8B0027E5A5 /* GenerateQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB4AF2854DB8B0027E5A5 /* GenerateQR.swift */; };
 		846FB4B32854DC2B0027E5A5 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB4B22854DC2B0027E5A5 /* AnimationHelper.swift */; };
+		846FB4B6285535290027E5A5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB4B5285535290027E5A5 /* AppColor.swift */; };
+		846FB4B8285535530027E5A5 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB4B7285535530027E5A5 /* AppConstants.swift */; };
+		846FB4BA2855358C0027E5A5 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB4B92855358C0027E5A5 /* AppFont.swift */; };
 		8476CB53284DE2C7006E915F /* RoutingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB52284DE2C7006E915F /* RoutingEnum.swift */; };
 		8476CB55284DE3B4006E915F /* RoutingEnum+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB54284DE3B4006E915F /* RoutingEnum+Navigation.swift */; };
 		8476CB58284DE45F006E915F /* PageNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB57284DE45F006E915F /* PageNavigator.swift */; };
@@ -515,6 +518,9 @@
 		846FB4AC2854DAEE0027E5A5 /* PhotosHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosHelper.swift; sourceTree = "<group>"; };
 		846FB4AF2854DB8B0027E5A5 /* GenerateQR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQR.swift; sourceTree = "<group>"; };
 		846FB4B22854DC2B0027E5A5 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		846FB4B5285535290027E5A5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		846FB4B7285535530027E5A5 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		846FB4B92855358C0027E5A5 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		8476CB52284DE2C7006E915F /* RoutingEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingEnum.swift; sourceTree = "<group>"; };
 		8476CB54284DE3B4006E915F /* RoutingEnum+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutingEnum+Navigation.swift"; sourceTree = "<group>"; };
 		8476CB57284DE45F006E915F /* PageNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNavigator.swift; sourceTree = "<group>"; };
@@ -1246,6 +1252,16 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		846FB4B42855350B0027E5A5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				846FB4B5285535290027E5A5 /* AppColor.swift */,
+				846FB4B7285535530027E5A5 /* AppConstants.swift */,
+				846FB4B92855358C0027E5A5 /* AppFont.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		8476CB50284DE2A5006E915F /* Routing */ = {
 			isa = PBXGroup;
 			children = (
@@ -1408,6 +1424,7 @@
 				84A379C42750CE8C0071CA81 /* AppDelegate */,
 				84A379CC2750D09D0071CA81 /* Application */,
 				8476CB63284DEB2A006E915F /* CommonUi */,
+				846FB4B42855350B0027E5A5 /* Constants */,
 				84A379C72750CFD30071CA81 /* Models */,
 				84090793284FBC6100483264 /* Networking */,
 				84A379C52750CEFF0071CA81 /* Resources */,
@@ -2214,6 +2231,7 @@
 				84A379D42750DABF0071CA81 /* Currently.swift in Sources */,
 				846FB47B2854C8900027E5A5 /* HTTPURLResponse+Validation.swift in Sources */,
 				84A379EC2750DD820071CA81 /* Utilities.swift in Sources */,
+				846FB4B6285535290027E5A5 /* AppColor.swift in Sources */,
 				846FB48C2854D1000027E5A5 /* NetworkErrorType+ResourceMessage.swift in Sources */,
 				84DF9A0428539C5B0097B022 /* NetworkDispatchResult.swift in Sources */,
 				840907D62850C0EA00483264 /* ActivityIndicatorLoadableView.swift in Sources */,
@@ -2259,6 +2277,7 @@
 				84FB7827275107000050E85D /* WeatherApi.swift in Sources */,
 				840907A0284FCA3A00483264 /* UiColor+AppColors.swift in Sources */,
 				84DF9A0D28539CD90097B022 /* ResponseInterceptor.swift in Sources */,
+				846FB4BA2855358C0027E5A5 /* AppFont.swift in Sources */,
 				84A961AB2853A903002C2A17 /* Endpoint+Janus.swift in Sources */,
 				84DF99FD28539BD30097B022 /* NetworkResponseObserver.swift in Sources */,
 				84DF9A0128539C2C0097B022 /* NetworkDispatcher.swift in Sources */,
@@ -2278,6 +2297,7 @@
 				84A961CB2853AE57002C2A17 /* ResponseLoggerInterceptor.swift in Sources */,
 				846FB3F82854B7A30027E5A5 /* VknValidator.swift in Sources */,
 				8476CB6C284DEF01006E915F /* ModalTransitionAnimator.swift in Sources */,
+				846FB4B8285535530027E5A5 /* AppConstants.swift in Sources */,
 				84A961DB2853B371002C2A17 /* ObservableNetworkActivity.swift in Sources */,
 				84DF9A2B2853A3200097B022 /* URL+Extension.swift in Sources */,
 				84A961F62853B8C5002C2A17 /* EmptyResponse.swift in Sources */,

@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "74066189cfebc298267c0f2c820677d11fa0a2fbd8bb1e13f6c7986f45ff9b90"
-build_start_time: [1654957277, 45628070]
-build_end_time: [1654957278, 874829053]
+build_start_time: [1654980221, 196370124]
+build_end_time: [1654980224, 271893024]
 inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/AppDelegate/AppDelegate.swift": [1654956114, 727730274]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/AppDelegate/SceneDelegate.swift": [1654706877, 182742118]
@@ -278,7 +278,10 @@ inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonUi/BaseNC/BaseNC.swift": [1654785552, 322542190]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonUi/BaseVC/BaseVC.swift": [1654804059, 198849201]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonUi/BaseVC/BaseViewController.swift": [1654804045, 732144355]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Common/EmptyResponse.swift": [1654882642, 238072872]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Constants/AppColor.swift": [1654980079, 579112291]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Constants/AppConstants.swift": [1654980057, 889132976]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Constants/AppFont.swift": [1654980219, 783745288]
+  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Common/EmptyResponse.swift": [1654882642, 238072872]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Weather/Currently.swift": [1637928385, 655685901]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Weather/Daily.swift": [1654876394, 706934452]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Weather/Hourly.swift": [1654876394, 718919515]
@@ -306,9 +309,6 @@ inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Resources/Enums/ImageResource.swift": [1654955568, 47380924]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Resources/StringResources/AppStringResources.swift": [1654896512, 985786437]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Animation/AnimationHelper.swift": [1654957275, 773591041]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppColor.swift": [1654786213, 855891466]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppConstants.swift": [1654948900, 56877851]
-  "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppFont.swift": [1654786053, 51485776]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/ObjectConverter/ObjectConverter.swift": [1654880165, 189869403]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Persistence/PersistencyKey.swift": [1654901665, 317949771]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Photo/PhotosHelper.swift": [1654956942, 839892387]

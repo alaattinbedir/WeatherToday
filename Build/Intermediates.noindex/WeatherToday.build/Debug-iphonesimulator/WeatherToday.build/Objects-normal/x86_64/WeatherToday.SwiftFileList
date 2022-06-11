@@ -2,7 +2,6 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/DailyCell/DailyTableViewCell.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Utils/Share/SharingHelper.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/ImportedFrameworks/SCLAlertView/SCLExtensions.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppConstants.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Networking/Session/Keeper.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Store/AppFileManager/AppFile.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Mapper/MappableEndpointExecuter/MappableEndpointExecuter.swift
@@ -25,7 +24,6 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Components/ScreenActivityIndicator/ScreenActivityIndicator.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Validators/TraficPenaltySerialNumberValidator.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Networking/Janus/Client/JanusTransactions.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppColor.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Networking/ServiceConstants/Endpoints.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Error/NetworkErrorType.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/HourlyCell/HourlyCollectionViewCell.swift
@@ -52,6 +50,7 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Weather/Currently.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Http/Response/HTTPURLResponse+Validation.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Utilities/Utilities.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Constants/AppColor.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Networking/Janus/Error/NetworkErrorType+ResourceMessage.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Dispatcher/NetworkDispatchResult.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Components/ScreenActivityIndicator/ActivityIndicatorLoadableView.swift
@@ -97,6 +96,7 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Networking/APIs/Weather/WeatherApi.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Extensions/UIColor/UiColor+AppColors.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Interceptor/Response/ResponseInterceptor.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Constants/AppFont.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Networking/Janus/Client/Endpoint+Janus.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Http/Response/NetworkResponseObserver.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Dispatcher/NetworkDispatcher.swift
@@ -116,9 +116,10 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Interceptor/Response/ResponseLoggerInterceptor.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Validators/VknValidator.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Transitioning/ModalTransitioning/ModalTransitionAnimator.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Constants/AppConstants.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Dispatcher/ObservableNetworkActivity.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Extensions/URL/URL+Extension.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Common/EmptyResponse.swift
+/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Common/EmptyResponse.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Validators/AmountValidator.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Components/ScreenActivityIndicator/ActivityIndicatorPresenter.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Application/Weather/WeatherVM.swift
@@ -195,7 +196,6 @@
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Validators/EmailValidator.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Networking/Dispatching/Interceptor/ObservableNetworkActivityInterceptor.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Models/Response/Weather/WeatherResponse.swift
-/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Constants/AppFont.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Utils/Permission/SpeechPermission.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/CommonLib/Common/Validators/TraficPenaltyDocumentDateValidator.swift
 /Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/WeatherToday/Utils/Routing/Navigator/PageNavigator.swift

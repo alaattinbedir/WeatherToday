@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "6c46b31aa7513c7647e7bd89a014857a55e9eb165c64feff106f36862e5dc7ee"
-build_start_time: [1654957247, 522259950]
-build_end_time: [1654957247, 568372011]
+build_start_time: [1654980186, 591727018]
+build_end_time: [1654980186, 638113975]
 inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/SwiftyJSON/Source/SwiftyJSON/SwiftyJSON.swift": [1637916520, 810509204]

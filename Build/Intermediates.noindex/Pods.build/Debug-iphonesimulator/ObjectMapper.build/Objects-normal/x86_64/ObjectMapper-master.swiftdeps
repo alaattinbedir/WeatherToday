@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "1df5a087573c1c3cd07e8076f6918d3928f13c31665350d2c288f48bd5050822"
-build_start_time: [1654957246, 512109994]
-build_end_time: [1654957246, 569797039]
+build_start_time: [1654980185, 557039976]
+build_end_time: [1654980185, 616518974]
 inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/ObjectMapper/Sources/CodableTransform.swift": [1654166898, 619896411]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/ObjectMapper/Sources/CustomDateFormatTransform.swift": [1654166898, 613074779]
