@@ -1020,13 +1020,13 @@
 		84A379932750CE2A0071CA81 /* WeatherToday */ = {
 			isa = PBXGroup;
 			children = (
-				846FB3A72854005E0027E5A5 /* Localization */,
 				84090792284FBB9A00483264 /* CommonLib */,
 				84A379C42750CE8C0071CA81 /* AppDelegate */,
 				84A379CC2750D09D0071CA81 /* Application */,
 				84A379C72750CFD30071CA81 /* Models */,
 				84090793284FBC6100483264 /* Networking */,
 				84A379CD2750D39F0071CA81 /* Utils */,
+				846FB3A72854005E0027E5A5 /* Localization */,
 				84A379C52750CEFF0071CA81 /* Resources */,
 				84A379C62750CF3E0071CA81 /* SupportingFiles */,
 			);
