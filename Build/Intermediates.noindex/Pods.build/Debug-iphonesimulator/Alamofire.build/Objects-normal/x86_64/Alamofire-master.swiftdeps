@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "1df5a087573c1c3cd07e8076f6918d3928f13c31665350d2c288f48bd5050822"
-build_start_time: [1654902469, 785285949]
-build_end_time: [1654902469, 872394084]
+build_start_time: [1654957246, 35712957]
+build_end_time: [1654957246, 111404895]
 inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/Alamofire/Source/AFError.swift": [1654166898, 600202083]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/Alamofire/Source/Alamofire.swift": [1654166898, 600903034]

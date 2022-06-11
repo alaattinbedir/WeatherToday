@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "0ecdccf401b0d9f7970e2c6c668cd30b59c4d82b57cf3c123807b909a2cb9461"
-build_start_time: [1654902470, 256947040]
-build_end_time: [1654902470, 430330038]
+build_start_time: [1654957247, 109429836]
+build_end_time: [1654957247, 276000022]
 inputs:
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/RxCocoa/Platform/DataStructures/Bag.swift": [1637916520, 704238891]
   "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Pods/RxCocoa/Platform/DataStructures/InfiniteSequence.swift": [1637916520, 704993724]

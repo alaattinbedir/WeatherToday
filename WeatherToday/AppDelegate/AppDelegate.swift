@@ -11,6 +11,12 @@ import IQKeyboardManagerSwift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    lazy var window: UIWindow? = {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.backgroundColor = AppColor.whiteDefault
+        return window
+    }()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true

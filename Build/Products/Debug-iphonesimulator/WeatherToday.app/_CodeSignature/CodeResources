@@ -26,7 +26,7 @@
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		9bMvU5WkyK1lq9QTyiuqEXUWLFE=
+		uVVuHGsDOiuvuu7AeDDtT5LSSgg=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/IQKeyboardManagerSwift</key>
 		<data>
-		qH85LnaHjiZAKX1PoEWGc3ZVz+A=
+		49KlD/kz7bMNZm03fHgi2VTemKQ=
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/Lottie.framework/Lottie</key>
 		<data>
-		8a2mbJPdXTG/I8yWb/ztWsy3S7w=
+		+RxEsl2J4wuT574O0VZfidtnFV0=
 		</data>
 		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Frameworks/OHHTTPStubs.framework/OHHTTPStubs</key>
 		<data>
-		miAF9w2ZPaSJKQ6MNbkZ4zUel/U=
+		h4o/Aq29Pe6QcWxU9LecByHvonI=
 		</data>
 		<key>Frameworks/OHHTTPStubs.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
 		<data>
-		NYj33oe9S3kV97ewYrSPLD6gEfU=
+		oqYE4jyaBK4a+ZKmzoguuVm4v9M=
 		</data>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Frameworks/RxCocoa.framework/RxCocoa</key>
 		<data>
-		HwdIgqU7JjeZ8IiXd+cm518evuY=
+		1bNpvXudtj1Bbj7p0y/dM0cDW90=
 		</data>
 		<key>Frameworks/RxCocoa.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Frameworks/RxRelay.framework/RxRelay</key>
 		<data>
-		jiRCMwtm/NOCJK2w+6TkGveyWx8=
+		RBFkS871dz36ejSYoLieapA7XRQ=
 		</data>
 		<key>Frameworks/RxRelay.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Frameworks/RxSwift.framework/RxSwift</key>
 		<data>
-		bGb3IqeBbAnuKs1J4w6Rae5sB9g=
+		E8u92cPW5CdFaRarL9qKuukxaI4=
 		</data>
 		<key>Frameworks/RxSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Frameworks/SnapKit.framework/SnapKit</key>
 		<data>
-		F6GVS4L+n3rBwzvNrJ/2D+KLfuc=
+		cGC7QqlYfQXvKCW1r0FCu4igVXM=
 		</data>
 		<key>Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Frameworks/SwiftyJSON.framework/SwiftyJSON</key>
 		<data>
-		EdcDIfiKW6+cYGICWfEbQ/E8Knc=
+		mpl2VxFubov8s4P32ugViTh0Y1k=
 		</data>
 		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -222,7 +222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Hyd6YXJfLtFqarMHPvsSLPbugb25aTiyAHX6ZAp5dc=
+			/kiWYp2xwpBRPa0cYZ9n3g7un1E395wvLTf/aL2Zmek=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uU3xpd3JGIhqnAXbHn24R1+17B8irGT9lwzBoOFb05o=
+			Td2aAABtt7ZXnFClZ8rs83IaWS7cTEV5vgOyUHlMhIY=
 			</data>
 		</dict>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
@@ -271,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			idvSDmVrOeTHse9sbussyNpoV+YskkBy5NHxZwVb0so=
+			5Gtxc4yPr6I8hbgdhzU4xyfse87gwWJYiYpVgRR4M3M=
 			</data>
 		</dict>
 		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
@@ -292,7 +292,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R5YyUUd9Cxfu0sRDUNvaQruYd/1a/L4pFUdXvDwinUY=
+			1cdRk7ULkC+rZ69+6+vwGawDf/HUar5J48cdF3d9EuI=
 			</data>
 		</dict>
 		<key>Frameworks/OHHTTPStubs.framework/_CodeSignature/CodeResources</key>
@@ -313,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXy4FOJwtnye/w8GiE7YyYnlT4Etffi583NrtcTFbq4=
+			Yv93yDbJK0keXC/DhFsUD8SuAmu6i7v27QvRnqhi/EE=
 			</data>
 		</dict>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XzTLaULZXK50DXwfc4Ht8FjdTb8PWhuVME/+6NRW2L4=
+			RfbTH2OtG3y8olXIEBYe0wklP40VfEhKnNYPcAZWSpY=
 			</data>
 		</dict>
 		<key>Frameworks/RxCocoa.framework/_CodeSignature/CodeResources</key>
@@ -355,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R/Fy5z5WKMQSdUmZT15A4OpU1Er4Uecb0kmLg5iVrlg=
+			F23KBd5A6Q9dhKyDUMeeyjA6SpLA1sAc5JQ129LjdtI=
 			</data>
 		</dict>
 		<key>Frameworks/RxRelay.framework/_CodeSignature/CodeResources</key>
@@ -376,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QpEwyvlBzfGHYI+b667hE9uEoFBgLUOVarBOAscBh3E=
+			bDt5k1taR6xvqnCC8gOsxRklQvjMccp5epLkXMBodrU=
 			</data>
 		</dict>
 		<key>Frameworks/RxSwift.framework/_CodeSignature/CodeResources</key>
@@ -397,7 +397,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			91wWFihCaXAtHBpgCMjMwbu6XpCsR4HSggMbVJ6HRuA=
+			m3kkZhA5THClrt1J1L/6W7JmDB78dDet/gI5dnKLryg=
 			</data>
 		</dict>
 		<key>Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
@@ -418,7 +418,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u84xjFxhalbt5I64G6Uc3qUot0L+LxGCSMh+DUpd0Aw=
+			G372gpyJLAvKWzg3MWJatJSXk8J/CrmIBaaoGnQzT8E=
 			</data>
 		</dict>
 		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>

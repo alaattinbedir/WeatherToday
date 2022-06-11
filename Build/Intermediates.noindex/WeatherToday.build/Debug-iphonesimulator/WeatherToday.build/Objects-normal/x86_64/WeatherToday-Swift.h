@@ -217,6 +217,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UIWindow;
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -224,6 +225,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC12WeatherToday11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
@@ -301,6 +303,12 @@ SWIFT_CLASS("_TtC12WeatherToday6BaseVC")
 
 
 
+
+SWIFT_CLASS("_TtC12WeatherToday16CameraPermission")
+@interface CameraPermission : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UILabel;
 @class UIImageView;
 
@@ -344,6 +352,8 @@ SWIFT_CLASS("_TtC12WeatherToday21ForecastTableViewCell")
 
 
 
+
+
 SWIFT_CLASS("_TtC12WeatherToday24HourlyCollectionViewCell")
 @interface HourlyCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hourLabel;
@@ -379,6 +389,13 @@ SWIFT_CLASS("_TtC12WeatherToday16LandingWelcomeVC")
 
 
 @class CLLocationManager;
+
+SWIFT_CLASS("_TtC12WeatherToday18LocationPermission")
+@interface LocationPermission : NSObject <CLLocationManagerDelegate>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)locationManager:(CLLocationManager * _Nonnull)_ didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
+@end
+
 @class CLLocation;
 
 SWIFT_CLASS("_TtC12WeatherToday17MDLocationManager")
@@ -421,6 +438,7 @@ SWIFT_CLASS("_TtC12WeatherToday26ModalTransitioningDelegate")
 @end
 
 
+
 @class UITouch;
 @class UIEvent;
 @class SCLButton;
@@ -461,7 +479,6 @@ SWIFT_CLASS("_TtC12WeatherToday9SCLButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIWindow;
 @class UIScene;
 
 SWIFT_CLASS("_TtC12WeatherToday13SceneDelegate")
@@ -518,9 +535,11 @@ SWIFT_CLASS("_TtC12WeatherToday27SecurityQuestionInfoPopUpVC")
 @end
 
 
+
 @interface UIViewController (SWIFT_EXTENSION(WeatherToday))
 - (void)customBackButtonPressed;
 @end
+
 
 @class NSURLSession;
 @class NSURLAuthenticationChallenge;
