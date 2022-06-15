@@ -11,7 +11,5 @@ enum StatusType: Int {
     case success
     case warning
     case error
-    case inform
-    case confirm
     case unknown
 }
