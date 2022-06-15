@@ -102,21 +102,10 @@ class WeatherVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bind()
         configureItems()
         viewModel.fetchCurrentWeather()
     }
 }
-
-
-// MARK: Bindings
-
-private extension WeatherVC {
-    func bind() {
-        
-    }
-}
-
 
 // MARK: Configure the components
 
