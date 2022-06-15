@@ -49,7 +49,6 @@ class BaseAPI: SessionDelegate {
     static let shared = BaseAPI()
     private var session: Session?
     let baseURL = "https://api.darksky.net/forecast/2bb07c3bece89caf533ac9a5d23d8417/"
-    let productionDomain = "api.darksky.net"
     private let timeoutIntervalForRequest: Double = 300
 
     private init() {
@@ -79,7 +78,7 @@ class BaseAPI: SessionDelegate {
 
         guard networkIsReachable() else {
             if let myError = ErrorMessage(errorCode: "NO_CONNECTION_ERROR", message: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
-                            failed(myError)
+                failed(myError)
             }
             return
         }
@@ -114,7 +113,6 @@ class BaseAPI: SessionDelegate {
 
     // MARK: Handle Default Json Response
 
-    // swiftlint:disable cyclomatic_complexity
     private func handleJsonResponse<S: Mappable, F: ErrorMessage>(dataRequest: DataRequest,
                                                                       succeed: @escaping (S) -> Void,
                                                                       failed: @escaping (F) -> Void) {
@@ -166,6 +164,7 @@ class BaseAPI: SessionDelegate {
             }
         }
     }
+
     private func prepareHeaderForSession(_: String,
                                          _: HTTPMethod,
                                          _ bodyParams: ([String: Any])?,
@@ -204,22 +203,22 @@ class BaseAPI: SessionDelegate {
                               methodType: HTTPMethod?,
                               body: [String: Any]?,
                               headerParams: [String: String]) {
-        #if DEBUG
-            let header = headerParams.reduce("\n   ") { $0 + $1.key + ":" + $1.value + "\n      " }
-            print("""
-            --------------------------------------------------
-            Request Url: \(url~)
-            Request Type: \(String(describing: methodType))
-            Request Parameters: \(String(describing: body))
-            Request Headers: \(header)
-            """)
-        #endif
+    #if DEBUG
+        let header = headerParams.reduce("\n   ") { $0 + $1.key + ":" + $1.value + "\n      " }
+        print("""
+        --------------------------------------------------
+        Request Url: \(url~)
+        Request Type: \(String(describing: methodType))
+        Request Parameters: \(String(describing: body))
+        Request Headers: \(header)
+        """)
+    #endif
     }
 
     private func printResponse(response: Any?,
                                statusCode: Int?,
                                url: String?) {
-#if DEBUG
+    #if DEBUG
         print("--------------------------------------------------")
 
         var options: JSONSerialization.WritingOptions
@@ -240,9 +239,7 @@ class BaseAPI: SessionDelegate {
         Response StatusCode: \(String(describing: statusCode))
         Response Time: \(String(describing: time))
         """)
-#endif
+    #endif
     }
 
 }
-
-
