@@ -11,18 +11,30 @@ import Alamofire
 import SwiftyJSON
 import ObjectMapper
 
-class MyError: Error {
+class ErrorMessage: NSObject, Mappable {
     
     var errorCode: String?
-    var errorMessage: String?
+    var message: String?
     
-    init() {
+    required init?(map _: Map) {
+        // Empty function body
     }
-    
-    init(errorCode: String?, errorMessage: String?) {
+
+    override init() {
+        // Empty function body
+    }
+
+    convenience init(errorCode: String?, message: String?) {
+        self.init()
         self.errorCode = errorCode
-        self.errorMessage = errorMessage
+        self.message = message
     }
+
+    func mapping(map: Map) {
+        message <- map["Message"]
+        errorCode <- map["ErrorCode"]
+    }
+
 }
 
 class BaseAPI: NSObject {
@@ -57,32 +69,29 @@ class BaseAPI: NSObject {
         return response
     }
     
-    func formatedErrorMessage(errorCode: String) -> MyError {
-        var error: MyError
-        
-        switch errorCode {
-        case "MAP_ERROR":
-            error = MyError(errorCode: errorCode, errorMessage: NSLocalizedString("Error mapping response", comment: "comment"))
-        case "BAD_RESPONSE":
-            error = MyError(errorCode: errorCode, errorMessage: NSLocalizedString("Error bad response", comment: "comment"))
-        default:
-            error = MyError(errorCode: errorCode, errorMessage: NSLocalizedString("An unknown error has occurred", comment: "comment"))
-        }
-        
-        return error
-    }
-
-    func request<S: Mappable, F: MyError>(methotType: HTTPMethod,
-                                          endPoint: String,
-                                          succeed: @escaping (S) -> Void,
-                                          failed: @escaping (F) -> Void) {
+    func request<S: Mappable, F: ErrorMessage>(methotType: HTTPMethod,
+                                               params: [String: Any]?,
+                                               endPoint: String,
+                                               succeed: @escaping (S) -> Void,
+                                               failed: @escaping (F) -> Void) {
         guard networkIsReachable() else {
-            let myError = MyError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment"))
-            failed(myError)
+            if let myError = ErrorMessage(errorCode: "NO_CONNECTION_ERROR", message: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
+                            failed(myError)
+            }
             return
         }
 
-        let url = baseURL + endPoint
+        var url = baseURL + endPoint
+
+        var bodyParams: [String: Any]?
+        if let params = params {
+            if methotType == .get {
+                url.append(URLQueryBuilder(params: params).build())
+            } else {
+                bodyParams = params
+            }
+        }
+
         printRequest(url: url)
 
         self.sessionManager.request(url, method: methotType, headers: nil).responseJSON { (response) -> Void in
