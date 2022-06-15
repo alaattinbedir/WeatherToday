@@ -20,7 +20,7 @@ class WeatherApi {
         // Set up current coordinate url
         let urlCoordinate = "\(latitude),\(longitude)"
         
-        MySessionManager.sharedInstance.request(methotType:.get, urlCoordinate, success: { (responseJSON) in
+        BaseAPI.sharedInstance.request(methotType:.get, endPoint: urlCoordinate, success: { (responseJSON) in
             // Get json object from response
             let weather = responseJSON.object
             

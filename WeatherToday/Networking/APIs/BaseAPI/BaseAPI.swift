@@ -25,9 +25,9 @@ class MyError: Error {
     }
 }
 
-class MySessionManager: NSObject {
+class BaseAPI: NSObject {
     
-    static let sharedInstance = MySessionManager()
+    static let sharedInstance = BaseAPI()
     private var sessionManager: SessionManager
     let baseURL = "https://api.darksky.net/forecast/2bb07c3bece89caf533ac9a5d23d8417/"
     
@@ -72,10 +72,13 @@ class MySessionManager: NSObject {
         return error
     }
 
-    func request(methotType: HTTPMethod, _ endPoint: String, success:@escaping (JSON) -> Void, failure:@escaping (MyError) -> Void) {
-        guard Utilities.sharedInstance.isNetworkConnectivityAvailable() else {
+    func request<S: Mappable, F: MyError>(methotType: HTTPMethod,
+                                          endPoint: String,
+                                          succeed: @escaping (S) -> Void,
+                                          failed: @escaping (F) -> Void) {
+        guard networkIsReachable() else {
             let myError = MyError(errorCode: "NO_CONNECTION_ERROR", errorMessage: NSLocalizedString("No Internet connection", comment: "comment"))
-            failure(myError)
+            failed(myError)
             return
         }
 
@@ -93,10 +96,10 @@ class MySessionManager: NSObject {
                     let json = JSON(value)
                     let (result, errorCode) = self.isValidResponse(json: json)
                     if result {
-                        success(json)
+                        succeed(json)
                     } else {
                         let error = self.formatedErrorMessage(errorCode: errorCode)
-                        failure(error)
+                        failed(error)
                     }
                 }
             }
@@ -104,10 +107,16 @@ class MySessionManager: NSObject {
             if response.result.isFailure {
                 if let error = response.result.error {
                     let myError = MyError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription)
-                    failure(myError)
+                    failed(myError)
                 }
             }
         }
+    }
+
+    public func networkIsReachable() -> Bool {
+        let networkManager = NetworkReachabilityManager()
+        let result = networkManager?.isReachable
+        return result~
     }
 
     private func printRequest(url: String?) {
