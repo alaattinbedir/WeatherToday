@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/RxRelay.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		gnU3++6xKczIsu1LutOKinlmdVQ=
+		B5zrY5UQowhwQorxXLIju7Vmh64=
 		</data>
 		<key>Modules/RxRelay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/RxRelay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FAS/1WU4hdPmQ0k2EsFpNRjMpk4=
+		ItN3Di0QlBBO9jL6NVi43Q0XMoc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,11 +61,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gnU3++6xKczIsu1LutOKinlmdVQ=
+			B5zrY5UQowhwQorxXLIju7Vmh64=
 			</data>
 			<key>hash2</key>
 			<data>
-			2mR9A37dngtc64ZJDQcA8WOpNlbw4ZT5bvW67cybv6I=
+			10oN+HBWYMqyEnreYsQH44aeXGMXnKW1Qo5/Goo09BM=
 			</data>
 		</dict>
 		<key>Modules/RxRelay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -83,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FAS/1WU4hdPmQ0k2EsFpNRjMpk4=
+			ItN3Di0QlBBO9jL6NVi43Q0XMoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			hjdJNTJnJJFtOhCS383bgd+VB+ewrM0gp0EZTVzpKyQ=
+			4ArpwvZrUuARlzjyG5jHfp+0a9BuvVhpcPWUvEgKr4g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

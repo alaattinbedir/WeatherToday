@@ -9,12 +9,18 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import AlamofireObjectMapper
 import ObjectMapper
+
+enum ApiContentTypeEnum: String {
+    case applicationJson = "application/json"
+}
 
 class ErrorMessage: NSObject, Mappable {
     
     var errorCode: String?
     var message: String?
+    var httpStatus: Int?
     
     required init?(map _: Map) {
         // Empty function body
@@ -28,6 +34,7 @@ class ErrorMessage: NSObject, Mappable {
         self.init()
         self.errorCode = errorCode
         self.message = message
+        self.httpStatus = httpStatus
     }
 
     func mapping(map: Map) {
@@ -37,43 +44,39 @@ class ErrorMessage: NSObject, Mappable {
 
 }
 
-class BaseAPI: NSObject {
+class BaseAPI: SessionDelegate {
     
-    static let sharedInstance = BaseAPI()
-    private var sessionManager: SessionManager
+    static let shared = BaseAPI()
+    private var session: Session?
     let baseURL = "https://api.darksky.net/forecast/2bb07c3bece89caf533ac9a5d23d8417/"
-    
-    private override init() {
-        // Create custom manager
+    let productionDomain = "api.darksky.net"
+    private let timeoutIntervalForRequest: Double = 300
+
+    private init() {
+        super.init()
+        // Create custom session
         let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 280
-        let manager = Alamofire.SessionManager(
-            configuration: URLSessionConfiguration.default,
-            serverTrustPolicyManager: CustomServerTrustPoliceManager()
-        )
-        
-        self.sessionManager = manager
+        configuration.timeoutIntervalForRequest = timeoutIntervalForRequest
+        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+
+        session = Session(configuration: configuration,
+                          delegate: self,
+                          startRequestsImmediately: true)
     }
-    
-    func isValidResponse(json: JSON) -> (Bool, String)  {
-        var response = (result: false, errorCode: "")
-        
-        if !json.isEmpty  {
-            response.result = true
-            response.errorCode = ""
-        } else {
-            response.result = false
-            response.errorCode = "BAD_RESPONSE"
-        }
-        
-        return response
+
+    func clearUrlSessionCache() {
+        URLCache.shared.removeAllCachedResponses()
     }
     
     func request<S: Mappable, F: ErrorMessage>(methotType: HTTPMethod,
                                                params: [String: Any]?,
                                                endPoint: String,
+                                               headerParams: ([String: String])? = nil,
                                                succeed: @escaping (S) -> Void,
                                                failed: @escaping (F) -> Void) {
+        guard let session = session else { return }
+        let contentType = ApiContentTypeEnum.applicationJson.rawValue
+
         guard networkIsReachable() else {
             if let myError = ErrorMessage(errorCode: "NO_CONNECTION_ERROR", message: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
                             failed(myError)
@@ -92,33 +95,102 @@ class BaseAPI: NSObject {
             }
         }
 
-        printRequest(url: url)
+        let headerParams = prepareHeaderForSession(endPoint, methotType, bodyParams, headerParams, contentType)
 
-        self.sessionManager.request(url, method: methotType, headers: nil).responseJSON { (response) -> Void in
+        printRequest(url: url, methodType: methotType, body: bodyParams, headerParams: headerParams)
 
-            self.printResponse(response: response.result.value,
+        let networkRequest = session.request(url,
+                                             method: methotType,
+                                             parameters: bodyParams,
+                                             encoding: JSONEncoding.default,
+                                             headers: HTTPHeaders(headerParams))
+                                   .validate(contentType: [contentType])
+                                   .validate(statusCode: 200 ..< 600)
+
+               handleJsonResponse(dataRequest: networkRequest,
+                                        succeed: succeed,
+                                        failed: failed)
+    }
+
+    // MARK: Handle Default Json Response
+
+    // swiftlint:disable cyclomatic_complexity
+    private func handleJsonResponse<S: Mappable, F: ErrorMessage>(dataRequest: DataRequest,
+                                                                      succeed: @escaping (S) -> Void,
+                                                                      failed: @escaping (F) -> Void) {
+        dataRequest.responseJSON { [weak self] response in
+            guard let self = self else { return }
+
+            self.printResponse(response: response.value,
                                statusCode: response.response?.statusCode,
                                url: response.request?.description)
 
-            if response.result.isSuccess {
-                if let value = response.result.value {
-                    let json = JSON(value)
-                    let (result, errorCode) = self.isValidResponse(json: json)
-                    if result {
-                        succeed(json)
-                    } else {
-                        let error = self.formatedErrorMessage(errorCode: errorCode)
-                        failed(error)
-                    }
+            switch response.result {
+            case .success:
+                switch self.statusType((response.response?.statusCode)~) {
+                case .success:
+                    self.handleSuccessfulResponseObject(dataRequest: dataRequest, succeed: succeed)
+                case .error:
+                    self.handleFailureResponseObject(dataRequest: dataRequest, failed: failed)
+                default:
+                    break
+                }
+            case .failure(_):
+                    self.handleFailureResponseObject(dataRequest: dataRequest, failed: failed)
                 }
             }
+    }
 
-            if response.result.isFailure {
-                if let error = response.result.error {
-                    let myError = MyError(errorCode: "NETWORK_ERROR", errorMessage: error.localizedDescription)
-                    failed(myError)
+    private func handleSuccessfulResponseObject<S: Mappable>(dataRequest: DataRequest,
+                                                             succeed: @escaping (S) -> Void) {
+        dataRequest.responseObject { (response: DataResponse<S, AFError>) in
+            if let responseObject = response.value {
+                succeed(responseObject)
+            } else {
+                let emptyResponse = S(JSON: [:])
+                if let emptyResponse = emptyResponse {
+                    succeed(emptyResponse)
                 }
             }
+        }
+    }
+
+    private func handleFailureResponseObject<F: Mappable>(dataRequest: DataRequest,
+                                                          failed: @escaping (F) -> Void) {
+        dataRequest.responseObject { (response: DataResponse<F, AFError>) in
+            if let responseObject = response.value {
+                if let errorMessage = responseObject as? ErrorMessage {
+                    errorMessage.httpStatus = response.response?.statusCode
+                }
+                failed(responseObject)
+            }
+        }
+    }
+    private func prepareHeaderForSession(_: String,
+                                         _: HTTPMethod,
+                                         _ bodyParams: ([String: Any])?,
+                                         _ extraHeaderParams: ([String: String])?,
+                                         _ contentType: String) -> [String: String] {
+        var allHeaderFields: [String: String] = [:]
+
+        allHeaderFields["Content-Type"] = contentType
+        if let extraHeaderParams = extraHeaderParams, !extraHeaderParams.isEmpty {
+            allHeaderFields.merge(extraHeaderParams) { _, new in new }
+        }
+
+        return allHeaderFields
+    }
+
+    private func statusType(_ statusCode: Int) -> StatusType {
+        switch statusCode {
+        case 200 ..< 300, 428:
+            return .success
+        case 300 ..< 400:
+            return .warning
+        case 400 ..< 600:
+            return .error
+        default:
+            return .unknown
         }
     }
 
@@ -128,16 +200,26 @@ class BaseAPI: NSObject {
         return result~
     }
 
-    private func printRequest(url: String?) {
-        print("""
-        --------------------------------------------------
-        Request Url: \(String(describing: url))
-        """)
+    private func printRequest(url: String?,
+                              methodType: HTTPMethod?,
+                              body: [String: Any]?,
+                              headerParams: [String: String]) {
+        #if DEBUG
+            let header = headerParams.reduce("\n   ") { $0 + $1.key + ":" + $1.value + "\n      " }
+            print("""
+            --------------------------------------------------
+            Request Url: \(url~)
+            Request Type: \(String(describing: methodType))
+            Request Parameters: \(String(describing: body))
+            Request Headers: \(header)
+            """)
+        #endif
     }
 
     private func printResponse(response: Any?,
                                statusCode: Int?,
                                url: String?) {
+#if DEBUG
         print("--------------------------------------------------")
 
         var options: JSONSerialization.WritingOptions
@@ -158,17 +240,9 @@ class BaseAPI: NSObject {
         Response StatusCode: \(String(describing: statusCode))
         Response Time: \(String(describing: time))
         """)
+#endif
     }
-}
 
-class CustomServerTrustPoliceManager: ServerTrustPolicyManager {
-    override func serverTrustPolicy(forHost host: String) -> ServerTrustPolicy? {
-        return .disableEvaluation
-    }
-    public init() {
-        super.init(policies: [:])
-    }
 }
-
 
 

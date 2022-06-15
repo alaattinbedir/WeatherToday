@@ -195,6 +195,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Alamofire;
 @import CoreGraphics;
 @import CoreLocation;
 @import Foundation;
@@ -230,6 +231,11 @@ SWIFT_CLASS("_TtC12WeatherToday11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12WeatherToday7BaseAPI")
+@interface BaseAPI : SessionDelegate
+@end
+
 @class UILabel;
 @class UIImageView;
 @class NSString;
@@ -245,6 +251,12 @@ SWIFT_CLASS("_TtC12WeatherToday18DailyTableViewCell")
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday12ErrorMessage")
+@interface ErrorMessage : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -267,13 +279,6 @@ SWIFT_CLASS("_TtC12WeatherToday24HourlyCollectionViewCell")
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC12WeatherToday16MySessionManager")
-@interface MySessionManager : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIWindow;

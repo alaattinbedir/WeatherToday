@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Alamofire-Swift.h</key>
 		<data>
-		H6xsqeomaClcWj7WKbTfoFUx56s=
+		A0ai4j1M3vh+p3MqpvSHmWjrL8c=
 		</data>
 		<key>Headers/Alamofire-umbrella.h</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bFBCiwH44cwkJxWJuys2g4QmyKU=
+		k4bv/wwhdzzPNfRVx/oLNL4ItXY=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		FvJ/Rbpg+mkUDGJ3tQeQFhq0dOU=
+		32nn/k8XBxoBYh4dF0fwpKilPgM=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		iKFKrEkhAV/nsmr3hgt8Rtqrg30=
+		q7Vxz5ZAPh35u20tWfaTbfVjmrg=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		088vcl9CmpodDZPmEeIlZ8SlCJE=
+		5c8g00LsUEPvGTbEad/q/JU0+Po=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H6xsqeomaClcWj7WKbTfoFUx56s=
+			A0ai4j1M3vh+p3MqpvSHmWjrL8c=
 			</data>
 			<key>hash2</key>
 			<data>
-			ovEcyRr0qdq/7aQXy89tl03mNVhsOxqrsuzJIOBeYV8=
+			EQbIgOAV7g34KYrvAKLwp8k8y3857LxD0FQQvw+yAOg=
 			</data>
 		</dict>
 		<key>Headers/Alamofire-umbrella.h</key>
@@ -61,33 +61,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FvJ/Rbpg+mkUDGJ3tQeQFhq0dOU=
+			32nn/k8XBxoBYh4dF0fwpKilPgM=
 			</data>
 			<key>hash2</key>
 			<data>
-			sC40H2UgdgoqK+WpKLitqtwz0arT45JFo0cSr4PYb4Y=
+			QlLzjYuY+PfmPybOqqFqPH3ucoUIDPEpP6Ui22EKYDQ=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iKFKrEkhAV/nsmr3hgt8Rtqrg30=
+			q7Vxz5ZAPh35u20tWfaTbfVjmrg=
 			</data>
 			<key>hash2</key>
 			<data>
-			8/XZASPKBLZFWyw6r/OW17bAQLxQjHidtXV/i0uifiA=
+			Thqr2u5mWHP4mUmnXdDFAyILrFRdjsjQF610/4q6b6I=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			088vcl9CmpodDZPmEeIlZ8SlCJE=
+			5c8g00LsUEPvGTbEad/q/JU0+Po=
 			</data>
 			<key>hash2</key>
 			<data>
-			ow/krv36tbzI1yi0LceN8BhQxSgeemKvsmTZM7cr5Wk=
+			idBe47RWNF1qcoT6fMmBPPUqO7FlqCNLv4ZiZEjCde4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -2,9 +2,10 @@
 platform :ios, '10.0'
 
 def shared_pods
-  pod 'Alamofire', '4.9.1'
+  pod 'Alamofire', '5.0.0-rc.2'
+  pod 'AlamofireObjectMapper', '6.2.0'
   pod 'SwiftyJSON'
-  pod 'ObjectMapper'
+  pod 'ObjectMapper', '~> 3.5.1'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'OHHTTPStubs/Swift'

@@ -1,7 +1,10 @@
 PODS:
-  - Alamofire (4.9.1)
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
   - Nimble (10.0.0)
-  - ObjectMapper (4.2.0)
+  - ObjectMapper (3.5.3)
   - OHHTTPStubs/Core (9.1.0)
   - OHHTTPStubs/Default (9.1.0):
     - OHHTTPStubs/Core
@@ -25,9 +28,10 @@ PODS:
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
-  - Alamofire (= 4.9.1)
+  - Alamofire (= 5.0.0-rc.2)
+  - AlamofireObjectMapper (= 6.2.0)
   - Nimble
-  - ObjectMapper
+  - ObjectMapper (~> 3.5.1)
   - OHHTTPStubs/Swift
   - Quick (~> 5.0.1)
   - RxCocoa (~> 5)
@@ -37,6 +41,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireObjectMapper
     - Nimble
     - ObjectMapper
     - OHHTTPStubs
@@ -47,9 +52,10 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
-  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
   Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
@@ -57,6 +63,6 @@ SPEC CHECKSUMS:
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 35048d37a6611361928d60eae1e0cf478b20fbc2
+PODFILE CHECKSUM: 44aff128ac28bfe9e2cdca6cb4dfafd02ee436e4
 
 COCOAPODS: 1.11.2
