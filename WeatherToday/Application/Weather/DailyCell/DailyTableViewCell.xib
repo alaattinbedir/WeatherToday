@@ -52,14 +52,22 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="KYf-gz-aqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="5aX-Yt-nQJ"/>
                     <constraint firstItem="KYf-gz-aqN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DDS-Tj-s52"/>
                     <constraint firstItem="pXw-3t-hGa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="I1b-dp-x7e"/>
                     <constraint firstItem="Igi-GI-PfM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IPO-Ax-dFx"/>
                     <constraint firstItem="57c-WE-e4t" firstAttribute="leading" secondItem="Igi-GI-PfM" secondAttribute="trailing" constant="9" id="RGd-t9-RxX"/>
                     <constraint firstAttribute="trailing" secondItem="57c-WE-e4t" secondAttribute="trailing" constant="20" id="dS8-Ns-Sze"/>
+                    <constraint firstAttribute="bottom" secondItem="57c-WE-e4t" secondAttribute="bottom" constant="15.5" id="gpO-il-DDg"/>
+                    <constraint firstItem="Igi-GI-PfM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15.5" id="hSW-Y7-vP5"/>
+                    <constraint firstItem="57c-WE-e4t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15.5" id="iLf-yS-qPq"/>
+                    <constraint firstAttribute="bottom" secondItem="pXw-3t-hGa" secondAttribute="bottom" constant="15.5" id="jL9-nZ-TJW"/>
                     <constraint firstItem="pXw-3t-hGa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mcE-5I-OaM"/>
                     <constraint firstItem="KYf-gz-aqN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qjm-2d-iOK"/>
+                    <constraint firstAttribute="bottom" secondItem="Igi-GI-PfM" secondAttribute="bottom" constant="15.5" id="rNX-5o-EM5"/>
                     <constraint firstItem="57c-WE-e4t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="roz-7R-nNu"/>
+                    <constraint firstItem="pXw-3t-hGa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15.5" id="uh3-zo-bfZ"/>
+                    <constraint firstAttribute="bottom" secondItem="KYf-gz-aqN" secondAttribute="bottom" constant="13" id="utl-ge-Bad"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -70,7 +78,7 @@
                 <outlet property="lowTempLabel" destination="57c-WE-e4t" id="TCK-HG-LeY"/>
                 <outlet property="weatherTypeImageView" destination="KYf-gz-aqN" id="Tav-GA-nDI"/>
             </connections>
-            <point key="canvasLocation" x="-200.00000000000003" y="64.620535714285708"/>
+            <point key="canvasLocation" x="-1117" y="-66"/>
         </tableViewCell>
     </objects>
     <resources>
