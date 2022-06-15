@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
-options: "6c46b31aa7513c7647e7bd89a014857a55e9eb165c64feff106f36862e5dc7ee"
-build_start_time: [1655278951, 457353115]
-build_end_time: [1655278953, 842288017]
-inputs:
-  "/Users/alaattinbedir/MyProjects/WeatherToday/Pods/OHHTTPStubs/Sources/OHHTTPStubsSwift/OHHTTPStubsSwift.swift": [1655139856, 725920200]

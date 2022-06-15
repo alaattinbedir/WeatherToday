@@ -12,31 +12,18 @@ import ObjectMapper
 
 class WeatherApi {
     // Get weather data from service
-//    func fetchWeather(latitude:(Double),
-//                      longitude:(Double),
-//                      success:@escaping (WeatherResponse) -> Void,
-//                      failure:@escaping (ErrorMessage) -> Void) {
-//
-//        // Set up current coordinate url
-//        let urlCoordinate = "\(latitude),\(longitude)"
-//
-//        BaseAPI.shared.request(methotType:.get, endPoint: urlCoordinate, success: { (responseJSON) in
-//            // Get json object from response
-//            let weather = responseJSON.object
-//
-//            // Map json to Weather object
-//            guard let weatherObject:WeatherResponse = Mapper<WeatherResponse>().map(JSONObject: weather) else {
-//                let myError = MyError(errorCode: "MAPPING_RESPONSE_ERROR", errorMessage: NSLocalizedString("Error mapping response", comment: "comment"))
-//                failure(myError)
-//                return
-//            }
-//
-//            // Send object to calling module
-//            success(weatherObject)
-//
-//        }, failure: { (error) in
-//            print(error)
-//            failure(error)
-//        })
-//    }
+    func fetchWeather(latitude:(Double),
+                      longitude:(Double),
+                      succeed:@escaping (WeatherResponse) -> Void,
+                      failed:@escaping (ErrorMessage) -> Void) {
+
+            // Set up current coordinate url
+            let urlCoordinate = "\(latitude),\(longitude)"
+
+            BaseAPI.shared.request(methotType: .get, params: nil, endPoint: urlCoordinate) { (response: WeatherResponse) in
+                succeed(response)
+            } failed: { (errorMessage: ErrorMessage) in
+                failed(errorMessage)
+            }
+    }
 }
