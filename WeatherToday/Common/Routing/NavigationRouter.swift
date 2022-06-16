@@ -50,12 +50,22 @@ enum NavigationRouter {
                    embedController: EmbedController = .none,
                    data: ViewModelData? = nil,
                    transitionOptions: TransitionOptions) {
-        if let window = (UIApplication.shared.delegate as? AppDelegate)?.window {
-            viewController.data = data
-            let controller = NavigationRouter.getViewController(from: viewController,
+        if #available(iOS 13.0, *) {
+            if let window = (UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate).window {
+                viewController.data = data
+                let controller = NavigationRouter.getViewController(from: viewController,
                                                                 embedController: embedController)
-            rootVC?.viewControllers = [controller]
-            window.setRootViewController(rootVC ?? controller, options: transitionOptions)
+                rootVC?.viewControllers = [controller]
+                window.setRootViewController(rootVC ?? controller, options: transitionOptions)
+            }
+        } else {
+            if let window = (UIApplication.shared.delegate as? AppDelegate)?.window {
+                viewController.data = data
+                let controller = NavigationRouter.getViewController(from: viewController,
+                                                                embedController: embedController)
+                rootVC?.viewControllers = [controller]
+                window.setRootViewController(rootVC ?? controller, options: transitionOptions)
+            }
         }
     }
 

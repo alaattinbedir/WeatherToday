@@ -86,6 +86,14 @@
 		848B3817285B256D00793438 /* UIViewController+AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B3816285B256D00793438 /* UIViewController+AlertPresentable.swift */; };
 		848B3819285B25E400793438 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B3818285B25E400793438 /* String+Utils.swift */; };
 		848B381B285B315500793438 /* String+ExtensionCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B381A285B315500793438 /* String+ExtensionCommon.swift */; };
+		848B381F285B42F000793438 /* LandingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848B381D285B42F000793438 /* LandingVC.xib */; };
+		848B3820285B42F000793438 /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B381E285B42F000793438 /* LandingVC.swift */; };
+		848B3824285B430300793438 /* LandingWelcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848B3822285B430300793438 /* LandingWelcome.storyboard */; };
+		848B3825285B430300793438 /* LandingWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B3823285B430300793438 /* LandingWelcomeVC.swift */; };
+		848B3828285B4F2100793438 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B3827285B4F2100793438 /* SplashVC.swift */; };
+		848B382C285B4FE400793438 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B382B285B4FE400793438 /* SplashViewModel.swift */; };
+		848B382E285B50A100793438 /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B382D285B50A100793438 /* Bundle+Version.swift */; };
+		848B3830285B56F000793438 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848B382F285B56F000793438 /* SplashVC.xib */; };
 		84A379952750CE2A0071CA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379942750CE2A0071CA81 /* AppDelegate.swift */; };
 		84A379972750CE2A0071CA81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379962750CE2A0071CA81 /* SceneDelegate.swift */; };
 		84A3799E2750CE2C0071CA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3799D2750CE2C0071CA81 /* Assets.xcassets */; };
@@ -199,6 +207,14 @@
 		848B3816285B256D00793438 /* UIViewController+AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertPresentable.swift"; sourceTree = "<group>"; };
 		848B3818285B25E400793438 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		848B381A285B315500793438 /* String+ExtensionCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionCommon.swift"; sourceTree = "<group>"; };
+		848B381D285B42F000793438 /* LandingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingVC.xib; sourceTree = "<group>"; };
+		848B381E285B42F000793438 /* LandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
+		848B3822285B430300793438 /* LandingWelcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LandingWelcome.storyboard; sourceTree = "<group>"; };
+		848B3823285B430300793438 /* LandingWelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingWelcomeVC.swift; sourceTree = "<group>"; };
+		848B3827285B4F2100793438 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		848B382B285B4FE400793438 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		848B382D285B50A100793438 /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
+		848B382F285B56F000793438 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		84A379912750CE2A0071CA81 /* WeatherToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A379942750CE2A0071CA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A379962750CE2A0071CA81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -427,6 +443,7 @@
 				848B3816285B256D00793438 /* UIViewController+AlertPresentable.swift */,
 				848B3818285B25E400793438 /* String+Utils.swift */,
 				848B381A285B315500793438 /* String+ExtensionCommon.swift */,
+				848B382D285B50A100793438 /* Bundle+Version.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -514,6 +531,34 @@
 				848B3809285B22E700793438 /* FieldErrorView.xib */,
 			);
 			path = FieldErrorView;
+			sourceTree = "<group>";
+		};
+		848B381C285B42F000793438 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				848B381D285B42F000793438 /* LandingVC.xib */,
+				848B381E285B42F000793438 /* LandingVC.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		848B3821285B430300793438 /* LandingWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				848B3822285B430300793438 /* LandingWelcome.storyboard */,
+				848B3823285B430300793438 /* LandingWelcomeVC.swift */,
+			);
+			path = LandingWelcome;
+			sourceTree = "<group>";
+		};
+		848B3826285B4F1100793438 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				848B3827285B4F2100793438 /* SplashVC.swift */,
+				848B382B285B4FE400793438 /* SplashViewModel.swift */,
+				848B382F285B56F000793438 /* SplashVC.xib */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		84A379882750CE2A0071CA81 = {
@@ -648,6 +693,9 @@
 		84A379CC2750D09D0071CA81 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				848B3826285B4F1100793438 /* Splash */,
+				848B3821285B430300793438 /* LandingWelcome */,
+				848B381C285B42F000793438 /* Landing */,
 				84A379CE2750D4530071CA81 /* Weather */,
 			);
 			path = Application;
@@ -856,6 +904,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B381F285B42F000793438 /* LandingVC.xib in Resources */,
 				848B37912859C7BD00793438 /* WeatherVC.xib in Resources */,
 				84A379FB2750E3DD0071CA81 /* DailyTableViewCell.xib in Resources */,
 				84A379A12750CE2C0071CA81 /* LaunchScreen.storyboard in Resources */,
@@ -864,6 +913,8 @@
 				848B37EA285A278F00793438 /* DKWarningViewController.xib in Resources */,
 				84A379E82750DD5D0071CA81 /* HourlyCollectionViewCell.xib in Resources */,
 				848B379E285A11A900793438 /* BaseRootVC.xib in Resources */,
+				848B3824285B430300793438 /* LandingWelcome.storyboard in Resources */,
+				848B3830285B56F000793438 /* SplashVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,11 +1044,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B382C285B4FE400793438 /* SplashViewModel.swift in Sources */,
 				848B3805285B1FE900793438 /* UIKit+Resource.swift in Sources */,
 				84A379D62750DABF0071CA81 /* Hourly.swift in Sources */,
 				848B3817285B256D00793438 /* UIViewController+AlertPresentable.swift in Sources */,
 				848B37B9285A192000793438 /* BaseVC.swift in Sources */,
 				848B37AA285A15A100793438 /* UIColor+Gradient.swift in Sources */,
+				848B3828285B4F2100793438 /* SplashVC.swift in Sources */,
 				848B37A8285A156100793438 /* UIColor+Additions.swift in Sources */,
 				848B3803285B1D8300793438 /* ErrorMessage.swift in Sources */,
 				848B37E6285A273700793438 /* DKWarningViewController.swift in Sources */,
@@ -1034,6 +1087,7 @@
 				848B37CE285A1E2200793438 /* Keeper.swift in Sources */,
 				848B37E1285A269500793438 /* UIImage+Utils.swift in Sources */,
 				848B3819285B25E400793438 /* String+Utils.swift in Sources */,
+				848B3825285B430300793438 /* LandingWelcomeVC.swift in Sources */,
 				848B37A2285A148200793438 /* NavigationBarButton.swift in Sources */,
 				848B380C285B232500793438 /* BaseFormField.swift in Sources */,
 				84A379972750CE2A0071CA81 /* SceneDelegate.swift in Sources */,
@@ -1048,6 +1102,7 @@
 				848B3813285B24CA00793438 /* UIView+SnapKit.swift in Sources */,
 				848B37BB285A19B000793438 /* UIWindow+Transitions.swift in Sources */,
 				848B3815285B250500793438 /* AnimationHelper.swift in Sources */,
+				848B382E285B50A100793438 /* Bundle+Version.swift in Sources */,
 				847D7E672848CE7100AD0DBC /* SafeUnwrap.swift in Sources */,
 				84A379F52750E0240071CA81 /* WeatherVM.swift in Sources */,
 				847D7E652848CDF600AD0DBC /* Dictionary+Json.swift in Sources */,
@@ -1057,6 +1112,7 @@
 				848B381B285B315500793438 /* String+ExtensionCommon.swift in Sources */,
 				848B3808285B22BE00793438 /* FieldErrorView.swift in Sources */,
 				848B37B1285A16D900793438 /* UIStackView+Extensions.swift in Sources */,
+				848B3820285B42F000793438 /* LandingVC.swift in Sources */,
 				848B37D0285A1ECA00793438 /* UIWindow+ViewControllers.swift in Sources */,
 				84A379D72750DABF0071CA81 /* WeatherResponse.swift in Sources */,
 				848B37D4285A23A500793438 /* UserDefaultsManager.swift in Sources */,

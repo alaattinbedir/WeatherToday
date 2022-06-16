@@ -105,6 +105,15 @@ class WeatherVC: BaseVC<WeatherVM> {
         configureItems()
         viewModel.fetchCurrentWeather()
     }
+
+    override func onStateChanged(_ state: ViewState) {
+        super.onStateChanged(state)
+        guard let state = state as? WeatherViewState else { return }
+        switch state {
+        case .close:
+            NavigationRouter.dismiss()
+        }
+    }
 }
 
 
