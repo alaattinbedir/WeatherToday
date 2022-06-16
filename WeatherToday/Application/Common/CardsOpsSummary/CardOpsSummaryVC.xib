@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="muli_bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardOpsSummaryVC" customModule="WeatherToday" customModuleProvider="target">
+            <connections>
+                <outlet property="btnContinue" destination="4SJ-CS-Fqn" id="U00-Yq-NeM"/>
+                <outlet property="lblDescription" destination="1AK-eY-FaK" id="59Y-BN-NVn"/>
+                <outlet property="scrollView" destination="GXa-12-wLi" id="Q6s-G6-L2d"/>
+                <outlet property="stackView" destination="MjA-fe-lVT" id="Imx-DR-hSC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="j08-cP-vtq">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXa-12-wLi">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNi-qo-bHi">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gan-al-MQB">
+                                    <rect key="frame" x="0.0" y="30" width="414" height="66"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AK-eY-FaK">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                            <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MjA-fe-lVT" customClass="PairStackView" customModule="DenizKartim" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="16" width="414" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="1" id="uMg-9K-nrF"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1AK-eY-FaK" firstAttribute="leading" secondItem="gan-al-MQB" secondAttribute="leading" constant="20" id="CwB-R8-qLK"/>
+                                        <constraint firstItem="MjA-fe-lVT" firstAttribute="leading" secondItem="gan-al-MQB" secondAttribute="leading" id="yNw-wm-wqt"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SJ-CS-Fqn" customClass="FormButton" customModule="DenizKartim" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="743" width="374" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Zah-xv-AC4"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="formButtonStyle">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="4SJ-CS-Fqn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gan-al-MQB" secondAttribute="bottom" constant="30" id="1ko-JB-WMf"/>
+                                <constraint firstAttribute="trailing" secondItem="4SJ-CS-Fqn" secondAttribute="trailing" constant="20" id="7EH-7C-yTG"/>
+                                <constraint firstItem="gan-al-MQB" firstAttribute="top" secondItem="lNi-qo-bHi" secondAttribute="top" constant="30" id="8KQ-KT-gN8"/>
+                                <constraint firstItem="gan-al-MQB" firstAttribute="leading" secondItem="lNi-qo-bHi" secondAttribute="leading" id="Cao-uA-8ny"/>
+                                <constraint firstAttribute="bottom" secondItem="4SJ-CS-Fqn" secondAttribute="bottom" constant="30" id="KrO-XD-DWB"/>
+                                <constraint firstItem="4SJ-CS-Fqn" firstAttribute="leading" secondItem="lNi-qo-bHi" secondAttribute="leading" constant="20" id="Xry-dQ-miQ"/>
+                                <constraint firstAttribute="trailing" secondItem="gan-al-MQB" secondAttribute="trailing" id="r13-VI-9Me"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lNi-qo-bHi" firstAttribute="leading" secondItem="GXa-12-wLi" secondAttribute="leading" id="BHl-ZF-2wq"/>
+                        <constraint firstAttribute="trailing" secondItem="lNi-qo-bHi" secondAttribute="trailing" id="Eep-ny-Rm2"/>
+                        <constraint firstItem="lNi-qo-bHi" firstAttribute="top" secondItem="GXa-12-wLi" secondAttribute="top" id="G8Q-9B-RND"/>
+                        <constraint firstAttribute="bottom" secondItem="lNi-qo-bHi" secondAttribute="bottom" id="KgU-JP-xfE"/>
+                        <constraint firstItem="lNi-qo-bHi" firstAttribute="width" secondItem="GXa-12-wLi" secondAttribute="width" id="UXj-Rj-lAw"/>
+                        <constraint firstItem="lNi-qo-bHi" firstAttribute="height" secondItem="GXa-12-wLi" secondAttribute="height" priority="1" id="jT8-Db-yXF"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="j2M-yq-HBw"/>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="j2M-yq-HBw" firstAttribute="bottom" secondItem="GXa-12-wLi" secondAttribute="bottom" id="XNb-BZ-EhL"/>
+                <constraint firstItem="GXa-12-wLi" firstAttribute="leading" secondItem="j2M-yq-HBw" secondAttribute="leading" id="k2N-Q2-fvk"/>
+                <constraint firstItem="GXa-12-wLi" firstAttribute="top" secondItem="j2M-yq-HBw" secondAttribute="top" id="vjZ-nL-ZNN"/>
+                <constraint firstItem="j2M-yq-HBw" firstAttribute="trailing" secondItem="GXa-12-wLi" secondAttribute="trailing" id="x06-ew-XU9"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+</document>

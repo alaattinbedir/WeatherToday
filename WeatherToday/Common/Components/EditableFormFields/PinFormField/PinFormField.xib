@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="muli_bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="muli_semibold.ttf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bNr-ZK-Pbc" customClass="PinFormField" customModule="DenizKartim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DcE-Q4-wEv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxI-7T-SXg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="14"/>
+                            <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2n-er-xQD">
+                            <rect key="frame" x="0.0" y="68" width="375" height="52"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-Oq-aaE">
+                                    <rect key="frame" x="20" y="4" width="0.0" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="100" id="gZg-Uj-hTe"/>
+                                    </constraints>
+                                </stackView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ppN-Mt-wC7" customClass="CustomTextField" customModule="DenizKartim" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="0.0" width="355" height="52"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartQuotesType="no" textContentType="one-time-code"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontWeight" value="medium"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPasteEnabled" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSelectEnabled" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSelectAllEnabled" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCopyEnabled" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCutEnabled" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCursorEnabled" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="bNr-ZK-Pbc" id="SL0-wQ-q0c"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ppN-Mt-wC7" firstAttribute="leading" secondItem="m2n-er-xQD" secondAttribute="leading" constant="20" id="0ca-IP-hIl"/>
+                                <constraint firstAttribute="bottom" secondItem="r4p-Oq-aaE" secondAttribute="bottom" constant="4" id="0r2-LU-jvX"/>
+                                <constraint firstAttribute="trailing" secondItem="ppN-Mt-wC7" secondAttribute="trailing" id="3jN-Bd-SND"/>
+                                <constraint firstAttribute="bottom" secondItem="ppN-Mt-wC7" secondAttribute="bottom" id="4wq-gg-zmj"/>
+                                <constraint firstItem="r4p-Oq-aaE" firstAttribute="leading" secondItem="ppN-Mt-wC7" secondAttribute="leading" id="HWb-T4-Q9e"/>
+                                <constraint firstItem="r4p-Oq-aaE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2n-er-xQD" secondAttribute="leading" id="Nij-VH-CsE"/>
+                                <constraint firstItem="r4p-Oq-aaE" firstAttribute="top" secondItem="m2n-er-xQD" secondAttribute="top" constant="4" id="dxN-gb-A18"/>
+                                <constraint firstItem="ppN-Mt-wC7" firstAttribute="top" secondItem="m2n-er-xQD" secondAttribute="top" id="eAV-Tv-9fk"/>
+                                <constraint firstAttribute="height" constant="52" id="mRi-DS-VP5"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RU6-zt-OlR">
+                            <rect key="frame" x="0.0" y="120" width="375" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="13"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.098039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="m2n-er-xQD" firstAttribute="leading" secondItem="DcE-Q4-wEv" secondAttribute="leading" id="khQ-Wc-vpc"/>
+                        <constraint firstItem="RU6-zt-OlR" firstAttribute="leading" secondItem="DcE-Q4-wEv" secondAttribute="leading" id="pRW-UL-AS2"/>
+                        <constraint firstAttribute="trailing" secondItem="RU6-zt-OlR" secondAttribute="trailing" id="pyA-gN-ZeW"/>
+                        <constraint firstAttribute="trailing" secondItem="m2n-er-xQD" secondAttribute="trailing" id="sLH-AM-HfD"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Nuj-uW-RkS"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DcE-Q4-wEv" secondAttribute="trailing" id="DXM-Fn-L03"/>
+                <constraint firstAttribute="bottom" secondItem="DcE-Q4-wEv" secondAttribute="bottom" id="KUu-bl-RZb"/>
+                <constraint firstItem="DcE-Q4-wEv" firstAttribute="leading" secondItem="bNr-ZK-Pbc" secondAttribute="leading" id="j9P-ze-xV1"/>
+                <constraint firstItem="DcE-Q4-wEv" firstAttribute="top" secondItem="bNr-ZK-Pbc" secondAttribute="top" id="mc3-AR-KI7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblError" destination="RU6-zt-OlR" id="Vkv-EQ-5yq"/>
+                <outlet property="lblTitle" destination="PxI-7T-SXg" id="Xsv-vK-pdK"/>
+                <outlet property="mainView" destination="m2n-er-xQD" id="U8p-tK-qEQ"/>
+                <outlet property="textField" destination="ppN-Mt-wC7" id="Alv-mZ-e5q"/>
+                <outlet property="viewContainer" destination="r4p-Oq-aaE" id="IYG-V7-V3a"/>
+            </connections>
+            <point key="canvasLocation" x="120.8" y="320.68965517241384"/>
+        </view>
+    </objects>
+</document>

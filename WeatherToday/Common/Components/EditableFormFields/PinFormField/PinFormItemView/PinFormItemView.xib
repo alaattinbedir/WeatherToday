@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="l3r-hq-kfY" customClass="PinFormItemView" customModule="DenizKartim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvb-D0-Ch1">
+                    <rect key="frame" x="0.0" y="8" width="30" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="999" constant="50" id="AcF-SZ-OQ0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontWeight" value="medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfC-Jm-4B0">
+                    <rect key="frame" x="0.0" y="23" width="30" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rOe-Dp-Jd2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lO5-Zh-OdU"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Hvb-D0-Ch1" firstAttribute="leading" secondItem="l3r-hq-kfY" secondAttribute="leading" id="3ZE-tU-c7I"/>
+                <constraint firstItem="PfC-Jm-4B0" firstAttribute="leading" secondItem="l3r-hq-kfY" secondAttribute="leading" id="DkT-vB-IA9"/>
+                <constraint firstAttribute="trailing" secondItem="PfC-Jm-4B0" secondAttribute="trailing" id="FxT-B9-b3w"/>
+                <constraint firstAttribute="trailing" secondItem="Hvb-D0-Ch1" secondAttribute="trailing" id="G42-gk-qZw"/>
+                <constraint firstAttribute="bottom" secondItem="PfC-Jm-4B0" secondAttribute="bottom" constant="8" id="hzl-yq-GQa"/>
+                <constraint firstItem="PfC-Jm-4B0" firstAttribute="top" secondItem="Hvb-D0-Ch1" secondAttribute="bottom" id="pP9-tE-96n"/>
+                <constraint firstItem="Hvb-D0-Ch1" firstAttribute="top" secondItem="l3r-hq-kfY" secondAttribute="top" constant="8" id="yb3-xe-rEg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblItem" destination="Hvb-D0-Ch1" id="IJi-VP-GCj"/>
+                <outlet property="viewIndicator" destination="PfC-Jm-4B0" id="tFp-xb-kuf"/>
+            </connections>
+            <point key="canvasLocation" x="102" y="40"/>
+        </view>
+    </objects>
+</document>

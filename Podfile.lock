@@ -9,7 +9,9 @@ PODS:
     - ReactiveKit (~> 3.14)
   - CryptoSwift (1.5.1)
   - Differ (1.4.5)
+  - EasyTipView (2.1.0)
   - IQKeyboardManagerSwift (6.5.10)
+  - KeychainAccess (4.2.2)
   - lottie-ios (3.2.3)
   - Nimble (10.0.0)
   - ObjectMapper (3.5.3)
@@ -44,7 +46,9 @@ DEPENDENCIES:
   - Atributika
   - Bond (= 7.6.1)
   - CryptoSwift (~> 1.0)
+  - EasyTipView (~> 2.1)
   - IQKeyboardManagerSwift
+  - KeychainAccess
   - lottie-ios
   - Nimble
   - ObjectMapper (~> 3.5.1)
@@ -64,7 +68,9 @@ SPEC REPOS:
     - Bond
     - CryptoSwift
     - Differ
+    - EasyTipView
     - IQKeyboardManagerSwift
+    - KeychainAccess
     - lottie-ios
     - Nimble
     - ObjectMapper
@@ -85,7 +91,9 @@ SPEC CHECKSUMS:
   Bond: 8aed9330723da630fccacf745d7fcbf58182d0df
   CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
   Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
@@ -99,6 +107,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TextAttributes: 89905fb52c36de587010f335bd4071463d9c6d9b
 
-PODFILE CHECKSUM: db5fc121014fdd61a31fb9729ec786da14aeb7a2
+PODFILE CHECKSUM: e65a4d1f2e97ed0b093f81ca9e3c82ff0e3aee2f
 
 COCOAPODS: 1.11.2

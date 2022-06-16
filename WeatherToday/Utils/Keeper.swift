@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import KeychainAccess
 
 final class PersistentKeeper {
     static let shared = PersistentKeeper()
@@ -24,17 +24,17 @@ final class PersistentKeeper {
         didSet { UserDefaultsManager.set(languageDict, forKey: Key.UserDefaults.langDict) }
     }
 
-//    var localeVersion = "" {
-//        didSet { KeeperCommon.shared.localeVersion = localeVersion }
-//    }
+    var localeVersion = "" {
+        didSet { KeeperCommon.shared.localeVersion = localeVersion }
+    }
 
     var lastCheckedAppVersion = "" {
         didSet { UserDefaultsManager.set(lastCheckedAppVersion, forKey: Key.UserDefaults.lastCheckedAppVersion) }
     }
 
-//    var activeReminededUser: MDUser? {
-//        didSet { UserDefaultsManager.set(activeReminededUser, forKey: Key.UserDefaults.activeRemindedUser) }
-//    }
+    var activeReminededUser: MDUser? {
+        didSet { UserDefaultsManager.set(activeReminededUser, forKey: Key.UserDefaults.activeRemindedUser) }
+    }
 
     var isLoginBefore = false {
         didSet { UserDefaultsManager.set(isLoginBefore, forKey: Key.UserDefaults.isLoginBefore) }
@@ -98,9 +98,9 @@ final class PersistentKeeper {
         didSet { UserDefaultsManager.set(dontShowAgainFeedBackCampaign, forKey: Key.UserDefaults.userFeedBackArray) }
     }
 
-//    var secureDeviceOtp: String? {
-//        didSet { KeeperCommon.shared.secureDeviceOtp = secureDeviceOtp }
-//    }
+    var secureDeviceOtp: String? {
+        didSet { KeeperCommon.shared.secureDeviceOtp = secureDeviceOtp }
+    }
 
     var autoLoginUser: String? {
         get { UserDefaultsManager.string(forKey: Key.UserDefaults.autoLoginUser) }
@@ -120,18 +120,18 @@ final class PersistentKeeper {
         didSet { UserDefaultsManager.set(isSelectNoForAddDevice, forKey: Key.UserDefaults.isSelectNoForAddDevice) }
     }
 
-//    var loginInfo: LoginResponse? {
-//        didSet {
-//            verificationType = loginInfo?.verificationType
-//            if let verificationType = verificationType {
-//                verificationTypeContainTokens =
-//                    verificationType.decrypt() == VerificationType.smsWithSoftToken.rawValue
-//                        || verificationType.decrypt() == VerificationType.hardTokenWithSoftToken.rawValue
-//            } else {
-//                verificationTypeContainTokens = nil
-//            }
-//        }
-//    }
+    var loginInfo: LoginResponse? {
+        didSet {
+            verificationType = loginInfo?.verificationType
+            if let verificationType = verificationType {
+                verificationTypeContainTokens =
+                    verificationType.decrypt() == VerificationType.smsWithSoftToken.rawValue
+                        || verificationType.decrypt() == VerificationType.hardTokenWithSoftToken.rawValue
+            } else {
+                verificationTypeContainTokens = nil
+            }
+        }
+    }
 
     var testMsisdnModeOn: Bool = false {
         didSet { UserDefaultsManager.set(testMsisdnModeOn, forKey: Key.UserDefaults.testMsisdnModeOpen) }
@@ -141,9 +141,9 @@ final class PersistentKeeper {
         hasAppRunBefore = UserDefaultsManager.bool(forKey: Key.UserDefaults.hasAppRunBefore)
         hasOnBoardingShownBefore = UserDefaultsManager.bool(forKey: Key.UserDefaults.hasOnBoardingShownBefore)
         languageDict = UserDefaultsManager.object([String: String].self, forKey: Key.UserDefaults.langDict)
-//        localeVersion = KeeperCommon.shared.localeVersion
+        localeVersion = KeeperCommon.shared.localeVersion
         lastCheckedAppVersion = UserDefaultsManager.string(forKey: Key.UserDefaults.lastCheckedAppVersion)~
-//        activeReminededUser = UserDefaultsManager.object(MDUser.self, forKey: Key.UserDefaults.activeRemindedUser)
+        activeReminededUser = UserDefaultsManager.object(MDUser.self, forKey: Key.UserDefaults.activeRemindedUser)
         favoriteCardMaskNumber = UserDefaultsManager.string(forKey: Key.UserDefaults.favoriteCardMaskNumber)
         plateNumber = UserDefaultsManager.string(forKey: Key.UserDefaults.plateNumber)
         isLoginBefore = UserDefaultsManager.bool(forKey: Key.UserDefaults.isLoginBefore)
@@ -151,13 +151,13 @@ final class PersistentKeeper {
         isRemoveVascoBefore = UserDefaultsManager.bool(forKey: Key.UserDefaults.isRemoveVascoBefore)
         dontShowAgainFeedBackCampaign = UserDefaultsManager.string(forKey: Key.UserDefaults.userFeedBackArray)
         shouldCheckMsisdn = UserDefaultsManager.bool(forKey: Key.UserDefaults.shouldCheckMsisdn)
-//        if let secureDeviceOtp = UserDefaultsManager.string(forKey: Key.UserDefaults.secureDeviceOtp) {
-//            self.secureDeviceOtp = secureDeviceOtp
-//            KeeperCommon.shared.secureDeviceOtp = secureDeviceOtp
-//            UserDefaultsManager.set(nil, forKey: Key.UserDefaults.secureDeviceOtp)
-//        } else {
-//            secureDeviceOtp = KeeperCommon.shared.secureDeviceOtp
-//        }
+        if let secureDeviceOtp = UserDefaultsManager.string(forKey: Key.UserDefaults.secureDeviceOtp) {
+            self.secureDeviceOtp = secureDeviceOtp
+            KeeperCommon.shared.secureDeviceOtp = secureDeviceOtp
+            UserDefaultsManager.set(nil, forKey: Key.UserDefaults.secureDeviceOtp)
+        } else {
+            secureDeviceOtp = KeeperCommon.shared.secureDeviceOtp
+        }
         isDeletedDevice = UserDefaultsManager.bool(forKey: Key.UserDefaults.isDeletedDevice)
         isSelectNoForAddDevice = UserDefaultsManager.bool(forKey: Key.UserDefaults.isSelectNoForAddDevice)
         isPayFast = UserDefaultsManager.bool(forKey: Key.UserDefaults.isPayFast)
@@ -165,11 +165,11 @@ final class PersistentKeeper {
     }
 
     func removeItems() {
-//        activeReminededUser = nil
+        activeReminededUser = nil
         hasAppRunBefore = false
         hasOnBoardingShownBefore = false
         languageDict = nil
-//        localeVersion = ""
+        localeVersion = ""
         lastCheckedAppVersion = ""
         favoriteCardMaskNumber = ""
         plateNumber = ""
@@ -182,7 +182,7 @@ final class PersistentKeeper {
         shouldCheckMsisdn = true
         isPayFast = false
         isLandscapeQR = false
-//        secureDeviceOtp = ""
+        secureDeviceOtp = ""
         autoLoginUser = nil
         autoLoginPass = nil
     }
@@ -190,9 +190,9 @@ final class PersistentKeeper {
     func removeSafeDevice() {
         isDeletedDevice = false
         isSelectNoForAddDevice = false
-//        SecureDevicesMenuViewModel().continueRemoveDevice(isForgot: true,
-//                                                          deviceId: UUIDHelper.getUniqueDeviceID())
-//        secureDeviceOtp = ""
+        SecureDevicesMenuViewModel().continueRemoveDevice(isForgot: true,
+                                                          deviceId: UUIDHelper.getUniqueDeviceID())
+        secureDeviceOtp = ""
     }
 }
 
@@ -210,20 +210,108 @@ enum ApplicationLanguageEnum: String {
     }
 }
 
+final class KeychainKeeper {
+    static let shared = KeychainKeeper()
+    lazy var keychainService = Keychain(service: Key.Keychain.serviceName)
+
+    var customUrl: String? {
+        get {
+            return keychainService[Key.Keychain.customUrl]
+        }
+        set {
+            keychainService[Key.Keychain.customUrl] = newValue
+        }
+    }
+
+    var uniqueDeviceID: String? {
+        get {
+            return keychainService[Key.Keychain.uniqueDeviceId]
+        }
+        set {
+            keychainService[Key.Keychain.uniqueDeviceId] = newValue
+        }
+    }
+
+    var userId: String? {
+        get {
+            return keychainService[Key.Keychain.userId]
+        }
+        set {
+            keychainService[Key.Keychain.userId] = newValue
+        }
+    }
+
+    var userIdentifier: String? {
+        get {
+            return keychainService[Key.Keychain.userIdentifier]
+        }
+        set {
+            keychainService[Key.Keychain.userIdentifier] = newValue
+        }
+    }
+
+    var isUserRegistered: Bool {
+        get {
+            return Bool(keychainService[Key.Keychain.isUserRegistered]~)~
+        }
+        set {
+            keychainService[Key.Keychain.isUserRegistered] = String(newValue)
+        }
+    }
+
+    var profilPicture: String? {
+        get {
+            return keychainService[Key.Keychain.profilePicture]
+        }
+        set {
+            keychainService[Key.Keychain.profilePicture] = newValue
+        }
+    }
+
+    var isRequireChangePassword: Bool {
+        get {
+            return Bool(keychainService[Key.Keychain.isRequireChangePassword]~)~
+        }
+        set {
+            keychainService[Key.Keychain.isRequireChangePassword] = String(newValue)
+        }
+    }
+
+    private init() {
+        // For singleton pattern
+    }
+
+    func removeItems() {
+        customUrl = nil
+        userIdentifier = nil
+        isUserRegistered = false
+        profilPicture = nil
+        userId = nil
+    }
+}
 
 final class SessionKeeper {
     static let shared = SessionKeeper()
-//    var currentEnvironment: AppEnvironment = AppEnvironment.prod {
-//        didSet {
-//            if let appGroupUserDefault = UserDefaults(suiteName: Key.AppGroupId) {
-//                appGroupUserDefault.set(APPURL.baseUrl, forKey: Key.UserDefaults.currentEnvironment)
-//            }
-//        }
-//    }
+    var currentEnvironment: AppEnvironment = AppEnvironment.prod {
+        didSet {
+            if let appGroupUserDefault = UserDefaults(suiteName: Key.AppGroupId) {
+                appGroupUserDefault.set(APPURL.baseUrl, forKey: Key.UserDefaults.currentEnvironment)
+            }
+        }
+    }
 
     var encryptionKey = ""
     var expiresIn: Double = 0
+    var loginInfo: LoginResponse? {
+        didSet {
+            guard let userId = loginInfo?.userId.decrypt() else { return }
+            if let appGroupUserDefault = UserDefaults(suiteName: Key.AppGroupId) {
+                appGroupUserDefault.set(userId, forKey: Key.Keychain.userId)
+            }
+        }
+    }
 
+    var activeReminededUser: MDUser?
     var patternMinLength = 5
     var isUserLoggedIn = false
     var hasMainPageShown = false

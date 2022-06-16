@@ -16,6 +16,8 @@ def shared_pods
   pod 'Atributika'
   pod 'lottie-ios'
   pod 'CryptoSwift', '~> 1.0'
+  pod 'EasyTipView', '~> 2.1'
+  pod 'KeychainAccess'
 end
 
 def testing_pods
