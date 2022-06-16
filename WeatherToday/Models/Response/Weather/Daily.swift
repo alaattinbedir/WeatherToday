@@ -17,7 +17,7 @@ import ObjectMapper
 struct Daily : Mappable {
 	var summary : String?
 	var icon : String?
-	var data : [Data]?
+	var data : [WeatherData]?
 
 	init?(map: Map) {
 

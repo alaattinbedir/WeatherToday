@@ -218,6 +218,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSString;
+
+SWIFT_CLASS("_TtC12WeatherToday10AlertModel")
+@interface AlertModel : NSObject
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable header;
+@property (nonatomic, copy) NSString * _Nullable message;
+@property (nonatomic) NSInteger code;
+@property (nonatomic, copy) NSString * _Nullable field;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull extraFields;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIWindow;
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -225,6 +239,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC12WeatherToday11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
@@ -236,10 +251,76 @@ SWIFT_CLASS("_TtC12WeatherToday7BaseAPI")
 @interface BaseAPI : SessionDelegate
 @end
 
-@class UILabel;
-@class UIImageView;
-@class NSString;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC12WeatherToday22BaseDataViewController")
+@interface BaseDataViewController : UIViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday13BaseFormField")
+@interface BaseFormField : UIView
+- (id _Nullable)awakeAfterUsingCoder:(NSCoder * _Nonnull)_ SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday6BaseNC")
+@interface BaseNC : UINavigationController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday10BasePageVC")
+@interface BasePageVC : UIPageViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, UIScrollViewDelegate>
+- (void)viewDidLoad;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)_ viewControllerBeforeViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)_ viewControllerAfterViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+- (void)pageViewController:(UIPageViewController * _Nonnull)_ willTransitionToViewControllers:(NSArray<UIViewController *> * _Nonnull)pendingViewControllers;
+- (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<UIPageViewControllerOptionsKey, id> * _Nullable)options SWIFT_UNAVAILABLE;
+@end
+
+@class UIImageView;
+@class UILabel;
+@class UIStackView;
+@class NSLayoutConstraint;
+@class UIButton;
+
+SWIFT_CLASS("_TtC12WeatherToday10BaseRootVC")
+@interface BaseRootVC : BaseDataViewController
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified viewTitleWithLogo;
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified imgLogo;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblTitleWithLogo;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblTitle;
+@property (nonatomic, strong) IBOutlet UIStackView * _Null_unspecified leftBarButtonContainer;
+@property (nonatomic, strong) IBOutlet UIStackView * _Null_unspecified rightBarButtonContainer;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified containerView;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified navigationBarHeightConstraint;
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified navBarBg;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified viewPageTitleAndStep;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblPageTitle;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblStep;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (void)viewDidLoad;
+- (void)navigationBarButtonItemPressed:(UIButton * _Nonnull)button;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface BaseRootVC (SWIFT_EXTENSION(WeatherToday)) <UINavigationControllerDelegate>
+- (void)navigationController:(UINavigationController * _Nonnull)navigationController didShowViewController:(UIViewController * _Nonnull)_ animated:(BOOL)_;
+@end
+
 
 SWIFT_CLASS("_TtC12WeatherToday18DailyTableViewCell")
 @interface DailyTableViewCell : UITableViewCell
@@ -254,9 +335,29 @@ SWIFT_CLASS("_TtC12WeatherToday18DailyTableViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC12WeatherToday13EmptyResponse")
+@interface EmptyResponse : NSObject
+@property (nonatomic) NSInteger statusCode;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12WeatherToday12ErrorMessage")
 @interface ErrorMessage : NSObject
+@property (nonatomic) NSInteger responseType;
+@property (nonatomic, copy) NSString * _Nonnull message;
+@property (nonatomic, copy) NSString * _Nonnull title;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12WeatherToday14FieldErrorView")
+@interface FieldErrorView : BaseFormField
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblError;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified viewContainer;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -271,6 +372,17 @@ SWIFT_CLASS("_TtC12WeatherToday21ForecastTableViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC12WeatherToday10FormButton")
+@interface FormButton : UIButton
+@property (nonatomic, readonly) UIControlState state;
+@property (nonatomic) IBInspectable NSInteger formButtonStyle;
+@property (nonatomic) IBInspectable CGFloat textSize;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
 SWIFT_CLASS("_TtC12WeatherToday24HourlyCollectionViewCell")
 @interface HourlyCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hourLabel;
@@ -281,7 +393,15 @@ SWIFT_CLASS("_TtC12WeatherToday24HourlyCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIWindow;
+
+
+SWIFT_CLASS("_TtC12WeatherToday11OverlayView")
+@interface OverlayView : UIView
+- (nonnull instancetype)init;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIScene;
 
 SWIFT_CLASS("_TtC12WeatherToday13SceneDelegate")
@@ -296,9 +416,99 @@ SWIFT_CLASS("_TtC12WeatherToday13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+@interface UIButton (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+
+@interface UICollectionViewCell (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+
+
+
+
+@interface UIDatePicker (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+
+@interface UIImageView (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+@interface UILabel (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+
+
+@interface UIPickerView (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+
+@interface UISwitch (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+@interface UITableViewCell (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+@interface UITextField (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+
+@interface UITextView (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+
+
+
+@interface UIView (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic, readonly, copy) NSString * _Nonnull accessibilityPrefix;
+@end
+
+
+@class UIColor;
+
+@interface UIView (SWIFT_EXTENSION(WeatherToday))
+@property (nonatomic) IBInspectable CGFloat cornerRadius;
+@property (nonatomic) IBInspectable CGFloat borderWidth;
+@property (nonatomic, strong) IBInspectable UIColor * _Nullable borderUIColor;
+@property (nonatomic) IBInspectable BOOL masksToBounds;
+@property (nonatomic) IBInspectable CGSize shadowOffset;
+@property (nonatomic) IBInspectable CGFloat shadowRadius;
+@property (nonatomic, strong) IBInspectable UIColor * _Nullable shadowColor;
+@property (nonatomic) IBInspectable float shadowOpacity;
+@property (nonatomic) IBInspectable BOOL shouldRasterize;
+@end
+
+
+
+
+
+
+
+
 @class UITableView;
 @class UICollectionView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC12WeatherToday9WeatherVC")
 @interface WeatherVC : UIViewController

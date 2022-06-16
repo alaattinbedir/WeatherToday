@@ -9,6 +9,13 @@ def shared_pods
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'OHHTTPStubs/Swift'
+  pod 'Bond', '7.6.1'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'IQKeyboardManagerSwift'
+  pod 'TextAttributes'
+  pod 'Atributika'
+  pod 'lottie-ios'
+  pod 'CryptoSwift', '~> 1.0'
 end
 
 def testing_pods

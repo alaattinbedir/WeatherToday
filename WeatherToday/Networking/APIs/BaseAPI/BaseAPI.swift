@@ -16,34 +16,6 @@ enum ApiContentTypeEnum: String {
     case applicationJson = "application/json"
 }
 
-class ErrorMessage: NSObject, Mappable {
-    
-    var errorCode: String?
-    var message: String?
-    var httpStatus: Int?
-    
-    required init?(map _: Map) {
-        // Empty function body
-    }
-
-    override init() {
-        // Empty function body
-    }
-
-    convenience init(errorCode: String?, message: String?) {
-        self.init()
-        self.errorCode = errorCode
-        self.message = message
-        self.httpStatus = httpStatus
-    }
-
-    func mapping(map: Map) {
-        message <- map["Message"]
-        errorCode <- map["ErrorCode"]
-    }
-
-}
-
 class BaseAPI: SessionDelegate {
     
     static let shared = BaseAPI()
@@ -77,7 +49,7 @@ class BaseAPI: SessionDelegate {
         let contentType = ApiContentTypeEnum.applicationJson.rawValue
 
         guard networkIsReachable() else {
-            if let myError = ErrorMessage(errorCode: "NO_CONNECTION_ERROR", message: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
+            if let myError = ErrorMessage(errorCode: 1001, message: NSLocalizedString("No Internet connection", comment: "comment")) as? F {
                 failed(myError)
             }
             return

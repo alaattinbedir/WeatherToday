@@ -29,7 +29,7 @@ class DailyTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(dailyData: Data) {
+    func configureCell(dailyData: WeatherData) {
         
         if let time = dailyData.time {
             self.dayLabel.text = Utilities.sharedInstance.getDayFromDate(date: Double(time))

@@ -21,7 +21,7 @@ class HourlyCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func configureCell(hourlyData: Data) {
+    func configureCell(hourlyData: WeatherData) {
         
         if let time = hourlyData.time {
             self.hourLabel.text = Utilities.sharedInstance.getHourFromDate(date: Double(time))
