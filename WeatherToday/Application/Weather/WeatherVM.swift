@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class WeatherVM {
+class WeatherVM: BaseViewModel {
     let disposeBag = DisposeBag()
     let cityName = BehaviorRelay<String>(value: "Barcelona")
     var currentLocation: (latitude:Double, longitude:Double) = (41.3874, 2.1686)

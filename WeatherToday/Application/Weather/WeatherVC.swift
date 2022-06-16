@@ -11,11 +11,10 @@ import CoreLocation
 import RxSwift
 import RxCocoa
 
-class WeatherVC: UIViewController {
+class WeatherVC: BaseVC<WeatherVM> {
     
     // MARK: - Vars & Lets
     
-    private let viewModel = WeatherVM()
     let locationManager = CLLocationManager()
     let hourlyCellNibName = "HourlyCollectionViewCell"
     let hourlyCellIdentifier = "HourlyCollectionViewCell"
@@ -110,12 +109,6 @@ class WeatherVC: UIViewController {
 
 
 // MARK: Bindings
-
-private extension WeatherVC {
-    func bind() {
-        
-    }
-}
 
 
 // MARK: Configure the components
