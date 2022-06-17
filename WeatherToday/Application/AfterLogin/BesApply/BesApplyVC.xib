@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6SB-OB-Wic">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXO-RT-c9l">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyC-fB-czp">
+                            <rect key="frame" x="16" y="16" width="382" height="0.0"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="300" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ad0-kX-5dQ" customClass="ContentSizedTableView" customModule="MobilDeniz_Internal" customModuleProvider="target">
+                            <rect key="frame" x="12" y="32" width="390" height="300"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ad0-kX-5dQ" firstAttribute="leading" secondItem="HXO-RT-c9l" secondAttribute="leading" constant="12" id="Ok6-0p-PGX"/>
+                        <constraint firstItem="wyC-fB-czp" firstAttribute="top" secondItem="HXO-RT-c9l" secondAttribute="top" constant="16" id="W4F-X9-ycf"/>
+                        <constraint firstAttribute="trailing" secondItem="wyC-fB-czp" secondAttribute="trailing" constant="16" id="hC8-sk-9aU"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ad0-kX-5dQ" secondAttribute="bottom" constant="20" id="hU7-uw-0y1"/>
+                        <constraint firstAttribute="trailing" secondItem="ad0-kX-5dQ" secondAttribute="trailing" constant="12" id="pm0-LQ-qT4"/>
+                        <constraint firstItem="wyC-fB-czp" firstAttribute="leading" secondItem="HXO-RT-c9l" secondAttribute="leading" constant="16" id="qXc-7z-1F2"/>
+                        <constraint firstItem="ad0-kX-5dQ" firstAttribute="top" secondItem="wyC-fB-czp" secondAttribute="bottom" constant="16" id="tjX-Mb-wBg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="N8I-bo-LAL"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HXO-RT-c9l" firstAttribute="leading" secondItem="N8I-bo-LAL" secondAttribute="leading" id="9MX-9J-zeu"/>
+                <constraint firstItem="N8I-bo-LAL" firstAttribute="bottom" secondItem="HXO-RT-c9l" secondAttribute="bottom" id="WLo-jn-Du7"/>
+                <constraint firstItem="N8I-bo-LAL" firstAttribute="trailing" secondItem="HXO-RT-c9l" secondAttribute="trailing" id="Z8b-Cv-2c2"/>
+                <constraint firstItem="HXO-RT-c9l" firstAttribute="top" secondItem="N8I-bo-LAL" secondAttribute="top" id="h5Q-BQ-5Lp"/>
+            </constraints>
+            <point key="canvasLocation" x="-204.34782608695653" y="72.991071428571431"/>
+        </view>
+    </objects>
+</document>

@@ -353,6 +353,28 @@
 		84DF9A2C2853A3200097B022 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF9A2A2853A3200097B022 /* URL+Extension.swift */; };
 		84FB7827275107000050E85D /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB7826275107000050E85D /* WeatherApi.swift */; };
 		84FB7828275107000050E85D /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB7826275107000050E85D /* WeatherApi.swift */; };
+		84FB8A88285CCEBF002B1A60 /* BesApplyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A87285CCEBF002B1A60 /* BesApplyVC.swift */; };
+		84FB8A8A285CCEE5002B1A60 /* BesApplyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A89285CCEE5002B1A60 /* BesApplyVM.swift */; };
+		84FB8A8C285CCEFC002B1A60 /* BesApplyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FB8A8B285CCEFC002B1A60 /* BesApplyVC.xib */; };
+		84FB8A8F285CCF75002B1A60 /* ContentSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A8E285CCF75002B1A60 /* ContentSizedTableView.swift */; };
+		84FB8A91285CD14C002B1A60 /* BesApplyPlanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A90285CD14C002B1A60 /* BesApplyPlanCellView.swift */; };
+		84FB8A93285CD166002B1A60 /* BesApplyPlanCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FB8A92285CD166002B1A60 /* BesApplyPlanCellView.xib */; };
+		84FB8A96285CD1A5002B1A60 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A95285CD1A5002B1A60 /* NibLoadable.swift */; };
+		84FB8A98285CD21D002B1A60 /* UIView+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A97285CD21D002B1A60 /* UIView+Content.swift */; };
+		84FB8A9A285CD2D6002B1A60 /* BesApplyTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A99285CD2D6002B1A60 /* BesApplyTO.swift */; };
+		84FB8A9D285CD3C4002B1A60 /* BesApplyCalculateMinimumEstimatedSavingsEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A9C285CD3C4002B1A60 /* BesApplyCalculateMinimumEstimatedSavingsEP.swift */; };
+		84FB8A9F285CD3DB002B1A60 /* BesApplyCalculateRiskSurveyResultEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8A9E285CD3DB002B1A60 /* BesApplyCalculateRiskSurveyResultEP.swift */; };
+		84FB8AA1285CD3EF002B1A60 /* BesApplyEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AA0285CD3EF002B1A60 /* BesApplyEP.swift */; };
+		84FB8AA3285CD405002B1A60 /* BesApplyGetCombinedFundsEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AA2285CD405002B1A60 /* BesApplyGetCombinedFundsEP.swift */; };
+		84FB8AA5285CD417002B1A60 /* BesApplyGetFundDistributionListEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AA4285CD417002B1A60 /* BesApplyGetFundDistributionListEP.swift */; };
+		84FB8AA7285CD429002B1A60 /* BesApplyGetPlansEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AA6285CD429002B1A60 /* BesApplyGetPlansEP.swift */; };
+		84FB8AA9285CD434002B1A60 /* BesApplyGetRiskSurveyEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AA8285CD434002B1A60 /* BesApplyGetRiskSurveyEP.swift */; };
+		84FB8AAD285CD47F002B1A60 /* BesApplyCombinedFundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AAC285CD47F002B1A60 /* BesApplyCombinedFundResponse.swift */; };
+		84FB8AAF285CD493002B1A60 /* BesApplyFundDistributionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AAE285CD493002B1A60 /* BesApplyFundDistributionResponse.swift */; };
+		84FB8AB1285CD4B5002B1A60 /* BesApplyMinimumEstimatedSavingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AB0285CD4B5002B1A60 /* BesApplyMinimumEstimatedSavingsResponse.swift */; };
+		84FB8AB3285CD4C7002B1A60 /* BesApplyPlansResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AB2285CD4C7002B1A60 /* BesApplyPlansResponse.swift */; };
+		84FB8AB5285CD4DF002B1A60 /* BesApplyRiskSurveyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AB4285CD4DF002B1A60 /* BesApplyRiskSurveyResponse.swift */; };
+		84FB8AB7285CD4F5002B1A60 /* BesApplyRiskSurveyResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8AB6285CD4F5002B1A60 /* BesApplyRiskSurveyResultResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -614,6 +636,28 @@
 		84DF9A262853A2B20097B022 /* Error+Cancelled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Cancelled.swift"; sourceTree = "<group>"; };
 		84DF9A2A2853A3200097B022 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		84FB7826275107000050E85D /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
+		84FB8A87285CCEBF002B1A60 /* BesApplyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyVC.swift; sourceTree = "<group>"; };
+		84FB8A89285CCEE5002B1A60 /* BesApplyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyVM.swift; sourceTree = "<group>"; };
+		84FB8A8B285CCEFC002B1A60 /* BesApplyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BesApplyVC.xib; sourceTree = "<group>"; };
+		84FB8A8E285CCF75002B1A60 /* ContentSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizedTableView.swift; sourceTree = "<group>"; };
+		84FB8A90285CD14C002B1A60 /* BesApplyPlanCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyPlanCellView.swift; sourceTree = "<group>"; };
+		84FB8A92285CD166002B1A60 /* BesApplyPlanCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BesApplyPlanCellView.xib; sourceTree = "<group>"; };
+		84FB8A95285CD1A5002B1A60 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		84FB8A97285CD21D002B1A60 /* UIView+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Content.swift"; sourceTree = "<group>"; };
+		84FB8A99285CD2D6002B1A60 /* BesApplyTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyTO.swift; sourceTree = "<group>"; };
+		84FB8A9C285CD3C4002B1A60 /* BesApplyCalculateMinimumEstimatedSavingsEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyCalculateMinimumEstimatedSavingsEP.swift; sourceTree = "<group>"; };
+		84FB8A9E285CD3DB002B1A60 /* BesApplyCalculateRiskSurveyResultEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyCalculateRiskSurveyResultEP.swift; sourceTree = "<group>"; };
+		84FB8AA0285CD3EF002B1A60 /* BesApplyEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyEP.swift; sourceTree = "<group>"; };
+		84FB8AA2285CD405002B1A60 /* BesApplyGetCombinedFundsEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyGetCombinedFundsEP.swift; sourceTree = "<group>"; };
+		84FB8AA4285CD417002B1A60 /* BesApplyGetFundDistributionListEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyGetFundDistributionListEP.swift; sourceTree = "<group>"; };
+		84FB8AA6285CD429002B1A60 /* BesApplyGetPlansEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyGetPlansEP.swift; sourceTree = "<group>"; };
+		84FB8AA8285CD434002B1A60 /* BesApplyGetRiskSurveyEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyGetRiskSurveyEP.swift; sourceTree = "<group>"; };
+		84FB8AAC285CD47F002B1A60 /* BesApplyCombinedFundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyCombinedFundResponse.swift; sourceTree = "<group>"; };
+		84FB8AAE285CD493002B1A60 /* BesApplyFundDistributionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyFundDistributionResponse.swift; sourceTree = "<group>"; };
+		84FB8AB0285CD4B5002B1A60 /* BesApplyMinimumEstimatedSavingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyMinimumEstimatedSavingsResponse.swift; sourceTree = "<group>"; };
+		84FB8AB2285CD4C7002B1A60 /* BesApplyPlansResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyPlansResponse.swift; sourceTree = "<group>"; };
+		84FB8AB4285CD4DF002B1A60 /* BesApplyRiskSurveyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyRiskSurveyResponse.swift; sourceTree = "<group>"; };
+		84FB8AB6285CD4F5002B1A60 /* BesApplyRiskSurveyResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BesApplyRiskSurveyResultResponse.swift; sourceTree = "<group>"; };
 		9D5867FD8BEDCCECA15D1AB5 /* Pods-WeatherToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherToday.debug.xcconfig"; path = "Target Support Files/Pods-WeatherToday/Pods-WeatherToday.debug.xcconfig"; sourceTree = "<group>"; };
 		A4FA4C4D0ED75BB4CEC96893 /* libPods-WeatherTodayUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherTodayUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBDF76CA361173C5F9C2637 /* Pods-WeatherTodayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTodayTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherTodayTests/Pods-WeatherTodayTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -724,6 +768,7 @@
 		840907AB284FE36C00483264 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				84FB8A8D285CCF5D002B1A60 /* TableView */,
 				840907D22850C03100483264 /* ScreenActivityIndicator */,
 				840907AC284FE37F00483264 /* WarningView */,
 			);
@@ -801,6 +846,7 @@
 			children = (
 				8476CB75284DF368006E915F /* UIView+DropShadow.swift */,
 				840907D82850C1F600483264 /* UIView+IBInspectable.swift */,
+				84FB8A97285CD21D002B1A60 /* UIView+Content.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1191,6 +1237,7 @@
 		846FB4882854D07E0027E5A5 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				84FB8A9B285CD3B5002B1A60 /* BesApply */,
 				846FB4892854D0940027E5A5 /* Weather */,
 			);
 			path = Endpoints;
@@ -1368,6 +1415,7 @@
 		847D7E632848CDD100AD0DBC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				84FB8A94285CD194002B1A60 /* Nib */,
 				84A961E62853B570002C2A17 /* Wrapper */,
 				846FB3CB2854061D0027E5A5 /* Any */,
 				846FB3BB285402960027E5A5 /* Locale */,
@@ -1500,6 +1548,7 @@
 		84A379C92750CFED0071CA81 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				84FB8AAA285CD464002B1A60 /* AfterLogin */,
 				84A961F42853B8B5002C2A17 /* Common */,
 				84A379D92750DADB0071CA81 /* Weather */,
 			);
@@ -1518,6 +1567,7 @@
 		84A379CC2750D09D0071CA81 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				84FB8A78285CCDE5002B1A60 /* AfterLogin */,
 				840907C22850A9B200483264 /* SecurityQuestionPopup */,
 				84090796284FBF0100483264 /* LandingWelcome */,
 				84383E5F284E8D250048AA21 /* Landing */,
@@ -1920,6 +1970,174 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
+		84FB8A78285CCDE5002B1A60 /* AfterLogin */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8A79285CCDF1002B1A60 /* BesApply */,
+			);
+			path = AfterLogin;
+			sourceTree = "<group>";
+		};
+		84FB8A79285CCDF1002B1A60 /* BesApply */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8A7A285CCE08002B1A60 /* AnswerCellView */,
+				84FB8A7B285CCE17002B1A60 /* BottomQuestionBarView */,
+				84FB8A85285CCE87002B1A60 /* Detail */,
+				84FB8A84285CCE7D002B1A60 /* EstimatedPensionSavings */,
+				84FB8A83285CCE73002B1A60 /* FundReturnInfo */,
+				84FB8A82285CCE69002B1A60 /* Model */,
+				84FB8A81285CCE5D002B1A60 /* PlanCell */,
+				84FB8A80285CCE51002B1A60 /* Result */,
+				84FB8A7F285CCE46002B1A60 /* ResultDistributionCellView */,
+				84FB8A7E285CCE3B002B1A60 /* ResultInfoView */,
+				84FB8A7D285CCE31002B1A60 /* SelectFundPage */,
+				84FB8A7C285CCE25002B1A60 /* Steps */,
+				84FB8A87285CCEBF002B1A60 /* BesApplyVC.swift */,
+				84FB8A89285CCEE5002B1A60 /* BesApplyVM.swift */,
+				84FB8A8B285CCEFC002B1A60 /* BesApplyVC.xib */,
+			);
+			path = BesApply;
+			sourceTree = "<group>";
+		};
+		84FB8A7A285CCE08002B1A60 /* AnswerCellView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnswerCellView;
+			sourceTree = "<group>";
+		};
+		84FB8A7B285CCE17002B1A60 /* BottomQuestionBarView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BottomQuestionBarView;
+			sourceTree = "<group>";
+		};
+		84FB8A7C285CCE25002B1A60 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		84FB8A7D285CCE31002B1A60 /* SelectFundPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SelectFundPage;
+			sourceTree = "<group>";
+		};
+		84FB8A7E285CCE3B002B1A60 /* ResultInfoView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResultInfoView;
+			sourceTree = "<group>";
+		};
+		84FB8A7F285CCE46002B1A60 /* ResultDistributionCellView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResultDistributionCellView;
+			sourceTree = "<group>";
+		};
+		84FB8A80285CCE51002B1A60 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		84FB8A81285CCE5D002B1A60 /* PlanCell */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8A90285CD14C002B1A60 /* BesApplyPlanCellView.swift */,
+				84FB8A92285CD166002B1A60 /* BesApplyPlanCellView.xib */,
+			);
+			path = PlanCell;
+			sourceTree = "<group>";
+		};
+		84FB8A82285CCE69002B1A60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8A99285CD2D6002B1A60 /* BesApplyTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84FB8A83285CCE73002B1A60 /* FundReturnInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FundReturnInfo;
+			sourceTree = "<group>";
+		};
+		84FB8A84285CCE7D002B1A60 /* EstimatedPensionSavings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EstimatedPensionSavings;
+			sourceTree = "<group>";
+		};
+		84FB8A85285CCE87002B1A60 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		84FB8A8D285CCF5D002B1A60 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8A8E285CCF75002B1A60 /* ContentSizedTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		84FB8A94285CD194002B1A60 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8A95285CD1A5002B1A60 /* NibLoadable.swift */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		84FB8A9B285CD3B5002B1A60 /* BesApply */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8A9C285CD3C4002B1A60 /* BesApplyCalculateMinimumEstimatedSavingsEP.swift */,
+				84FB8A9E285CD3DB002B1A60 /* BesApplyCalculateRiskSurveyResultEP.swift */,
+				84FB8AA0285CD3EF002B1A60 /* BesApplyEP.swift */,
+				84FB8AA2285CD405002B1A60 /* BesApplyGetCombinedFundsEP.swift */,
+				84FB8AA4285CD417002B1A60 /* BesApplyGetFundDistributionListEP.swift */,
+				84FB8AA6285CD429002B1A60 /* BesApplyGetPlansEP.swift */,
+				84FB8AA8285CD434002B1A60 /* BesApplyGetRiskSurveyEP.swift */,
+			);
+			path = BesApply;
+			sourceTree = "<group>";
+		};
+		84FB8AAA285CD464002B1A60 /* AfterLogin */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8AAB285CD46F002B1A60 /* BesApply */,
+			);
+			path = AfterLogin;
+			sourceTree = "<group>";
+		};
+		84FB8AAB285CD46F002B1A60 /* BesApply */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8AAC285CD47F002B1A60 /* BesApplyCombinedFundResponse.swift */,
+				84FB8AAE285CD493002B1A60 /* BesApplyFundDistributionResponse.swift */,
+				84FB8AB0285CD4B5002B1A60 /* BesApplyMinimumEstimatedSavingsResponse.swift */,
+				84FB8AB2285CD4C7002B1A60 /* BesApplyPlansResponse.swift */,
+				84FB8AB4285CD4DF002B1A60 /* BesApplyRiskSurveyResponse.swift */,
+				84FB8AB6285CD4F5002B1A60 /* BesApplyRiskSurveyResultResponse.swift */,
+			);
+			path = BesApply;
+			sourceTree = "<group>";
+		};
 		F13F10A28EE11D127177FC0A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2043,7 +2261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84090798284FBF3600483264 /* LandingWelcome.storyboard in Resources */,
+				84FB8A93285CD166002B1A60 /* BesApplyPlanCellView.xib in Resources */,
 				840907C62850AA8600483264 /* SecurityQuestionInfoPopUpVC.xib in Resources */,
+				84FB8A8C285CCEFC002B1A60 /* BesApplyVC.xib in Resources */,
 				84383E5E284E85A00048AA21 /* WeatherVC.xib in Resources */,
 				84A379FB2750E3DD0071CA81 /* DailyTableViewCell.xib in Resources */,
 				84A379A12750CE2C0071CA81 /* LaunchScreen.storyboard in Resources */,
@@ -2182,6 +2402,7 @@
 				84A379D62750DABF0071CA81 /* Hourly.swift in Sources */,
 				84A379E72750DD5D0071CA81 /* DailyTableViewCell.swift in Sources */,
 				846FB4362854BD5E0027E5A5 /* SharingHelper.swift in Sources */,
+				84FB8A8F285CCF75002B1A60 /* ContentSizedTableView.swift in Sources */,
 				840907CC2850BED500483264 /* SCLExtensions.swift in Sources */,
 				84189B68285113100018974D /* Keeper.swift in Sources */,
 				846FB3CA285404C60027E5A5 /* AppFile.swift in Sources */,
@@ -2208,9 +2429,12 @@
 				84189B6D2851150F0018974D /* Endpoints.swift in Sources */,
 				84DF99E7285398770097B022 /* NetworkErrorType.swift in Sources */,
 				84A379E62750DD5D0071CA81 /* HourlyCollectionViewCell.swift in Sources */,
+				84FB8AAD285CD47F002B1A60 /* BesApplyCombinedFundResponse.swift in Sources */,
 				84189B6B285113C50018974D /* AppDomain.swift in Sources */,
 				846FB42C2854BC700027E5A5 /* SiriPermission.swift in Sources */,
+				84FB8A9A285CD2D6002B1A60 /* BesApplyTO.swift in Sources */,
 				84DF9A1128539E310097B022 /* DispatchQueue+CurrentQueue.swift in Sources */,
+				84FB8A88285CCEBF002B1A60 /* BesApplyVC.swift in Sources */,
 				846FB3D22854B5480027E5A5 /* PhoneNumberWithCountryValidator.swift in Sources */,
 				846FB45E2854C2300027E5A5 /* EmojiConsoleLogger.swift in Sources */,
 				846FB4062854B9190027E5A5 /* NSAttributedString+Extension.swift in Sources */,
@@ -2230,6 +2454,8 @@
 				846FB3C3285403C90027E5A5 /* Storage.swift in Sources */,
 				84A379D42750DABF0071CA81 /* Currently.swift in Sources */,
 				846FB47B2854C8900027E5A5 /* HTTPURLResponse+Validation.swift in Sources */,
+				84FB8AA7285CD429002B1A60 /* BesApplyGetPlansEP.swift in Sources */,
+				84FB8AAF285CD493002B1A60 /* BesApplyFundDistributionResponse.swift in Sources */,
 				84A379EC2750DD820071CA81 /* Utilities.swift in Sources */,
 				846FB4B6285535290027E5A5 /* AppColor.swift in Sources */,
 				846FB48C2854D1000027E5A5 /* NetworkErrorType+ResourceMessage.swift in Sources */,
@@ -2240,6 +2466,7 @@
 				840907D92850C1F600483264 /* UIView+IBInspectable.swift in Sources */,
 				8476CB62284DE7C4006E915F /* NavigationRouter.swift in Sources */,
 				846FB3CD2854062F0027E5A5 /* Any+Extension.swift in Sources */,
+				84FB8A98285CD21D002B1A60 /* UIView+Content.swift in Sources */,
 				846FB3D82854B5B80027E5A5 /* AddressValidator.swift in Sources */,
 				840907E12850C39100483264 /* Logger.swift in Sources */,
 				84DCFB822852919900EE18F4 /* BaseApiData.swift in Sources */,
@@ -2259,17 +2486,22 @@
 				840907D12850BF8C00483264 /* UIFont+DeviceSpesific.swift in Sources */,
 				8476CB53284DE2C7006E915F /* RoutingEnum.swift in Sources */,
 				846FB3B7285402150027E5A5 /* DateFormat.swift in Sources */,
+				84FB8AA9285CD434002B1A60 /* BesApplyGetRiskSurveyEP.swift in Sources */,
+				84FB8A9D285CD3C4002B1A60 /* BesApplyCalculateMinimumEstimatedSavingsEP.swift in Sources */,
 				846FB3A9285400840027E5A5 /* AppLocale.swift in Sources */,
 				84A961C52853AC70002C2A17 /* MDLocationManager.swift in Sources */,
+				84FB8AA5285CD417002B1A60 /* BesApplyGetFundDistributionListEP.swift in Sources */,
 				84A379E92750DD5D0071CA81 /* ForecastTableViewCell.swift in Sources */,
 				846FB3AB285400BF0027E5A5 /* AppLocalization.swift in Sources */,
 				846FB4542854BFAB0027E5A5 /* DefaultWhaleNotificationRouter.swift in Sources */,
 				846FB4672854C41C0027E5A5 /* ConsoleLogger.swift in Sources */,
 				846FB42A2854BC5F0027E5A5 /* PushPermission.swift in Sources */,
 				840907B0284FE3DA00483264 /* WarningType.swift in Sources */,
+				84FB8AB3285CD4C7002B1A60 /* BesApplyPlansResponse.swift in Sources */,
 				846FB3C5285403F50027E5A5 /* FileStore.swift in Sources */,
 				84DF99DE285397B60097B022 /* ParameterEncoding+Default.swift in Sources */,
 				84A961AE2853A92E002C2A17 /* JanusClient.swift in Sources */,
+				84FB8AB5285CD4DF002B1A60 /* BesApplyRiskSurveyResponse.swift in Sources */,
 				84DF99DB2853977F0097B022 /* ParameterEncoding.swift in Sources */,
 				84DF99EE28539A040097B022 /* NetworkError.swift in Sources */,
 				84A961D82853B0A2002C2A17 /* WeatherEP.swift in Sources */,
@@ -2298,9 +2530,11 @@
 				846FB3F82854B7A30027E5A5 /* VknValidator.swift in Sources */,
 				8476CB6C284DEF01006E915F /* ModalTransitionAnimator.swift in Sources */,
 				846FB4B8285535530027E5A5 /* AppConstants.swift in Sources */,
+				84FB8A96285CD1A5002B1A60 /* NibLoadable.swift in Sources */,
 				84A961DB2853B371002C2A17 /* ObservableNetworkActivity.swift in Sources */,
 				84DF9A2B2853A3200097B022 /* URL+Extension.swift in Sources */,
 				84A961F62853B8C5002C2A17 /* EmptyResponse.swift in Sources */,
+				84FB8AA3285CD405002B1A60 /* BesApplyGetCombinedFundsEP.swift in Sources */,
 				846FB3DA2854B5CD0027E5A5 /* AmountValidator.swift in Sources */,
 				840907DB2850C28500483264 /* ActivityIndicatorPresenter.swift in Sources */,
 				84A379F52750E0240071CA81 /* WeatherVM.swift in Sources */,
@@ -2342,6 +2576,7 @@
 				846FB3EC2854B6F70027E5A5 /* LicenceNumberValidator.swift in Sources */,
 				846FB3EA2854B6D70027E5A5 /* MerchantNameValidator.swift in Sources */,
 				846FB48E2854D1900027E5A5 /* JanusDefaultRequestHeaderInterceptor.swift in Sources */,
+				84FB8A8A285CCEE5002B1A60 /* BesApplyVM.swift in Sources */,
 				846FB4082854B93F0027E5A5 /* String+Base64.swift in Sources */,
 				84DF99D7285397350097B022 /* HTTPHeaderKey.swift in Sources */,
 				846FB46C2854C61F0027E5A5 /* URLQueryValueRepresentable+String.swift in Sources */,
@@ -2360,11 +2595,13 @@
 				84383E65284E94540048AA21 /* RoutingEnum+ControllerType.swift in Sources */,
 				8476CB5C284DE4FA006E915F /* UiPageNavigator.swift in Sources */,
 				846FB49C2854D4630027E5A5 /* ImageResource.swift in Sources */,
+				84FB8AB1285CD4B5002B1A60 /* BesApplyMinimumEstimatedSavingsResponse.swift in Sources */,
 				846FB4282854BC4D0027E5A5 /* PhotoLibraryPermission.swift in Sources */,
 				84DF99EB2853997D0097B022 /* JSONParameterEncoder.swift in Sources */,
 				846FB4632854C3420027E5A5 /* SafeUnwrap.swift in Sources */,
 				846FB4832854CEB30027E5A5 /* String+MDResource.swift in Sources */,
 				84DF99D3285396F10097B022 /* HTTPMethodEnum.swift in Sources */,
+				84FB8A91285CD14C002B1A60 /* BesApplyPlanCellView.swift in Sources */,
 				846FB4102854B9D70027E5A5 /* UnicodeScalar+Emoji.swift in Sources */,
 				846FB3FE2854B8050027E5A5 /* PassportValidator.swift in Sources */,
 				846FB4022854B8620027E5A5 /* TerminalCountValidator.swift in Sources */,
@@ -2373,9 +2610,11 @@
 				846FB3DE2854B6120027E5A5 /* CitizenshipIDValidator.swift in Sources */,
 				846FB3D62854B5890027E5A5 /* AccountNameValidator.swift in Sources */,
 				84383E63284E8DD30048AA21 /* LandingVC.swift in Sources */,
+				84FB8AB7285CD4F5002B1A60 /* BesApplyRiskSurveyResultResponse.swift in Sources */,
 				846FB3DC2854B5F60027E5A5 /* CarPlateValidator.swift in Sources */,
 				846FB3E82854B68A0027E5A5 /* EmailValidator.swift in Sources */,
 				84A961E42853B54A002C2A17 /* ObservableNetworkActivityInterceptor.swift in Sources */,
+				84FB8A9F285CD3DB002B1A60 /* BesApplyCalculateRiskSurveyResultEP.swift in Sources */,
 				84A379D72750DABF0071CA81 /* WeatherResponse.swift in Sources */,
 				846FB42E2854BC820027E5A5 /* SpeechPermission.swift in Sources */,
 				846FB3F22854B75D0027E5A5 /* TraficPenaltyDocumentDateValidator.swift in Sources */,
@@ -2390,6 +2629,7 @@
 				846FB4342854BD3E0027E5A5 /* Pasteboard.swift in Sources */,
 				846FB4702854C6340027E5A5 /* URLQueryValueRepresentable+Double.swift in Sources */,
 				84DF9A272853A2B20097B022 /* Error+Cancelled.swift in Sources */,
+				84FB8AA1285CD3EF002B1A60 /* BesApplyEP.swift in Sources */,
 				846FB3FC2854B7D80027E5A5 /* SecurityQuestionValidator.swift in Sources */,
 				84DF99D02853969F0097B022 /* Endpoint.swift in Sources */,
 				84A961A12853A387002C2A17 /* URL+RawRepresentable.swift in Sources */,
