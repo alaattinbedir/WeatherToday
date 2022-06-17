@@ -543,13 +543,13 @@ enum Alert: Int {
     }
 
     func navigate(with tag: AlertButtonIdentifier) {
-//        switch (self, tag) {
-//        case (.unknownError, .ok):
-//            NavigationRouter.go(to: SplashVC(),
-//                                transitionOptions: TransitionOptions(direction: .fade))
-//        default:
-//            break
-//        }
+        switch (self, tag) {
+        case (.unknownError, .ok):
+            NavigationRouter.go(to: SplashVC(),
+                                transitionOptions: TransitionOptions(direction: .fade))
+        default:
+            break
+        }
     }
 }
 

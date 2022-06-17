@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="muli_bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="muli_semibold.ttf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GZa-bU-mWh" customClass="TextFormField" customModule="DenizKartim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fPs-RF-afZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmh-Dv-MhR">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="14"/>
+                            <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibr-eb-HCw">
+                            <rect key="frame" x="0.0" y="5" width="375" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fkd-vo-pjv" customClass="CustomTextField" customModule="DenizKartim" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="0.0" width="350" height="50"/>
+                                    <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="GZa-bU-mWh" id="w71-TG-Evo"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Fkd-vo-pjv" firstAttribute="top" secondItem="Ibr-eb-HCw" secondAttribute="top" id="5Hk-5r-P33"/>
+                                <constraint firstAttribute="trailing" secondItem="Fkd-vo-pjv" secondAttribute="trailing" constant="5" id="LGT-MJ-eYT"/>
+                                <constraint firstItem="Fkd-vo-pjv" firstAttribute="leading" secondItem="Ibr-eb-HCw" secondAttribute="leading" constant="20" id="aPn-nC-bo4"/>
+                                <constraint firstAttribute="bottom" secondItem="Fkd-vo-pjv" secondAttribute="bottom" id="fUC-lT-M6p"/>
+                                <constraint firstAttribute="height" constant="50" id="rnX-Qk-jSu"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAj-QE-l08">
+                            <rect key="frame" x="0.0" y="55" width="50" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="13"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.098039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqX-NF-kUW" customClass="WarningInfoAlertView" customModule="DenizKartim" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="55" width="375" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="PqX-NF-kUW" firstAttribute="leading" secondItem="fPs-RF-afZ" secondAttribute="leading" id="15P-m7-ZCb"/>
+                        <constraint firstAttribute="trailing" secondItem="Ibr-eb-HCw" secondAttribute="trailing" id="1Na-lU-mVW"/>
+                        <constraint firstAttribute="trailing" secondItem="PqX-NF-kUW" secondAttribute="trailing" id="2s8-VI-ix7"/>
+                        <constraint firstItem="Ibr-eb-HCw" firstAttribute="leading" secondItem="fPs-RF-afZ" secondAttribute="leading" id="ybN-Qp-Qjp"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8AY-w9-uvw"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fPs-RF-afZ" firstAttribute="leading" secondItem="8AY-w9-uvw" secondAttribute="leading" id="CkP-i9-AiF"/>
+                <constraint firstAttribute="bottom" secondItem="fPs-RF-afZ" secondAttribute="bottom" id="Pa0-8z-3up"/>
+                <constraint firstItem="fPs-RF-afZ" firstAttribute="trailing" secondItem="8AY-w9-uvw" secondAttribute="trailing" id="Sto-3B-kQm"/>
+                <constraint firstItem="fPs-RF-afZ" firstAttribute="top" secondItem="GZa-bU-mWh" secondAttribute="top" id="YRO-qw-7K7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblError" destination="DAj-QE-l08" id="tLU-Kw-w5R"/>
+                <outlet property="lblTitle" destination="Jmh-Dv-MhR" id="Ubs-WF-33z"/>
+                <outlet property="mainView" destination="Ibr-eb-HCw" id="3qS-D4-8F3"/>
+                <outlet property="textField" destination="Fkd-vo-pjv" id="7bI-nc-uPu"/>
+                <outlet property="warningView" destination="PqX-NF-kUW" id="uav-AV-Osb"/>
+            </connections>
+            <point key="canvasLocation" x="50.399999999999999" y="106.14692653673164"/>
+        </view>
+    </objects>
+</document>
