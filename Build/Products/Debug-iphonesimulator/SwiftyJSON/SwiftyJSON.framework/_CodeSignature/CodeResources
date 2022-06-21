@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/SwiftyJSON.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		yomTXCR8+ymFhXJc8uvcrRXuNac=
+		CtBNTf/+Rwv1HGROVuklUw9ePtc=
 		</data>
 		<key>Modules/SwiftyJSON.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/SwiftyJSON.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0D4aVi0pbTYdmGCCcNikpuwHDB4=
+		nZSl4XnqbTOX0vmwJdpN24aH32Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,11 +61,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yomTXCR8+ymFhXJc8uvcrRXuNac=
+			CtBNTf/+Rwv1HGROVuklUw9ePtc=
 			</data>
 			<key>hash2</key>
 			<data>
-			qfYsieZvRTiWcVM/QnfTWGWrULrr4U3GxgyS0US7yAI=
+			Ux0lAkLiyFZkHTwU6SR0DgXYHY3HCealEj1u7hsNzxY=
 			</data>
 		</dict>
 		<key>Modules/SwiftyJSON.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -83,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0D4aVi0pbTYdmGCCcNikpuwHDB4=
+			nZSl4XnqbTOX0vmwJdpN24aH32Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			OsO5xvSTxZj3AtggUTww5OH4OynVBnMRrHLaAiQQ1Mk=
+			i0UnBu09kd34rTFPL44SNSbVKphnLVc+4JjTXqwq0P4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

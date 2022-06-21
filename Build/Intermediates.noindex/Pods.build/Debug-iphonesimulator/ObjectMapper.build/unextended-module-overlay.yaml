@@ -4,11 +4,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules"
+    'name': "/Users/alaattinbedir/MyProjects/WeatherToday/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/alaattinbedir/MyProjects/Tutorials/iOS/WeatherToday/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ObjectMapper.build/unextended-module.modulemap",
+      'external-contents': "/Users/alaattinbedir/MyProjects/WeatherToday/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ObjectMapper.build/unextended-module.modulemap",
     }]
   }]
 }

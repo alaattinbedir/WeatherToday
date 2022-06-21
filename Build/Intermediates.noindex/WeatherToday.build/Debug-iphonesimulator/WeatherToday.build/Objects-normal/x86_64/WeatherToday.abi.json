@@ -35335,1098 +35335,6 @@
     },
     {
       "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "WeatherToday"
-    },
-    {
-      "kind": "OperatorDecl",
-      "name": "~",
-      "printedName": "~",
-      "declKind": "PostfixOperator",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ]
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Int",
-          "printedName": "Swift.Int",
-          "usr": "s:Si"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Int?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPyS2iSgF",
-      "mangledName": "$s12WeatherToday1toPyS2iSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Int64",
-          "printedName": "Swift.Int64",
-          "usr": "s:s5Int64V"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Int64?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int64",
-              "printedName": "Swift.Int64",
-              "usr": "s:s5Int64V"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPys5Int64VADSgF",
-      "mangledName": "$s12WeatherToday1toPys5Int64VADSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "UInt",
-          "printedName": "Swift.UInt",
-          "usr": "s:Su"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.UInt?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "UInt",
-              "printedName": "Swift.UInt",
-              "usr": "s:Su"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPyS2uSgF",
-      "mangledName": "$s12WeatherToday1toPyS2uSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "UInt64",
-          "printedName": "Swift.UInt64",
-          "usr": "s:s6UInt64V"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.UInt64?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "UInt64",
-              "printedName": "Swift.UInt64",
-              "usr": "s:s6UInt64V"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPys6UInt64VADSgF",
-      "mangledName": "$s12WeatherToday1toPys6UInt64VADSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Float",
-          "printedName": "Swift.Float",
-          "usr": "s:Sf"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Float?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Float",
-              "printedName": "Swift.Float",
-              "usr": "s:Sf"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPyS2fSgF",
-      "mangledName": "$s12WeatherToday1toPyS2fSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "CGFloat",
-          "printedName": "CoreGraphics.CGFloat",
-          "usr": "s:12CoreGraphics7CGFloatV"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "CoreGraphics.CGFloat?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "CGFloat",
-              "printedName": "CoreGraphics.CGFloat",
-              "usr": "s:12CoreGraphics7CGFloatV"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPy12CoreGraphics7CGFloatVAESgF",
-      "mangledName": "$s12WeatherToday1toPy12CoreGraphics7CGFloatVAESgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Double",
-          "printedName": "Swift.Double",
-          "usr": "s:Sd"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Double?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Double",
-              "printedName": "Swift.Double",
-              "usr": "s:Sd"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPyS2dSgF",
-      "mangledName": "$s12WeatherToday1toPyS2dSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "String",
-          "printedName": "Swift.String",
-          "usr": "s:SS"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.String?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPyS2SSgF",
-      "mangledName": "$s12WeatherToday1toPyS2SSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "String",
-          "printedName": "Swift.String",
-          "usr": "s:SS"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Substring?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Substring",
-              "printedName": "Swift.Substring",
-              "usr": "s:Ss"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPySSSsSgF",
-      "mangledName": "$s12WeatherToday1toPySSSsSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Bool",
-          "printedName": "Swift.Bool",
-          "usr": "s:Sb"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Bool?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPyS2bSgF",
-      "mangledName": "$s12WeatherToday1toPyS2bSgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Date",
-          "printedName": "Foundation.Date",
-          "usr": "s:10Foundation4DateV"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Foundation.Date?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Date",
-              "printedName": "Foundation.Date",
-              "usr": "s:10Foundation4DateV"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPy10Foundation4DateVAESgF",
-      "mangledName": "$s12WeatherToday1toPy10Foundation4DateVAESgF",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Array",
-          "printedName": "[τ_0_0]",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_0"
-            }
-          ],
-          "usr": "s:Sa"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "[τ_0_0]?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Array",
-              "printedName": "[τ_0_0]",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "GenericTypeParam",
-                  "printedName": "τ_0_0"
-                }
-              ],
-              "usr": "s:Sa"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPySayxGACSglF",
-      "mangledName": "$s12WeatherToday1toPySayxGACSglF",
-      "moduleName": "WeatherToday",
-      "genericSig": "<τ_0_0>",
-      "sugared_genericSig": "<T>",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "~",
-      "printedName": "~(_:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Dictionary",
-          "printedName": "[τ_0_0 : τ_0_1]",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_0"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_1"
-            }
-          ],
-          "usr": "s:SD"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "[τ_0_0 : τ_0_1]?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Dictionary",
-              "printedName": "[τ_0_0 : τ_0_1]",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "GenericTypeParam",
-                  "printedName": "τ_0_0"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "GenericTypeParam",
-                  "printedName": "τ_0_1"
-                }
-              ],
-              "usr": "s:SD"
-            }
-          ],
-          "usr": "s:Sq"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday1toPySDyxq_GACSgSHRzr0_lF",
-      "mangledName": "$s12WeatherToday1toPySDyxq_GACSgSHRzr0_lF",
-      "moduleName": "WeatherToday",
-      "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
-      "sugared_genericSig": "<T, U where T : Swift.Hashable>",
-      "declAttributes": [
-        "Postfix"
-      ],
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Int",
-          "printedName": "Swift.Int",
-          "usr": "s:Si"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Int?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Int",
-          "printedName": "Swift.Int",
-          "hasDefaultArg": true,
-          "usr": "s:Si"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2iSg_SitF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2iSg_SitF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Int64",
-          "printedName": "Swift.Int64",
-          "usr": "s:s5Int64V"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Int64?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int64",
-              "printedName": "Swift.Int64",
-              "usr": "s:s5Int64V"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Int64",
-          "printedName": "Swift.Int64",
-          "hasDefaultArg": true,
-          "usr": "s:s5Int64V"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaults5Int64VAESg_AEtF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaults5Int64VAESg_AEtF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "UInt",
-          "printedName": "Swift.UInt",
-          "usr": "s:Su"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.UInt?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "UInt",
-              "printedName": "Swift.UInt",
-              "usr": "s:Su"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "UInt",
-          "printedName": "Swift.UInt",
-          "hasDefaultArg": true,
-          "usr": "s:Su"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2uSg_SutF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2uSg_SutF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "UInt64",
-          "printedName": "Swift.UInt64",
-          "usr": "s:s6UInt64V"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.UInt64?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "UInt64",
-              "printedName": "Swift.UInt64",
-              "usr": "s:s6UInt64V"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "UInt64",
-          "printedName": "Swift.UInt64",
-          "hasDefaultArg": true,
-          "usr": "s:s6UInt64V"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaults6UInt64VAESg_AEtF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaults6UInt64VAESg_AEtF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Float",
-          "printedName": "Swift.Float",
-          "usr": "s:Sf"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Float?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Float",
-              "printedName": "Swift.Float",
-              "usr": "s:Sf"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Float",
-          "printedName": "Swift.Float",
-          "hasDefaultArg": true,
-          "usr": "s:Sf"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2fSg_SftF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2fSg_SftF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "CGFloat",
-          "printedName": "CoreGraphics.CGFloat",
-          "usr": "s:12CoreGraphics7CGFloatV"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "CoreGraphics.CGFloat?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "CGFloat",
-              "printedName": "CoreGraphics.CGFloat",
-              "usr": "s:12CoreGraphics7CGFloatV"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "CGFloat",
-          "printedName": "CoreGraphics.CGFloat",
-          "hasDefaultArg": true,
-          "usr": "s:12CoreGraphics7CGFloatV"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7default12CoreGraphics7CGFloatVAFSg_AFtF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7default12CoreGraphics7CGFloatVAFSg_AFtF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Double",
-          "printedName": "Swift.Double",
-          "usr": "s:Sd"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Double?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Double",
-              "printedName": "Swift.Double",
-              "usr": "s:Sd"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Double",
-          "printedName": "Swift.Double",
-          "hasDefaultArg": true,
-          "usr": "s:Sd"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2dSg_SdtF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2dSg_SdtF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "String",
-          "printedName": "Swift.String",
-          "usr": "s:SS"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.String?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "String",
-          "printedName": "Swift.String",
-          "hasDefaultArg": true,
-          "usr": "s:SS"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2SSg_SStF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2SSg_SStF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "String",
-          "printedName": "Swift.String",
-          "usr": "s:SS"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Substring?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Substring",
-              "printedName": "Swift.Substring",
-              "usr": "s:Ss"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Substring",
-          "printedName": "Swift.Substring",
-          "hasDefaultArg": true,
-          "usr": "s:Ss"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultSSSsSg_SstF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultSSSsSg_SstF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Bool",
-          "printedName": "Swift.Bool",
-          "usr": "s:Sb"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Swift.Bool?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Bool",
-          "printedName": "Swift.Bool",
-          "hasDefaultArg": true,
-          "usr": "s:Sb"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2bSg_SbtF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2bSg_SbtF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Date",
-          "printedName": "Foundation.Date",
-          "usr": "s:10Foundation4DateV"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "Foundation.Date?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Date",
-              "printedName": "Foundation.Date",
-              "usr": "s:10Foundation4DateV"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Date",
-          "printedName": "Foundation.Date",
-          "hasDefaultArg": true,
-          "usr": "s:10Foundation4DateV"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7default10Foundation4DateVAFSg_AFtF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7default10Foundation4DateVAFSg_AFtF",
-      "moduleName": "WeatherToday",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Array",
-          "printedName": "[τ_0_0]",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_0"
-            }
-          ],
-          "usr": "s:Sa"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "[τ_0_0]?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Array",
-              "printedName": "[τ_0_0]",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "GenericTypeParam",
-                  "printedName": "τ_0_0"
-                }
-              ],
-              "usr": "s:Sa"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Array",
-          "printedName": "[τ_0_0]",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_0"
-            }
-          ],
-          "hasDefaultArg": true,
-          "usr": "s:Sa"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultSayxGADSg_ADtlF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultSayxGADSg_ADtlF",
-      "moduleName": "WeatherToday",
-      "genericSig": "<τ_0_0>",
-      "sugared_genericSig": "<T>",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Function",
-      "name": "safeUnwrap",
-      "printedName": "safeUnwrap(_:default:)",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Dictionary",
-          "printedName": "[τ_0_0 : τ_0_1]",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_0"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_1"
-            }
-          ],
-          "usr": "s:SD"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Optional",
-          "printedName": "[τ_0_0 : τ_0_1]?",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Dictionary",
-              "printedName": "[τ_0_0 : τ_0_1]",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "GenericTypeParam",
-                  "printedName": "τ_0_0"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "GenericTypeParam",
-                  "printedName": "τ_0_1"
-                }
-              ],
-              "usr": "s:SD"
-            }
-          ],
-          "usr": "s:Sq"
-        },
-        {
-          "kind": "TypeNominal",
-          "name": "Dictionary",
-          "printedName": "[τ_0_0 : τ_0_1]",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_0"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "GenericTypeParam",
-              "printedName": "τ_0_1"
-            }
-          ],
-          "hasDefaultArg": true,
-          "usr": "s:SD"
-        }
-      ],
-      "declKind": "Func",
-      "usr": "s:12WeatherToday10safeUnwrap_7defaultSDyxq_GADSg_ADtSHRzr0_lF",
-      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultSDyxq_GADSg_ADtSHRzr0_lF",
-      "moduleName": "WeatherToday",
-      "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
-      "sugared_genericSig": "<T, U where T : Swift.Hashable>",
-      "funcSelfKind": "NonMutating"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "WeatherToday",
-      "declAttributes": [
-        "RawDocComment"
-      ]
-    },
-    {
-      "kind": "Import",
       "name": "RxSwift",
       "printedName": "RxSwift",
       "declKind": "Import",
@@ -61633,6 +60541,1098 @@
           "mangledName": "$s12ObjectMapper12BaseMappableP"
         }
       ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "WeatherToday"
+    },
+    {
+      "kind": "OperatorDecl",
+      "name": "~",
+      "printedName": "~",
+      "declKind": "PostfixOperator",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ]
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Int",
+          "printedName": "Swift.Int",
+          "usr": "s:Si"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Int?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPyS2iSgF",
+      "mangledName": "$s12WeatherToday1toPyS2iSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Int64",
+          "printedName": "Swift.Int64",
+          "usr": "s:s5Int64V"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Int64?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int64",
+              "printedName": "Swift.Int64",
+              "usr": "s:s5Int64V"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPys5Int64VADSgF",
+      "mangledName": "$s12WeatherToday1toPys5Int64VADSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "UInt",
+          "printedName": "Swift.UInt",
+          "usr": "s:Su"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.UInt?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UInt",
+              "printedName": "Swift.UInt",
+              "usr": "s:Su"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPyS2uSgF",
+      "mangledName": "$s12WeatherToday1toPyS2uSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "UInt64",
+          "printedName": "Swift.UInt64",
+          "usr": "s:s6UInt64V"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.UInt64?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UInt64",
+              "printedName": "Swift.UInt64",
+              "usr": "s:s6UInt64V"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPys6UInt64VADSgF",
+      "mangledName": "$s12WeatherToday1toPys6UInt64VADSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Float",
+          "printedName": "Swift.Float",
+          "usr": "s:Sf"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Float?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Float",
+              "printedName": "Swift.Float",
+              "usr": "s:Sf"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPyS2fSgF",
+      "mangledName": "$s12WeatherToday1toPyS2fSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "CGFloat",
+          "printedName": "CoreGraphics.CGFloat",
+          "usr": "s:12CoreGraphics7CGFloatV"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "CoreGraphics.CGFloat?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPy12CoreGraphics7CGFloatVAESgF",
+      "mangledName": "$s12WeatherToday1toPy12CoreGraphics7CGFloatVAESgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Double",
+          "printedName": "Swift.Double",
+          "usr": "s:Sd"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Double?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPyS2dSgF",
+      "mangledName": "$s12WeatherToday1toPyS2dSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.String?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPyS2SSgF",
+      "mangledName": "$s12WeatherToday1toPyS2SSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Substring?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Substring",
+              "printedName": "Swift.Substring",
+              "usr": "s:Ss"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPySSSsSgF",
+      "mangledName": "$s12WeatherToday1toPySSSsSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Bool",
+          "printedName": "Swift.Bool",
+          "usr": "s:Sb"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Bool?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPyS2bSgF",
+      "mangledName": "$s12WeatherToday1toPyS2bSgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Date",
+          "printedName": "Foundation.Date",
+          "usr": "s:10Foundation4DateV"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.Date?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPy10Foundation4DateVAESgF",
+      "mangledName": "$s12WeatherToday1toPy10Foundation4DateVAESgF",
+      "moduleName": "WeatherToday",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[τ_0_0]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "usr": "s:Sa"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "[τ_0_0]?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[τ_0_0]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPySayxGACSglF",
+      "mangledName": "$s12WeatherToday1toPySayxGACSglF",
+      "moduleName": "WeatherToday",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<T>",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "~",
+      "printedName": "~(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Dictionary",
+          "printedName": "[τ_0_0 : τ_0_1]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_1"
+            }
+          ],
+          "usr": "s:SD"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "[τ_0_0 : τ_0_1]?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Dictionary",
+              "printedName": "[τ_0_0 : τ_0_1]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ],
+              "usr": "s:SD"
+            }
+          ],
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday1toPySDyxq_GACSgSHRzr0_lF",
+      "mangledName": "$s12WeatherToday1toPySDyxq_GACSgSHRzr0_lF",
+      "moduleName": "WeatherToday",
+      "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+      "sugared_genericSig": "<T, U where T : Swift.Hashable>",
+      "declAttributes": [
+        "Postfix"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Int",
+          "printedName": "Swift.Int",
+          "usr": "s:Si"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Int?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Int",
+          "printedName": "Swift.Int",
+          "hasDefaultArg": true,
+          "usr": "s:Si"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2iSg_SitF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2iSg_SitF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Int64",
+          "printedName": "Swift.Int64",
+          "usr": "s:s5Int64V"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Int64?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int64",
+              "printedName": "Swift.Int64",
+              "usr": "s:s5Int64V"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Int64",
+          "printedName": "Swift.Int64",
+          "hasDefaultArg": true,
+          "usr": "s:s5Int64V"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaults5Int64VAESg_AEtF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaults5Int64VAESg_AEtF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "UInt",
+          "printedName": "Swift.UInt",
+          "usr": "s:Su"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.UInt?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UInt",
+              "printedName": "Swift.UInt",
+              "usr": "s:Su"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "UInt",
+          "printedName": "Swift.UInt",
+          "hasDefaultArg": true,
+          "usr": "s:Su"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2uSg_SutF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2uSg_SutF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "UInt64",
+          "printedName": "Swift.UInt64",
+          "usr": "s:s6UInt64V"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.UInt64?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UInt64",
+              "printedName": "Swift.UInt64",
+              "usr": "s:s6UInt64V"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "UInt64",
+          "printedName": "Swift.UInt64",
+          "hasDefaultArg": true,
+          "usr": "s:s6UInt64V"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaults6UInt64VAESg_AEtF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaults6UInt64VAESg_AEtF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Float",
+          "printedName": "Swift.Float",
+          "usr": "s:Sf"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Float?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Float",
+              "printedName": "Swift.Float",
+              "usr": "s:Sf"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Float",
+          "printedName": "Swift.Float",
+          "hasDefaultArg": true,
+          "usr": "s:Sf"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2fSg_SftF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2fSg_SftF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "CGFloat",
+          "printedName": "CoreGraphics.CGFloat",
+          "usr": "s:12CoreGraphics7CGFloatV"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "CoreGraphics.CGFloat?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "CGFloat",
+          "printedName": "CoreGraphics.CGFloat",
+          "hasDefaultArg": true,
+          "usr": "s:12CoreGraphics7CGFloatV"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7default12CoreGraphics7CGFloatVAFSg_AFtF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7default12CoreGraphics7CGFloatVAFSg_AFtF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Double",
+          "printedName": "Swift.Double",
+          "usr": "s:Sd"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Double?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Double",
+          "printedName": "Swift.Double",
+          "hasDefaultArg": true,
+          "usr": "s:Sd"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2dSg_SdtF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2dSg_SdtF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.String?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "hasDefaultArg": true,
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2SSg_SStF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2SSg_SStF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Substring?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Substring",
+              "printedName": "Swift.Substring",
+              "usr": "s:Ss"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Substring",
+          "printedName": "Swift.Substring",
+          "hasDefaultArg": true,
+          "usr": "s:Ss"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultSSSsSg_SstF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultSSSsSg_SstF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Bool",
+          "printedName": "Swift.Bool",
+          "usr": "s:Sb"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Swift.Bool?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Bool",
+          "printedName": "Swift.Bool",
+          "hasDefaultArg": true,
+          "usr": "s:Sb"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultS2bSg_SbtF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultS2bSg_SbtF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Date",
+          "printedName": "Foundation.Date",
+          "usr": "s:10Foundation4DateV"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.Date?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Date",
+          "printedName": "Foundation.Date",
+          "hasDefaultArg": true,
+          "usr": "s:10Foundation4DateV"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7default10Foundation4DateVAFSg_AFtF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7default10Foundation4DateVAFSg_AFtF",
+      "moduleName": "WeatherToday",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[τ_0_0]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "usr": "s:Sa"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "[τ_0_0]?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[τ_0_0]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[τ_0_0]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sa"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultSayxGADSg_ADtlF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultSayxGADSg_ADtlF",
+      "moduleName": "WeatherToday",
+      "genericSig": "<τ_0_0>",
+      "sugared_genericSig": "<T>",
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "safeUnwrap",
+      "printedName": "safeUnwrap(_:default:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Dictionary",
+          "printedName": "[τ_0_0 : τ_0_1]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_1"
+            }
+          ],
+          "usr": "s:SD"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "[τ_0_0 : τ_0_1]?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Dictionary",
+              "printedName": "[τ_0_0 : τ_0_1]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_1"
+                }
+              ],
+              "usr": "s:SD"
+            }
+          ],
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Dictionary",
+          "printedName": "[τ_0_0 : τ_0_1]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_1"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:SD"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:12WeatherToday10safeUnwrap_7defaultSDyxq_GADSg_ADtSHRzr0_lF",
+      "mangledName": "$s12WeatherToday10safeUnwrap_7defaultSDyxq_GADSg_ADtSHRzr0_lF",
+      "moduleName": "WeatherToday",
+      "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+      "sugared_genericSig": "<T, U where T : Swift.Hashable>",
+      "funcSelfKind": "NonMutating"
     },
     {
       "kind": "Import",

@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/OHHTTPStubs.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		+0sCrpwplYhaDj0ENpUjuqhHijc=
+		4zJ0tfp/8zCEqb+A69e1mRndPmI=
 		</data>
 		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		X1i0/YxLxEHnDE4ty1pFjRzPnp8=
+		9jITfzW7ysfiGOFR427hl0cjBqc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -155,11 +155,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+0sCrpwplYhaDj0ENpUjuqhHijc=
+			4zJ0tfp/8zCEqb+A69e1mRndPmI=
 			</data>
 			<key>hash2</key>
 			<data>
-			nGvDcJMD4g8wg1Q3WBQQZ4EzpocGDCPvShm+pbYOJ38=
+			fe6geaIxOW4YWL2+Pnlmo8naF+mMIpU0S1PWp2W5eWg=
 			</data>
 		</dict>
 		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -177,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X1i0/YxLxEHnDE4ty1pFjRzPnp8=
+			9jITfzW7ysfiGOFR427hl0cjBqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			rXULo3c59AkqGWIgKczqr6kSML3ar4A6wmPdEQZO20k=
+			Uyi9P7kb2kG9xKMRQ9ykCHSDs3UIsypN0nPnffHt6rc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
