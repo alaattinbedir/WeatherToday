@@ -49,6 +49,7 @@
 		84383E63284E8DD30048AA21 /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383E62284E8DD30048AA21 /* LandingVC.swift */; };
 		84383E65284E94540048AA21 /* RoutingEnum+ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383E64284E94540048AA21 /* RoutingEnum+ControllerType.swift */; };
 		84383E68284E963C0048AA21 /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383E67284E963C0048AA21 /* BaseNC.swift */; };
+		846CCF7F2861A86E00D32B48 /* SafeUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CCF7E2861A86E00D32B48 /* SafeUnwrap.swift */; };
 		846FB3A9285400840027E5A5 /* AppLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB3A8285400840027E5A5 /* AppLocale.swift */; };
 		846FB3AB285400BF0027E5A5 /* AppLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB3AA285400BF0027E5A5 /* AppLocalization.swift */; };
 		846FB3AD285400F30027E5A5 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FB3AC285400F30027E5A5 /* AppLanguage.swift */; };
@@ -81,7 +82,6 @@
 		8476CB76284DF368006E915F /* UIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB75284DF368006E915F /* UIView+DropShadow.swift */; };
 		8476CB78284DF5C4006E915F /* RoutingEnum+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476CB77284DF5C4006E915F /* RoutingEnum+Configuration.swift */; };
 		847D7E652848CDF600AD0DBC /* Dictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D7E642848CDF600AD0DBC /* Dictionary+Json.swift */; };
-		847D7E672848CE7100AD0DBC /* SafeUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D7E662848CE7100AD0DBC /* SafeUnwrap.swift */; };
 		847D7E6A2848D25400AD0DBC /* success_weather_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 847D7E692848D25400AD0DBC /* success_weather_response.json */; };
 		847D7E6B2848D66300AD0DBC /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379EF2750DDC50071CA81 /* BaseAPI.swift */; };
 		847D7E6C2848D6F000AD0DBC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379EA2750DD820071CA81 /* Utilities.swift */; };
@@ -94,7 +94,6 @@
 		847D7E742848D79600AD0DBC /* HourlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379E12750DD5D0071CA81 /* HourlyCollectionViewCell.swift */; };
 		847D7E752848D79A00AD0DBC /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379E42750DD5D0071CA81 /* ForecastTableViewCell.swift */; };
 		847D7E772848D7D400AD0DBC /* SessionKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379EB2750DD820071CA81 /* SessionKeeper.swift */; };
-		847D7E782848D7D800AD0DBC /* SafeUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D7E662848CE7100AD0DBC /* SafeUnwrap.swift */; };
 		84A379952750CE2A0071CA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379942750CE2A0071CA81 /* AppDelegate.swift */; };
 		84A379972750CE2A0071CA81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A379962750CE2A0071CA81 /* SceneDelegate.swift */; };
 		84A3799E2750CE2C0071CA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3799D2750CE2C0071CA81 /* Assets.xcassets */; };
@@ -337,6 +336,7 @@
 		84383E62284E8DD30048AA21 /* LandingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
 		84383E64284E94540048AA21 /* RoutingEnum+ControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutingEnum+ControllerType.swift"; sourceTree = "<group>"; };
 		84383E67284E963C0048AA21 /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
+		846CCF7E2861A86E00D32B48 /* SafeUnwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeUnwrap.swift; sourceTree = "<group>"; };
 		846FB3A8285400840027E5A5 /* AppLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocale.swift; sourceTree = "<group>"; };
 		846FB3AA285400BF0027E5A5 /* AppLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalization.swift; sourceTree = "<group>"; };
 		846FB3AC285400F30027E5A5 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
@@ -369,7 +369,6 @@
 		8476CB75284DF368006E915F /* UIView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DropShadow.swift"; sourceTree = "<group>"; };
 		8476CB77284DF5C4006E915F /* RoutingEnum+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutingEnum+Configuration.swift"; sourceTree = "<group>"; };
 		847D7E642848CDF600AD0DBC /* Dictionary+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Json.swift"; sourceTree = "<group>"; };
-		847D7E662848CE7100AD0DBC /* SafeUnwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SafeUnwrap.swift; path = "../New Group/SafeUnwrap.swift"; sourceTree = "<group>"; };
 		847D7E692848D25400AD0DBC /* success_weather_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success_weather_response.json; sourceTree = "<group>"; };
 		84A379912750CE2A0071CA81 /* WeatherToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A379942750CE2A0071CA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -529,7 +528,7 @@
 		84090795284FBD4500483264 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				840907DF2850C37400483264 /* SafeUnwrap */,
+				846CCF7D2861A86E00D32B48 /* SafeUnwrap */,
 				840907DE2850C36600483264 /* Logger */,
 			);
 			path = Helpers;
@@ -693,14 +692,6 @@
 			path = Logger;
 			sourceTree = "<group>";
 		};
-		840907DF2850C37400483264 /* SafeUnwrap */ = {
-			isa = PBXGroup;
-			children = (
-				847D7E662848CE7100AD0DBC /* SafeUnwrap.swift */,
-			);
-			path = SafeUnwrap;
-			sourceTree = "<group>";
-		};
 		840907E62850C4F000483264 /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -784,6 +775,14 @@
 				84383E67284E963C0048AA21 /* BaseNC.swift */,
 			);
 			path = BaseNC;
+			sourceTree = "<group>";
+		};
+		846CCF7D2861A86E00D32B48 /* SafeUnwrap */ = {
+			isa = PBXGroup;
+			children = (
+				846CCF7E2861A86E00D32B48 /* SafeUnwrap.swift */,
+			);
+			path = SafeUnwrap;
 			sourceTree = "<group>";
 		};
 		846FB3A72854005E0027E5A5 /* Localization */ = {
@@ -1865,7 +1864,6 @@
 				84DF9A2B2853A3200097B022 /* URL+Extension.swift in Sources */,
 				84A961F62853B8C5002C2A17 /* EmptyResponse.swift in Sources */,
 				840907DB2850C28500483264 /* ActivityIndicatorPresenter.swift in Sources */,
-				847D7E672848CE7100AD0DBC /* SafeUnwrap.swift in Sources */,
 				84A379F52750E0240071CA81 /* WeatherVM.swift in Sources */,
 				84A961E82853B588002C2A17 /* AtomicPropertyWrapper.swift in Sources */,
 				84A961B62853A9BF002C2A17 /* VulcanClient.swift in Sources */,
@@ -1904,6 +1902,7 @@
 				84383E63284E8DD30048AA21 /* LandingVC.swift in Sources */,
 				84A961E42853B54A002C2A17 /* ObservableNetworkActivityInterceptor.swift in Sources */,
 				84A379D72750DABF0071CA81 /* WeatherResponse.swift in Sources */,
+				846CCF7F2861A86E00D32B48 /* SafeUnwrap.swift in Sources */,
 				840907CE2850BF2700483264 /* AppFont.swift in Sources */,
 				84A962022853EAD5002C2A17 /* String+MDResource.swift in Sources */,
 				8476CB58284DE45F006E915F /* PageNavigator.swift in Sources */,
@@ -1953,7 +1952,6 @@
 				84DF9A0A28539CA10097B022 /* RequestInterceptor.swift in Sources */,
 				84DF99D4285396FF0097B022 /* Endpoint.swift in Sources */,
 				847D7E6B2848D66300AD0DBC /* BaseAPI.swift in Sources */,
-				847D7E782848D7D800AD0DBC /* SafeUnwrap.swift in Sources */,
 				84A961C92853AD7F002C2A17 /* RequestLoggerInterceptor.swift in Sources */,
 				84A962032853EAD5002C2A17 /* String+MDResource.swift in Sources */,
 				84268CE42848C0D0003D52EE /* WeatherStub.swift in Sources */,
