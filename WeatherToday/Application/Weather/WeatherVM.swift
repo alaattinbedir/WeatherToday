@@ -27,9 +27,9 @@ extension WeatherVM {
             guard let self = self else { return }
 
             self.weather.accept(weather)
-            self.currentDate.accept(weather.currently?.time)
-            self.weatherType.accept(weather.currently?.summary)
-            self.currentCityTemp.accept(weather.currently?.temperature)
+            self.currentDate.accept(weather.current?.dt)
+            self.weatherType.accept(weather.current?.weather?[0].description?.uppercased())
+            self.currentCityTemp.accept(weather.current?.temp)
 
         }, failed: { (error) in
             print(error)

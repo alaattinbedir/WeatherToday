@@ -4,11 +4,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/alaattinbedir/MyProjects/WeatherToday/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules"
+    'name': "/Users/alaattib/Projects/WeatherToday/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/alaattinbedir/MyProjects/WeatherToday/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxCocoa.build/unextended-module.modulemap",
+      'external-contents': "/Users/alaattib/Projects/WeatherToday/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxCocoa.build/unextended-module.modulemap",
     }]
   }]
 }

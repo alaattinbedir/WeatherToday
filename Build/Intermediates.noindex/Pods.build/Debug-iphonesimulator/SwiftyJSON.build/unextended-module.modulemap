@@ -6,5 +6,5 @@ framework module SwiftyJSON {
 }
 
 module SwiftyJSON.__Swift {
-    exclude header "SwiftyJSON-Swift.h"
+  exclude header "SwiftyJSON-Swift.h"
 }

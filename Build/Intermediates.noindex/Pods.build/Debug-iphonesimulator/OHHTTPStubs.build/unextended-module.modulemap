@@ -6,5 +6,5 @@ framework module OHHTTPStubs {
 }
 
 module OHHTTPStubs.__Swift {
-    exclude header "OHHTTPStubs-Swift.h"
+  exclude header "OHHTTPStubs-Swift.h"
 }

@@ -6,5 +6,5 @@ framework module RxCocoa {
 }
 
 module RxCocoa.__Swift {
-    exclude header "RxCocoa-Swift.h"
+  exclude header "RxCocoa-Swift.h"
 }

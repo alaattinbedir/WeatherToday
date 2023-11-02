@@ -1,5 +1,5 @@
 /* 
-Copyright (c) 2019 Swift Models Generated from JSON powered by http://www.json4swift.com
+Copyright (c) 2023 Swift Models Generated from JSON powered by http://www.json4swift.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -14,31 +14,28 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 import Foundation
 import ObjectMapper
 
-class WeatherResponse : Mappable {
-	var latitude : Double?
-	var longitude : Double?
+struct WeatherResponse : Mappable {
+	var lat : Double?
+	var lon : Double?
 	var timezone : String?
-	var currently : Currently?
-	var hourly : Hourly?
-	var daily : Daily?
-	var offset : Int?
+	var timezone_offset : Int?
+	var current : Current?
+	var hourly : [Hourly]?
+	var daily : [Daily]?
 
-    init() {
-        // Intentionally unimplemented
-    }
+	init?(map: Map) {
 
-    required init?(map _: Map) {
-        // Intentionally unimplemented
-    }
+	}
 
-	func mapping(map: Map) {
-		latitude <- map["latitude"]
-		longitude <- map["longitude"]
+	mutating func mapping(map: Map) {
+
+		lat <- map["lat"]
+		lon <- map["lon"]
 		timezone <- map["timezone"]
-		currently <- map["currently"]
+		timezone_offset <- map["timezone_offset"]
+		current <- map["current"]
 		hourly <- map["hourly"]
 		daily <- map["daily"]
-		offset <- map["offset"]
 	}
 
 }

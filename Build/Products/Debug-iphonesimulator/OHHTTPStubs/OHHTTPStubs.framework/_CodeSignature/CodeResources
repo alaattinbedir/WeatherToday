@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/OHHTTPStubs-Swift.h</key>
 		<data>
-		ed85Un42nkYZ8GAyXtC2bYQZAxo=
+		nmIiBoQg1TPWgFibaHJh17PifGs=
 		</data>
 		<key>Headers/OHHTTPStubs-umbrella.h</key>
 		<data>
@@ -38,23 +38,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IjmMLrT1q66IVTmDW+8yIb/7w0M=
+		MIZYDXU4QsWRSsus2JpD+0E8BrY=
 		</data>
 		<key>Modules/OHHTTPStubs.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		4zJ0tfp/8zCEqb+A69e1mRndPmI=
+		mYPFLyp/6M8CBrre3OzBp3QjLWI=
+		</data>
+		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		W9vEJPD4FOe1BqVrtnVDV4LZdYo=
+		5G9g4E5VYM0JOBnsUtJYIcy5kcY=
 		</data>
 		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9jITfzW7ysfiGOFR427hl0cjBqc=
+		X5kUTzu5J/VY1TCRUG1wV0LwSQo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		i1HgCODbLUEzd5Q8nBurHxGH684=
+		yJkj9krpev5kpJqj2rwdxgpENO0=
 		</data>
 		<key>PrivateHeaders/HTTPStubsMethodSwizzling.h</key>
 		<data>
@@ -133,11 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ed85Un42nkYZ8GAyXtC2bYQZAxo=
+			nmIiBoQg1TPWgFibaHJh17PifGs=
 			</data>
 			<key>hash2</key>
 			<data>
-			DzwsC8RBUYgyRlbPUsZVC9+cNjK0qBtq+eGqo238rFk=
+			kIES64NC7ljdtUzAjGEsS3PKGwmySGMydtoR0eXiRic=
 			</data>
 		</dict>
 		<key>Headers/OHHTTPStubs-umbrella.h</key>
@@ -155,44 +159,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4zJ0tfp/8zCEqb+A69e1mRndPmI=
+			mYPFLyp/6M8CBrre3OzBp3QjLWI=
 			</data>
 			<key>hash2</key>
 			<data>
-			fe6geaIxOW4YWL2+Pnlmo8naF+mMIpU0S1PWp2W5eWg=
+			2qZyDMV8MquGKhsUBQFUOBAwtCBu7i9TX9l4SgLtceU=
+			</data>
+		</dict>
+		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FSPnLbho3G+LL9smI3XgVOqBIQ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W9vEJPD4FOe1BqVrtnVDV4LZdYo=
+			5G9g4E5VYM0JOBnsUtJYIcy5kcY=
 			</data>
 			<key>hash2</key>
 			<data>
-			uc4CytxXru3MRbBZGxS1LtTZPdI6hxa4UDIsGD8BbKE=
+			BCWQFHIpNQ6xhOCOiamvp216IljLw0R4p9qflupuRKI=
 			</data>
 		</dict>
 		<key>Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9jITfzW7ysfiGOFR427hl0cjBqc=
+			X5kUTzu5J/VY1TCRUG1wV0LwSQo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uyi9P7kb2kG9xKMRQ9ykCHSDs3UIsypN0nPnffHt6rc=
+			KUJno3d7DeFU43dblKiqp5AJ2l0KEb+T041TnpcPhVI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i1HgCODbLUEzd5Q8nBurHxGH684=
+			yJkj9krpev5kpJqj2rwdxgpENO0=
 			</data>
 			<key>hash2</key>
 			<data>
-			RdPd0pCbzcPe8POyyXu1q4OqRvWNdVpecjzzhbtp9so=
+			sJmAda/KVeD2vw5USTBcTiHaauZ9DkvL/UWXsO0e5M0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/HTTPStubsMethodSwizzling.h</key>

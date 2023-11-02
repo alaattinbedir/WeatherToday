@@ -6,6 +6,6 @@ framework module RxRelay {
 }
 
 module RxRelay.Swift {
-    header "RxRelay-Swift.h"
-    requires objc
+  header "RxRelay-Swift.h"
+  requires objc
 }

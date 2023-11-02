@@ -6,6 +6,6 @@ framework module Alamofire {
 }
 
 module Alamofire.Swift {
-    header "Alamofire-Swift.h"
-    requires objc
+  header "Alamofire-Swift.h"
+  requires objc
 }

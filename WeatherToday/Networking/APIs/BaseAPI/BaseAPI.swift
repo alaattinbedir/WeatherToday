@@ -48,7 +48,7 @@ class BaseAPI: SessionDelegate {
     
     static let shared = BaseAPI()
     private var session: Session?
-    let baseURL = "https://api.darksky.net/forecast/2bb07c3bece89caf533ac9a5d23d8417/"
+    let baseURL = "https://api.openweathermap.org/data/2.5/"
     private let timeoutIntervalForRequest: Double = 300
 
     private init() {

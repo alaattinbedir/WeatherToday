@@ -28,20 +28,9 @@ class DailyTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    func configureCell(dailyData: Data) {
-        
-        if let time = dailyData.time {
-            self.dayLabel.text = Utilities.sharedInstance.getDayFromDate(date: Double(time))
-        }
-        
-        if let tempHigh = dailyData.temperatureHigh {
-            self.highTempLabel.text = Utilities.sharedInstance.convertFahrenheitToCelsius(fahrenheit: tempHigh) 
-        }
-        
-        if let tempLow = dailyData.temperatureLow {
-            self.lowTempLabel.text = Utilities.sharedInstance.convertFahrenheitToCelsius(fahrenheit: tempLow)
-        }
-        
+    func configureCell(dailyData: Daily) {
+        self.dayLabel.text = Utilities.sharedInstance.getDayFromDate(date: Double(dailyData.dt ?? 0))
+        self.highTempLabel.text = Utilities.sharedInstance.convertFahrenheitToCelsius(fahrenheit: dailyData.temp?.max ?? 0)
+        self.lowTempLabel.text = Utilities.sharedInstance.convertFahrenheitToCelsius(fahrenheit: dailyData.temp?.min ?? 0)
     }
 }

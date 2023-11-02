@@ -6,5 +6,5 @@ framework module ObjectMapper {
 }
 
 module ObjectMapper.__Swift {
-    exclude header "ObjectMapper-Swift.h"
+  exclude header "ObjectMapper-Swift.h"
 }

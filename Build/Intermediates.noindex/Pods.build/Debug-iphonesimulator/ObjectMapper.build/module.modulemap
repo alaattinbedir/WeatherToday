@@ -6,6 +6,6 @@ framework module ObjectMapper {
 }
 
 module ObjectMapper.Swift {
-    header "ObjectMapper-Swift.h"
-    requires objc
+  header "ObjectMapper-Swift.h"
+  requires objc
 }

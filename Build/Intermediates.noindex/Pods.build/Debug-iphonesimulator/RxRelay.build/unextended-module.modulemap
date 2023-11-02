@@ -6,5 +6,5 @@ framework module RxRelay {
 }
 
 module RxRelay.__Swift {
-    exclude header "RxRelay-Swift.h"
+  exclude header "RxRelay-Swift.h"
 }

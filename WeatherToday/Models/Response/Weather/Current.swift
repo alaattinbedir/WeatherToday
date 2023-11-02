@@ -1,5 +1,5 @@
 /* 
-Copyright (c) 2019 Swift Models Generated from JSON powered by http://www.json4swift.com
+Copyright (c) 2023 Swift Models Generated from JSON powered by http://www.json4swift.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -14,26 +14,21 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 import Foundation
 import ObjectMapper
 
-struct Currently : Mappable {
-	var time : Int?
-	var summary : String?
-	var icon : String?
-	var nearestStormDistance : Int?
-	var precipIntensity : Double?
-	var precipProbability : Double?
-	var precipType : String?
-	var temperature : Double?
-	var apparentTemperature : Double?
-	var dewPoint : Double?
-	var humidity : Double?
-	var pressure : Double?
-	var windSpeed : Double?
-	var windGust : Double?
-	var windBearing : Int?
-	var cloudCover : Double?
-	var uvIndex : Int?
-	var visibility : Double?
-	var ozone : Double?
+struct Current : Mappable {
+	var dt : Int?
+	var sunrise : Int?
+	var sunset : Int?
+	var temp : Double?
+	var feels_like : Double?
+	var pressure : Int?
+	var humidity : Int?
+	var dew_point : Double?
+	var uvi : Double?
+	var clouds : Int?
+	var visibility : Int?
+	var wind_speed : Double?
+	var wind_deg : Int?
+	var weather : [Weather]?
 
 	init?(map: Map) {
 
@@ -41,25 +36,20 @@ struct Currently : Mappable {
 
 	mutating func mapping(map: Map) {
 
-		time <- map["time"]
-		summary <- map["summary"]
-		icon <- map["icon"]
-		nearestStormDistance <- map["nearestStormDistance"]
-		precipIntensity <- map["precipIntensity"]
-		precipProbability <- map["precipProbability"]
-		precipType <- map["precipType"]
-		temperature <- map["temperature"]
-		apparentTemperature <- map["apparentTemperature"]
-		dewPoint <- map["dewPoint"]
-		humidity <- map["humidity"]
+		dt <- map["dt"]
+		sunrise <- map["sunrise"]
+		sunset <- map["sunset"]
+		temp <- map["temp"]
+		feels_like <- map["feels_like"]
 		pressure <- map["pressure"]
-		windSpeed <- map["windSpeed"]
-		windGust <- map["windGust"]
-		windBearing <- map["windBearing"]
-		cloudCover <- map["cloudCover"]
-		uvIndex <- map["uvIndex"]
+		humidity <- map["humidity"]
+		dew_point <- map["dew_point"]
+		uvi <- map["uvi"]
+		clouds <- map["clouds"]
 		visibility <- map["visibility"]
-		ozone <- map["ozone"]
+		wind_speed <- map["wind_speed"]
+		wind_deg <- map["wind_deg"]
+		weather <- map["weather"]
 	}
 
 }

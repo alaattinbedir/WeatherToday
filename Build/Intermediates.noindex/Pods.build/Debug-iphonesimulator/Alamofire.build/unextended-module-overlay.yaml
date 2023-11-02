@@ -4,11 +4,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/alaattinbedir/MyProjects/WeatherToday/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules"
+    'name': "/Users/alaattib/Projects/WeatherToday/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/alaattinbedir/MyProjects/WeatherToday/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap",
+      'external-contents': "/Users/alaattib/Projects/WeatherToday/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap",
     }]
   }]
 }

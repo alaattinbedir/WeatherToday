@@ -6,5 +6,5 @@ framework module RxSwift {
 }
 
 module RxSwift.__Swift {
-    exclude header "RxSwift-Swift.h"
+  exclude header "RxSwift-Swift.h"
 }

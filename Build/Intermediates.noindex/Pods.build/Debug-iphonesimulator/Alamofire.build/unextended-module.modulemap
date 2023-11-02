@@ -6,5 +6,5 @@ framework module Alamofire {
 }
 
 module Alamofire.__Swift {
-    exclude header "Alamofire-Swift.h"
+  exclude header "Alamofire-Swift.h"
 }

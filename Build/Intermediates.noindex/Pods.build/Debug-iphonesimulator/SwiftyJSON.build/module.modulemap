@@ -6,6 +6,6 @@ framework module SwiftyJSON {
 }
 
 module SwiftyJSON.Swift {
-    header "SwiftyJSON-Swift.h"
-    requires objc
+  header "SwiftyJSON-Swift.h"
+  requires objc
 }
